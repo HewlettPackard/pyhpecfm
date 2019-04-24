@@ -72,7 +72,7 @@ class CFMClient(object):
         self._session = None
         self._token = None
 
-    def get(self, path):
+    def get(self, path, params=None):
         """
         helper function used to issue HTTP get commands
         :param path: str which describes the desired path

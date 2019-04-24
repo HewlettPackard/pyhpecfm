@@ -22,7 +22,7 @@ def get_switches(cfmclient, params=None):
     # takes input of dict object params and crafts query string from it.
     # looked at requests PreparedRequest but didn't mesh with cfmclient.get method
     # due to the way the URL was split
-    return cfmclient.get(path).json().get('result')
+    return cfmclient.get(path, params).json().get('result')
 
 
 def get_fabrics(cfmclient, fabric_uuid=None):
@@ -60,6 +60,7 @@ def get_ports(cfmclient, switch_uuid=None):
 def update_ports(cfmclient, port_uuids, field, value):
     """
     Function to update various attributes of composable fabric module ports
+    :param cfmclient:
     :param port_uuids: list of str where each string represents a single unique port in a
     composable fabric
     :param field: str specific field which is desired to be modified (case-sensitive)
