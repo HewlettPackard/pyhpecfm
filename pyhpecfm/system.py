@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+"""
+This module contains functions related to working with the system characteristics of the
+desired HPE Composabale Fabric Manager instance
+"""
 
 
 def get_version(cfmclient):

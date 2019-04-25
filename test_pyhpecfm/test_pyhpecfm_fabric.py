@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-This module is used for testing the functions within the pyawair.objects module.
+This module is used for testing the functions within the pyhpecfm.fabric module.
 """
 
 

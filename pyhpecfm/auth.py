@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+"""
+This module provides helped functions and holds the main auth object used for authenticating
+against the desired HPE Composable Fabric Manager instance.
+"""
 
 from requests.models import PreparedRequest
 import requests
