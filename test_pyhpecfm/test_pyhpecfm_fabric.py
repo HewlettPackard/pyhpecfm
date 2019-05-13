@@ -14,9 +14,9 @@ from pyhpecfm.fabric import *
 from pyhpecfm.auth import *
 import os
 
-cfm_ip= os.environ['CFM_IP']
-cfm_username= os.environ['CFM_USERNAME']
-cfm_password= os.environ['CFM_PASSWORD']
+cfm_ip = os.environ['CFM_IP']
+cfm_username = os.environ['CFM_USERNAME']
+cfm_password = os.environ['CFM_PASSWORD']
 
 client= CFMClient(cfm_ip, cfm_username,cfm_password)
 
