@@ -119,4 +119,19 @@ class TestGetFabric(TestCase):
 
 
 
-
+class TestGetFabric_IP_Networks(TestCase):
+    """
+    Test
+    case for pyhpecfm.fabric get_fabric function
+    """
+    def test_get_fabric_ip_networks(self):
+        """
+        General test for get_fabric function
+        """
+        test_fabric = get_fabric_ip_networks(client)
+        my_attributes = ['subnet', 'fabric_uuid', 'name', 'switch_addresses', 'vlan', 'uuid',
+                         'mode', 'description']
+        self.assertIs(type(test_fabric), list)
+        self.assertIs(type(test_fabric[0]), dict)
+        for i in test_fabric[0].keys():
+            self.assertIn(i, my_attributes)
