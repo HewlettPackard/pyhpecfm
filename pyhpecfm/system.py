@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+"""
+This module contains functions related to working with the system characteristics of the
+desired HPE Composable Fabric Manager instance
+"""
 
 
 def get_version(cfmclient):
@@ -12,4 +16,16 @@ def get_version(cfmclient):
     :return: list of dicts
     """
     path = 'versions'
+    return cfmclient.get(path).json().get('result')
+
+
+def get_audit_logs(cfmclient):
+    """
+    Get :List of audit log records currently defined in Composable Fabric.
+    :param cfmclient:
+    :return: list of Dictionary objects where each dictionary represents a single entry in the
+    audit log of the HPE Composable Fabric Manager
+    :rtype: list
+    """
+    path = 'audits'
     return cfmclient.get(path).json().get('result')

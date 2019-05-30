@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-This module is used for testing the functions within the pyawair.objects module.
+This module is used for testing the functions within the pyhpecfm.system module.
 """
 
 
@@ -30,10 +30,33 @@ class TestGetVersions(TestCase):
 
     def test_get_versions(self):
         """
-        There will be verbose text here to describe what the test is actually doing
+        Test pyhpeimc.system.get_version function.
         """
         test_version = get_version(client)
         my_attributes = ['current', 'supported', 'software']
         self.assertIs(type(test_version), dict)
         for i in test_version.keys():
             self.assertIn(i, my_attributes)
+
+class TestGetAuditLogs(TestCase):
+    """
+    Test Case for pyhpecfm.fabric get_switches function
+    """
+
+    def test_get_audit_logs(self):
+        """
+        Test pyhpecfm.system.get_audit_logs function.
+        """
+        my_logs = get_audit_logs(client)
+        my_attributes = ['description', 'record_type', 'log_date', 'uuid', 'stream_id', 'data',
+                         'severity']
+        self.assertIs(type(my_logs), list)
+        for i in my_logs[0].keys():
+            self.assertIn(i, my_attributes)
+
+
+
+
+
+
+
