@@ -76,14 +76,14 @@ class CFMClient(object):
         self._session = None
         self._token = None
 
-    def get(self, path, params=None):
+    def get(self, path, params= None):
         """
         helper function used to issue HTTP get commands
         :param path: str which describes the desired path
         :return: requests.Response containing full response of API call
         :rtype: requests.Response
         """
-        return self._call_api(method='GET', path=path)
+        return self._call_api(method='GET', path=path, params= params)
 
     def patch(self, path, data):
         """Execute an API PATCH request.
@@ -121,8 +121,10 @@ class CFMClient(object):
             Response: The requests response object
         """
         url = 'https://{}/api/{}'.format(self._host, path)
-        req = PreparedRequest()
-        req.prepare_url(url, params)
+        if params:
+            req = PreparedRequest()
+            req.prepare_url(url, params)
+            url = req.url
         if self._session is None:
             self.connect()
         response = self._session.request(method=method,

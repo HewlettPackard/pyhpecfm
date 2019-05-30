@@ -4,7 +4,6 @@
 This module contains functions related to working with the fabric characteristics of the
 desired HPE Composabale Fabric Manager instance
 """
-#TODO fabric_ip_neworks functions
 
 
 # section dealing with fabric functions
@@ -41,6 +40,22 @@ def get_fabric_ip_networks(cfmclient, fabric_uuid=None):
     return cfmclient.get(path).json().get('result')
 
 
+# section dealing with fitting functions
+
+def perform_fit(cfmclient, fabric_uuid, name, description):
+    """
+    Function causes Composable Fabric Manager to perform a full fit across managed fabrics
+    :param cfmclient:
+    :return:
+    """
+    data = {
+        'fabric_uuid': '{}'.format(fabric_uuid),
+        'name': '{}'.format(name),
+        'description': '{}'.format(description)
+            }
+    path = 'fits'
+    return cfmclient.post(path, data)
+
 # section dealing with switches functions
 
 
@@ -67,7 +82,7 @@ def get_switches(cfmclient, params=None):
 
 
 
-# Section dealing with ports
+# Section dealing with port functions
 
 def get_ports(cfmclient, switch_uuid=None):
     """
@@ -109,3 +124,37 @@ def update_ports(cfmclient, port_uuids, field, value):
             ]
         }]
         cfmclient.patch('ports', data)
+
+
+#section dealing with VLAN functions
+
+def get_vlan_groups(cfmclient, params=None):
+    """
+    Get Composable Fabric vlan groups.
+    :param cfmclient: object of type CFMClient
+    :return: list of Dictionary objects where each dictionary represents a vlan group on a
+    Composable Fabric.
+    :rtype: list
+    """
+    path='vlan_groups'
+    return cfmclient.get(path, params).json().get('result')
+
+#TODO POST VLAN_GROUP FUNCTION
+
+#TODO PUT VLAN GROUP FUNCTION
+
+#TODO DELETE VLAN GROUP FUNCTION
+
+
+def get_vlan_properties(cfmclient, fabric_uuid):
+    """
+    Get Composable Fabric vlan properties for a specific fabric.
+    :param cfmclient: object of type CFMClient
+    :param fabric_uuid: object of type string which represents a valid fabric UUID on the specific
+    CFM instance.
+    :return: list of Dictionary objects where each dictionary represents a vlan group on a
+    Composable Fabric.
+    :rtype: list
+    """
+    path='vlan_properties/{}'.format(fabric_uuid)
+    return cfmclient.get(path).json().get('result')

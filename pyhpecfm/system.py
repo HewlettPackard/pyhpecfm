@@ -5,7 +5,6 @@ This module contains functions related to working with the system characteristic
 desired HPE Composable Fabric Manager instance
 """
 
-#TODO audits functions  events and alarms
 
 def get_version(cfmclient):
     """
