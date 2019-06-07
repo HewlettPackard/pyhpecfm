@@ -52,9 +52,10 @@ def perform_fit(cfmclient, fabric_uuid, name, description):
         'fabric_uuid': '{}'.format(fabric_uuid),
         'name': '{}'.format(name),
         'description': '{}'.format(description)
-            }
+    }
     path = 'fits'
     return cfmclient.post(path, data)
+
 
 # section dealing with switches functions
 
@@ -79,9 +80,6 @@ def get_switches(cfmclient, params=None):
     return cfmclient.get(path, params).json().get('result')
 
 
-
-
-
 # Section dealing with port functions
 
 def get_ports(cfmclient, switch_uuid=None):
@@ -93,7 +91,7 @@ def get_ports(cfmclient, switch_uuid=None):
     Composable Fabric Module
     :rtype: list
     """
-    path='ports'
+    path = 'ports'
     if switch_uuid:
         path = 'ports?switches={}&type=access'.format(switch_uuid)
         return cfmclient.get(path).json().get('result')
@@ -126,7 +124,7 @@ def update_ports(cfmclient, port_uuids, field, value):
         cfmclient.patch('ports', data)
 
 
-#section dealing with VLAN functions
+# section dealing with VLAN functions
 
 def get_vlan_groups(cfmclient, params=None):
     """
@@ -136,14 +134,15 @@ def get_vlan_groups(cfmclient, params=None):
     Composable Fabric.
     :rtype: list
     """
-    path='vlan_groups'
+    path = 'vlan_groups'
     return cfmclient.get(path, params).json().get('result')
 
-#TODO POST VLAN_GROUP FUNCTION
 
-#TODO PUT VLAN GROUP FUNCTION
+# TODO POST VLAN_GROUP FUNCTION
 
-#TODO DELETE VLAN GROUP FUNCTION
+# TODO PUT VLAN GROUP FUNCTION
+
+# TODO DELETE VLAN GROUP FUNCTION
 
 
 def get_vlan_properties(cfmclient, fabric_uuid):
@@ -156,5 +155,5 @@ def get_vlan_properties(cfmclient, fabric_uuid):
     Composable Fabric.
     :rtype: list
     """
-    path='vlan_properties/{}'.format(fabric_uuid)
+    path = 'vlan_properties/{}'.format(fabric_uuid)
     return cfmclient.get(path).json().get('result')
