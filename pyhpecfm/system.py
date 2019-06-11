@@ -29,3 +29,29 @@ def get_audit_logs(cfmclient):
     """
     path = 'audits'
     return cfmclient.get(path).json().get('result')
+
+
+def get_backups(cfcmclient, uuid=None):
+    """
+    Function to get a list of current backups located on the Composable Fabric Manager
+    represented by the cfcmclient object.
+    :param cfcmclient: Composable Fabric Manager connection object of type CFMClient
+    :param uuid: str that represents the unique identifier for a specific backup
+    :return: single dictionary if UUID. List of dictionaries where each dictionary represents a
+    single backup.
+    """
+    path = 'backups'
+    if uuid:
+        path = 'backups/{}'.format(uuid)
+    return cfcmclient.get(path).json().get('result')
+
+
+def create_backup(cfcmclient):
+    """
+    Function to initiate a new backup on the Composable Fabric Manager represented by the
+    CFCMClinet object
+    :param cfcmclient:Composable Fabric Manager connection object of type CFMClient
+    :return: HTTP response
+    """
+    path = 'backups'
+    return cfcmclient.post(path, data='')

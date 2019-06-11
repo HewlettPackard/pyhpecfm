@@ -181,8 +181,7 @@ class TestGetVLANProperties(TestCase):
         all_fabrics = get_fabrics(client)
         my_fabric = all_fabrics[0]['uuid']
         test_vlan_properties = get_vlan_properties(client, my_fabric)
-        my_attributes = ['lag_uuids', 'description', 'vlans', 'uuid', 'name']
+        my_attributes = ['vlans', 'ipv4_igmp_snooping', 'ipv6_igmp_snooping']
         self.assertIs(type(test_vlan_properties), dict)
-        self.assertIs(type(test_vlan_properties[0]), dict)
-        for i in test_vlan_properties[0].keys():
+        for i in test_vlan_properties['vlan_properties'][0].keys():
             self.assertIn(i, my_attributes)
