@@ -6,7 +6,7 @@ desired HPE Composable Fabric Manager instance
 """
 
 
-def get_version(cfmclient):
+def get_versions(cfmclient):
     """
     Function takes input cfmclient type object to authenticate against CFM API and queries
     versions API to return the version number of the system represented by the CFCMclient object
@@ -16,7 +16,8 @@ def get_version(cfmclient):
     :return: list of dicts
     """
     path = 'versions'
-    return cfmclient.get(path).json().get('result')
+    response = cfmclient.get(path)
+    return response.json().get('result') if response else None
 
 
 def get_audit_logs(cfmclient):
@@ -27,5 +28,6 @@ def get_audit_logs(cfmclient):
     audit log of the HPE Composable Fabric Manager
     :rtype: list
     """
-    path = 'audits'
-    return cfmclient.get(path).json().get('result')
+    path = 'v1/audits'
+    response = cfmclient.get(path)
+    return response.json().get('result') if response else None
