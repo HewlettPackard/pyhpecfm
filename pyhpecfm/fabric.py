@@ -62,11 +62,14 @@ def perform_fit(cfmclient, fabric_uuid, name, description):
     :param cfmclient:
     :return:
     """
-    data = {'fabric_uuid': '{}'.format(fabric_uuid),
-            'name': '{}'.format(name),
-            'description': '{}'.format(description)}
+    data = {
+        'fabric_uuid': '{}'.format(fabric_uuid),
+        'name': '{}'.format(name),
+        'description': '{}'.format(description)
+    }
+    path = 'fits'
 
-    return cfmclient.post('v1/fits', data=data)
+    return cfmclient.post(path, data)
 
 
 ####################
@@ -159,11 +162,12 @@ def get_vlan_groups(cfmclient, params=None):
 
     return cfmclient.get('v1/vlan_groups', params).json().get('result')
 
-#TODO POST VLAN_GROUP FUNCTION
 
-#TODO PUT VLAN GROUP FUNCTION
+# TODO POST VLAN_GROUP FUNCTION
 
-#TODO DELETE VLAN GROUP FUNCTION
+# TODO PUT VLAN GROUP FUNCTION
+
+# TODO DELETE VLAN GROUP FUNCTION
 
 
 def get_vlan_properties(cfmclient, fabric_uuid):

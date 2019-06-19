@@ -54,6 +54,44 @@ class TestGetAuditLogs(TestCase):
             self.assertIn(i, my_attributes)
 
 
+class TestGetBackups(TestCase):
+    """
+    Test Cases for pyhpecfm.system get_backups function
+    """
+
+    def test_get_backups(self):
+        """
+        Test pyhpecfm.system.get_backups function.
+        """
+        my_backups = get_backups(client)
+        my_attributes = ['url', 'checksum', 'uuid', 'name', 'date_created']
+        self.assertIs(type(my_backups), list)
+        for i in my_backups[0].keys():
+            self.assertIn(i, my_attributes)
+
+    def test_get_specific_backup(self):
+        """
+        Test pyhpecfm.system.get_backups function.
+        """
+        my_backups = get_backups(client)
+        my_uuid = my_backups[0]['uuid']
+        single_backup = get_backups(client, my_uuid)
+        my_attributes = ['url', 'checksum', 'uuid', 'name', 'date_created']
+        self.assertIs(type(single_backup), dict)
+        for i in single_backup.keys():
+            self.assertIn(i, my_attributes)
+
+class TestCreateBackup(TestCase):
+    """
+    Test Case for pyhpecfm.system create_backup function
+    """
+
+    def test_get_backups(self):
+        """
+        Test pyhpecfm.system.create_backup function.
+        """
+        backup_result = create_backup(client)
+        self.assertEqual(200, backup_result.status_code)
 
 
 
