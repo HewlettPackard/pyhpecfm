@@ -33,7 +33,7 @@ def get_audit_logs(cfmclient):
     return response.json().get('result') if response else None
 
 
-def get_backups(cfcmclient, uuid=None):
+def get_backups(cfmclient, uuid=None):
     """
     Function to get a list of current backups located on the Composable Fabric Manager
     represented by the cfcmclient object.
@@ -49,7 +49,7 @@ def get_backups(cfcmclient, uuid=None):
     return response.json().get('result') if response else None
 
 
-def create_backup(cfcmclient):
+def create_backup(cfmclient):
     """
     Function to initiate a new backup on the Composable Fabric Manager represented by the
     CFCMClinet object
