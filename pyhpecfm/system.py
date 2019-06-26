@@ -6,7 +6,7 @@ desired HPE Composable Fabric Manager instance
 """
 
 
-def get_version(cfmclient):
+def get_versions(cfmclient):
     """
     Function takes input cfmclient type object to authenticate against CFM API and queries
     versions API to return the version number of the system represented by the CFCMclient object
@@ -16,7 +16,8 @@ def get_version(cfmclient):
     :return: list of dicts
     """
     path = 'versions'
-    return cfmclient.get(path).json().get('result')
+    response = cfmclient.get(path)
+    return response.json().get('result') if response else None
 
 
 def get_audit_logs(cfmclient):
@@ -27,11 +28,12 @@ def get_audit_logs(cfmclient):
     audit log of the HPE Composable Fabric Manager
     :rtype: list
     """
-    path = 'audits'
-    return cfmclient.get(path).json().get('result')
+    path = 'v1/audits'
+    response = cfmclient.get(path)
+    return response.json().get('result') if response else None
 
 
-def get_backups(cfcmclient, uuid=None):
+def get_backups(cfmclient, uuid=None):
     """
     Function to get a list of current backups located on the Composable Fabric Manager
     represented by the cfcmclient object.
@@ -42,11 +44,12 @@ def get_backups(cfcmclient, uuid=None):
     """
     path = 'backups'
     if uuid:
-        path = 'backups/{}'.format(uuid)
-    return cfcmclient.get(path).json().get('result')
+        path += '/{}'.format(uuid)
+    response = cfmclient.get(path)
+    return response.json().get('result') if response else None
 
 
-def create_backup(cfcmclient):
+def create_backup(cfmclient):
     """
     Function to initiate a new backup on the Composable Fabric Manager represented by the
     CFCMClinet object
@@ -54,4 +57,5 @@ def create_backup(cfcmclient):
     :return: HTTP response
     """
     path = 'backups'
-    return cfcmclient.post(path, data='')
+    response = cfmclient.get(path)
+    return response.json().get('result') if response else None
