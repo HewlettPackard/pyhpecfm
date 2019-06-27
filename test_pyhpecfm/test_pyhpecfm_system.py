@@ -63,7 +63,7 @@ class TestGetBackups(TestCase):
         """
         Test pyhpecfm.system.get_backups function.
         """
-        my_backups = get_backups(client)
+        my_backups = system.get_backups(cfm)
         my_attributes = ['url', 'checksum', 'uuid', 'name', 'date_created']
         self.assertIs(type(my_backups), list)
         for i in my_backups[0].keys():
@@ -73,9 +73,9 @@ class TestGetBackups(TestCase):
         """
         Test pyhpecfm.system.get_backups function.
         """
-        my_backups = get_backups(client)
+        my_backups = system.get_backups(cfm)
         my_uuid = my_backups[0]['uuid']
-        single_backup = get_backups(client, my_uuid)
+        single_backup = system.get_backups(cfm, my_uuid)
         my_attributes = ['url', 'checksum', 'uuid', 'name', 'date_created']
         self.assertIs(type(single_backup), dict)
         for i in single_backup.keys():
@@ -90,9 +90,11 @@ class TestCreateBackup(TestCase):
         """
         Test pyhpecfm.system.create_backup function.
         """
-        backup_result = create_backup(client)
-        self.assertEqual(200, backup_result.status_code)
-
+        backup_result = system.create_backup(cfm)
+        my_attributes = ['url', 'checksum', 'uuid', 'name', 'date_created']
+        self.assertIs(type(backup_result), list)
+        for i in backup_result[0].keys():
+            self.assertIn(i, my_attributes)
 
 
 

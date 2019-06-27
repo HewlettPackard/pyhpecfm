@@ -42,7 +42,7 @@ def get_backups(cfmclient, uuid=None):
     :return: single dictionary if UUID. List of dictionaries where each dictionary represents a
     single backup.
     """
-    path = 'backups'
+    path = 'v1/backups'
     if uuid:
         path += '/{}'.format(uuid)
     response = cfmclient.get(path)
@@ -56,6 +56,6 @@ def create_backup(cfmclient):
     :param cfcmclient:Composable Fabric Manager connection object of type CFMClient
     :return: HTTP response
     """
-    path = 'backups'
+    path = 'v1/backups'
     response = cfmclient.get(path)
     return response.json().get('result') if response else None
