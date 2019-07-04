@@ -97,5 +97,19 @@ class TestCreateBackup(TestCase):
             self.assertIn(i, my_attributes)
 
 
+class TestGetAudit(TestCase):
+    """
+    Test Case for pyhpecfm.system get_audit_logs function
+    """
+
+    def test_get_audit_logs(self):
+        """
+        Test pyhpecfm.system.create_backup function.
+        """
+        audit_logs = system.get_audit_logs(cfm)
+        my_attributes = ['description', 'record_type', 'log_date', 'uuid', 'stream_id', 'data', 'severity']
+        self.assertIs(type(audit_logs), list)
+        for i in audit_logs[0].keys():
+            self.assertIn(i, my_attributes)
 
 
