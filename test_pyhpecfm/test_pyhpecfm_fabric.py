@@ -51,6 +51,19 @@ class TestGetSwitches(TestCase):
         for i in test_switches[0].keys():
             self.assertIn(i, my_attributes)
 
+
+    def test_get_lags(self):
+        """
+        Test to return lags.
+        """
+        test_lags = fabric.get_lags(cfm, params={'count_only': None,'mac_attachments': None,'mac_learnining': None,'ports': None,'port_type': None,'tag': None,'type': None,'vlan_groups': None})
+        my_attributes = ['count_only','mac_attachments','mac_learnining','ports','port_type','tag','type','vlan_groups']
+        self.assertIs(type(test_lags), list)
+        self.assertIs(type(test_lags[0]), dict)
+        for i in test_lags[0].keys():
+            self.assertIn(i, my_attributes)
+
+
     def test_get_switches_multiple_param(self):
         """
         Test to return switches. Request is launched with multiple parameters of Ports = True and a specific
