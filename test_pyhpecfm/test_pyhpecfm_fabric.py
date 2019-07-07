@@ -56,8 +56,8 @@ class TestGetSwitches(TestCase):
         """
         Test to return lags.
         """
-        test_lags = fabric.get_lags(cfm, params={'count_only': None,'mac_attachments': None,'mac_learnining': None,'ports': None,'port_type': None,'tag': None,'type': None,'vlan_groups': None})
-        my_attributes = ['count_only','mac_attachments','mac_learnining','ports','port_type','tag','type','vlan_groups']
+        test_lags = fabric.get_lags(cfm, params={'count_only': False,'mac_attachments': False,'mac_learnining': True,'ports': True,'port_type': 'access','tag': True,'type': 'provisioned','vlan_groups': True})
+        my_attributes = ['count_only','mac_attachments','mac_learning','ports','port_type','tag','type','vlan_groups']
         self.assertIs(type(test_lags), list)
         self.assertIs(type(test_lags[0]), dict)
         for i in test_lags[0].keys():
