@@ -120,7 +120,7 @@ class CFMClient(object):
         Returns:
             Response: The requests response object
         """
-        url = 'https://{}/api/{}'.format(self._host, path)
+        url = 'http://{}/api/{}'.format(self._host, path)
         if params:
             req = PreparedRequest()
             req.prepare_url(url, params)
