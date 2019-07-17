@@ -51,6 +51,7 @@ class TestGetSwitches(TestCase):
         for i in test_switches[0].keys():
             self.assertIn(i, my_attributes)
 
+
     def test_get_switches_multiple_param(self):
         """
         Test to return switches. Request is launched with multiple parameters of Ports = True and a specific
@@ -183,4 +184,28 @@ class TestGetVLANProperties(TestCase):
         my_attributes = ['vlans', 'ipv4_igmp_snooping', 'ipv6_igmp_snooping']
         self.assertIs(type(test_vlan_properties), dict)
         for i in test_vlan_properties['vlan_properties'][0].keys():
+            self.assertIn(i, my_attributes)
+
+class TestGetLags(TestCase):
+
+    def test_get_lags_no_params(self):
+        """
+        Test case for pyhpecfm.fabric get_lags function no parameters
+        """
+        test_lags = fabric.get_lags(cfm)
+        my_attributes = ['native_vlan','fabric_uuid','uuid','tags','vlan_groups','mac_learning_use_default_configuration','mac_learning_configuration','mac_learning_attachments','description','vlan_group_uuids','lacp-fallback','port_properties','vlans','type','ungrouped_vlans','name']
+        self.assertIs(type(test_lags), list)
+        self.assertIs(type(test_lags[0]), dict)
+        for i in test_lags[0].keys():
+            self.assertIn(i, my_attributes)
+
+    def test_get_lags_multiple_param(self):
+        """
+        Test to return lags. Passing multiple params.
+        """
+        test_lags = fabric.get_lags(cfm, params={'count_only': False,'mac_attachments': False,'mac_learnining': True,'ports': True,'port_type': 'access','tag': True,'type': 'provisioned','vlan_groups': True})
+        my_attributes = ['native_vlan','fabric_uuid','uuid','tags','vlan_groups','mac_learning_use_default_configuration','mac_learning_configuration','mac_learning_attachments','description','vlan_group_uuids','lacp-fallback','port_properties','vlans','type','ungrouped_vlans','name']
+        self.assertIs(type(test_lags), list)
+        self.assertIs(type(test_lags[0]), dict)
+        for i in test_lags[0].keys():
             self.assertIn(i, my_attributes)
