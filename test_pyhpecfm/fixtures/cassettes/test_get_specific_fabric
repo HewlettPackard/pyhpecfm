@@ -1,0 +1,135 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Password:
+      - plexxi
+      X-Auth-Username:
+      - admin
+    method: POST
+    uri: https://10.101.0.210/api/v1/auth/token
+  response:
+    body:
+      string: '{"count": 1, "result": "8754f69d6844a8e61cd0ed76c891caf1950aaa2485838bf9421a9c9ea74b9ee9e2812b1b22604febd1f243522d046816",
+        "time": "344.616mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '143'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 12 Jul 2019 21:06:51 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 8754f69d6844a8e61cd0ed76c891caf1950aaa2485838bf9421a9c9ea74b9ee9e2812b1b22604febd1f243522d046816
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://10.101.0.210/api/v1/fabrics
+  response:
+    body:
+      string: '{"count": 1, "result": [{"description": "Composable Fabric Manager
+        Demonstration fabric using Container based virtual switches", "foreign_manager_id":
+        "", "foreign_fabric_state": "Unmanaged", "name": "Virtual CFM Demo Fabric",
+        "is_stable": true, "foreign_management_state": "Available", "foreign_manager_url":
+        "", "uuid": "a01322116dfc4cdba663e7cc90fe74d6"}], "time": "7.021mS"}'
+    headers:
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '378'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 12 Jul 2019 21:06:51 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=10; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 8754f69d6844a8e61cd0ed76c891caf1950aaa2485838bf9421a9c9ea74b9ee9e2812b1b22604febd1f243522d046816
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://10.101.0.210/api/v1/fabrics/a01322116dfc4cdba663e7cc90fe74d6
+  response:
+    body:
+      string: '{"count": 1, "result": {"description": "Composable Fabric Manager Demonstration
+        fabric using Container based virtual switches", "foreign_manager_id": "",
+        "foreign_fabric_state": "Unmanaged", "name": "Virtual CFM Demo Fabric", "is_stable":
+        true, "foreign_management_state": "Available", "foreign_manager_url": "",
+        "uuid": "a01322116dfc4cdba663e7cc90fe74d6"}, "time": "6.326mS"}'
+    headers:
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '376'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 12 Jul 2019 21:06:51 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=10; includeSubDomains
+    status:
+      code: 200
+      message: OK
+version: 1

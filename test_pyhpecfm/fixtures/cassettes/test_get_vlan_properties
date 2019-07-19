@@ -1,0 +1,139 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Password:
+      - plexxi
+      X-Auth-Username:
+      - admin
+    method: POST
+    uri: https://10.101.0.210/api/v1/auth/token
+  response:
+    body:
+      string: '{"count": 1, "result": "e032d742a5cbab17bf58c4fe131415900fa903201298c6aa26370e66bf39d54888f133b2916189ea67a30c6795f3e5e0",
+        "time": "416.100mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '143'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 12 Jul 2019 21:07:08 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer e032d742a5cbab17bf58c4fe131415900fa903201298c6aa26370e66bf39d54888f133b2916189ea67a30c6795f3e5e0
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://10.101.0.210/api/v1/fabrics
+  response:
+    body:
+      string: '{"count": 1, "result": [{"description": "Composable Fabric Manager
+        Demonstration fabric using Container based virtual switches", "foreign_manager_id":
+        "", "foreign_fabric_state": "Unmanaged", "name": "Virtual CFM Demo Fabric",
+        "is_stable": true, "foreign_management_state": "Available", "foreign_manager_url":
+        "", "uuid": "a01322116dfc4cdba663e7cc90fe74d6"}], "time": "6.576mS"}'
+    headers:
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '378'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 12 Jul 2019 21:07:08 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=10; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer e032d742a5cbab17bf58c4fe131415900fa903201298c6aa26370e66bf39d54888f133b2916189ea67a30c6795f3e5e0
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://10.101.0.210/api/v1/vlan_properties/a01322116dfc4cdba663e7cc90fe74d6
+  response:
+    body:
+      string: '{"count": 1, "result": {"vlan_properties": [{"vlans": "1, 3-4000",
+        "ipv4_igmp_snooping": {"querier_timeout_seconds": 126, "enabled": true, "reporter_timeout_seconds":
+        261}, "ipv6_igmp_snooping": {"querier_timeout_seconds": 126, "enabled": true,
+        "reporter_timeout_seconds": 261}}, {"vlans": "2", "ipv4_igmp_snooping": {"querier_timeout_seconds":
+        126, "enabled": true, "reporter_timeout_seconds": 261}, "ipv6_igmp_snooping":
+        {"querier_timeout_seconds": null, "enabled": false, "reporter_timeout_seconds":
+        null}}]}, "time": "11.540mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '532'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 12 Jul 2019 21:07:09 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+version: 1

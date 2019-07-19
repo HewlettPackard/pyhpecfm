@@ -1,0 +1,1039 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Password:
+      - plexxi
+      X-Auth-Username:
+      - admin
+    method: POST
+    uri: https://10.101.0.210/api/v1/auth/token
+  response:
+    body:
+      string: '{"count": 1, "result": "b6bbc0fce0266bb329da44cd54e9bf1d252eab90b65ffc959580115cf6aaea8efe7a58d3d9dc926b82d13a568b11402d",
+        "time": "465.576mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '143'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 12 Jul 2019 21:07:10 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer b6bbc0fce0266bb329da44cd54e9bf1d252eab90b65ffc959580115cf6aaea8efe7a58d3d9dc926b82d13a568b11402d
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://10.101.0.210/api/v1/audits
+  response:
+    body:
+      string: '{"count": 73, "page": {"next_page": "/api/v1/audits?page_size=1000&before=475d94534eb34ce29d1d45413cabc6f0",
+        "prev_page": "/api/v1/audits?page_size=1000&after=ea84be0ca5d34a5e8581c81511552273"},
+        "result": [{"description": "Switch admin-vs1 is unresponsive", "record_type":
+        "ALARM", "log_date": 1560856648116, "uuid": "ea84be0ca5d34a5e8581c81511552273",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901000", "uuid": "c5fd56eaefbf4b73adeed22794447bb0",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:10:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.3", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs1", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs1",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs1 state changed from SYNCED to UNRESPONSIVE", "record_type":
+        "EVENT", "log_date": 1560856647564, "uuid": "d6462d9eeed249c5a52ca1bb4515518e",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901000", "uuid": "c5fd56eaefbf4b73adeed22794447bb0",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:10:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.3", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs1", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs1",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs3 is unresponsive", "record_type": "ALARM", "log_date": 1560856643524,
+        "uuid": "74bf297daff74d12a821db0178ef38bf", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901200", "uuid": "34d71aaf8ada42a094879bfcd9ce0c89",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:12:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.5", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs3", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs3",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs3 state changed from SYNCED to UNRESPONSIVE", "record_type":
+        "EVENT", "log_date": 1560856643208, "uuid": "19fcbd00600644bcbf4ee09d257a3eda",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901200", "uuid": "34d71aaf8ada42a094879bfcd9ce0c89",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:12:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.5", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs3", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs3",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs4 is unresponsive", "record_type": "ALARM", "log_date": 1560856640144,
+        "uuid": "ba7c66c34a514497a8d6ad980581f533", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901300", "uuid": "2c5546079fd54c778074f5273eb4a29d",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:13:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.6", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs4", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs4",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs4 state changed from SYNCED to UNRESPONSIVE", "record_type":
+        "EVENT", "log_date": 1560856640500, "uuid": "ca28ceac29064138a438e46abb7557cf",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901300", "uuid": "2c5546079fd54c778074f5273eb4a29d",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:13:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.6", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs4", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs4",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs2 is unresponsive", "record_type": "ALARM", "log_date": 1560856636648,
+        "uuid": "d85bc39d533f4e569e09ce8f306dd55c", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901100", "uuid": "9048da24f7ae435da4f8d49af6c36d76",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:11:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.4", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs2", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs2",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs2 state changed from SYNCED to UNRESPONSIVE", "record_type":
+        "EVENT", "log_date": 1560856631722, "uuid": "80a463aab962464b8a72998bed228f97",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901100", "uuid": "9048da24f7ae435da4f8d49af6c36d76",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:11:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.4", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs2", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs2",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs6 is unresponsive", "record_type": "ALARM", "log_date": 1560856628160,
+        "uuid": "e2017591a08c4495ac4d47cedb4c685c", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901500", "uuid": "7057eb117d5240898da6cd6250ef6507",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:15:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.8", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs6", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs6",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs6 state changed from SYNCED to UNRESPONSIVE", "record_type":
+        "EVENT", "log_date": 1560856628306, "uuid": "9427924dd05440648b4e168cf9213fb8",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901500", "uuid": "7057eb117d5240898da6cd6250ef6507",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:15:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.8", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs6", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs6",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs7 is unresponsive", "record_type": "ALARM", "log_date": 1560856624842,
+        "uuid": "6f0a4aca5e30435cb7525ec9c46756c2", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901600", "uuid": "873cb8288b814d3d9bdc8495ba76cbe5",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:16:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.9", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs7", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs7",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs7 state changed from SYNCED to UNRESPONSIVE", "record_type":
+        "EVENT", "log_date": 1560856624702, "uuid": "57ca1b0421954380b01bfe1844e5e4b3",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901600", "uuid": "873cb8288b814d3d9bdc8495ba76cbe5",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:16:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.9", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs7", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs7",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs5 is unresponsive", "record_type": "ALARM", "log_date": 1560856622732,
+        "uuid": "2123d38a04a845e08be56455eda1a395", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901400", "uuid": "96714a47116a4ad69d154081673a2782",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:14:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.7", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs5", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs5",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs5 state changed from SYNCED to UNRESPONSIVE", "record_type":
+        "EVENT", "log_date": 1560856621298, "uuid": "e3e2967aadeb445fa46a1d8ed59a0a1f",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901400", "uuid": "96714a47116a4ad69d154081673a2782",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:14:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.7", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs5", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs5",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs7 state changed from SYNCING to SYNCED", "record_type": "EVENT",
+        "log_date": 1559243102368, "uuid": "99a7e7b8eccd44e6816fb55abce5fad4", "stream_id":
+        "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901600", "uuid": "873cb8288b814d3d9bdc8495ba76cbe5",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:16:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address":
+        "172.30.0.9", "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.0.0-60", "name": "admin-vs7", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s3p", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs7", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs3
+        state changed from SYNCING to SYNCED", "record_type": "EVENT", "log_date":
+        1559243102076, "uuid": "0766691c4ab7495fb9646b44e4028a97", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901200", "uuid": "34d71aaf8ada42a094879bfcd9ce0c89",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:12:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address":
+        "172.30.0.5", "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.0.0-60", "name": "admin-vs3", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s3p", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs3", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs4
+        state changed from SYNCING to SYNCED", "record_type": "EVENT", "log_date":
+        1559243092186, "uuid": "1f42d23ecca640f895327872e377dea1", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901300", "uuid": "2c5546079fd54c778074f5273eb4a29d",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:13:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address":
+        "172.30.0.6", "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.0.0-60", "name": "admin-vs4", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s3p", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs4", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs2
+        state changed from SYNCING to SYNCED", "record_type": "EVENT", "log_date":
+        1559243066666, "uuid": "d4e785c5c2344a19a78e350e904eecb0", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901100", "uuid": "9048da24f7ae435da4f8d49af6c36d76",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:11:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address":
+        "172.30.0.4", "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.0.0-60", "name": "admin-vs2", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s3p", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs2", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs7
+        state changed from CONNECTED to SYNCING", "record_type": "EVENT", "log_date":
+        1559243066608, "uuid": "289e2335e15946148734cae068941b5e", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901600", "uuid": "873cb8288b814d3d9bdc8495ba76cbe5",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:16:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCING", "description": "", "previous_status": "CONNECTED", "ip_address":
+        "172.30.0.9", "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.0.0-60", "name": "admin-vs7", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s3i", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs7", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs5
+        state changed from SYNCING to SYNCED", "record_type": "EVENT", "log_date":
+        1559243066204, "uuid": "0784e4a8ca8f47579401d1daad17ab7d", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901400", "uuid": "96714a47116a4ad69d154081673a2782",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:14:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address":
+        "172.30.0.7", "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.0.0-60", "name": "admin-vs5", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s3p", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs5", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs3
+        state changed from CONNECTED to SYNCING", "record_type": "EVENT", "log_date":
+        1559243065694, "uuid": "b78732f7f4b84ec28d6b1b8e021b88b9", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901200", "uuid": "34d71aaf8ada42a094879bfcd9ce0c89",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:12:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCING", "description": "", "previous_status": "CONNECTED", "ip_address":
+        "172.30.0.5", "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.0.0-60", "name": "admin-vs3", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s3i", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs3", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs1
+        state changed from SYNCING to SYNCED", "record_type": "EVENT", "log_date":
+        1559243065422, "uuid": "6df01428387c4cdba4de79ca4a50fbcc", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901000", "uuid": "c5fd56eaefbf4b73adeed22794447bb0",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:10:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address":
+        "172.30.0.3", "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.0.0-60", "name": "admin-vs1", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s3p", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs1", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs4
+        state changed from CONNECTED to SYNCING", "record_type": "EVENT", "log_date":
+        1559243064276, "uuid": "830263c3230d48178b54a1a00b8ec53c", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901300", "uuid": "2c5546079fd54c778074f5273eb4a29d",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:13:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCING", "description": "", "previous_status": "CONNECTED", "ip_address":
+        "172.30.0.6", "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.0.0-60", "name": "admin-vs4", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s3i", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs4", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs6
+        state changed from SYNCING to SYNCED", "record_type": "EVENT", "log_date":
+        1559243064024, "uuid": "859277683ecd4daab12b9e1918b6bb3a", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901500", "uuid": "7057eb117d5240898da6cd6250ef6507",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:15:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address":
+        "172.30.0.8", "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.0.0-60", "name": "admin-vs6", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s3p", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs6", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs3
+        state changed from UNRESPONSIVE to CONNECTED", "record_type": "EVENT", "log_date":
+        1559243017116, "uuid": "5f48a0f44ccb4615a2913138b4fd08ae", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901200", "uuid": "34d71aaf8ada42a094879bfcd9ce0c89",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:12:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "CONNECTED", "description": "", "previous_status": "UNRESPONSIVE",
+        "ip_address": "172.30.0.5", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs3", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3i",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs3",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs4 state changed from UNRESPONSIVE to CONNECTED", "record_type":
+        "EVENT", "log_date": 1559243017586, "uuid": "3eb4e3680461494f881798a0c1fcae84",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901300", "uuid": "2c5546079fd54c778074f5273eb4a29d",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:13:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "CONNECTED", "description": "", "previous_status": "UNRESPONSIVE",
+        "ip_address": "172.30.0.6", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs4", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3i",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs4",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs7 state changed from UNRESPONSIVE to CONNECTED", "record_type":
+        "EVENT", "log_date": 1559243017212, "uuid": "666a5c3c5b8d4bdcb1b17e781395e9de",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901600", "uuid": "873cb8288b814d3d9bdc8495ba76cbe5",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:16:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "CONNECTED", "description": "", "previous_status": "UNRESPONSIVE",
+        "ip_address": "172.30.0.9", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs7", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3i",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs7",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs1 state changed from CONNECTED to SYNCING", "record_type":
+        "EVENT", "log_date": 1559243016738, "uuid": "17d36671d33246ea89cc457902653928",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901000", "uuid": "c5fd56eaefbf4b73adeed22794447bb0",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:10:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCING", "description": "", "previous_status": "CONNECTED", "ip_address":
+        "172.30.0.3", "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.0.0-60", "name": "admin-vs1", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s3i", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs1", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs5
+        state changed from AUTHENTICATE to SYNCING", "record_type": "EVENT", "log_date":
+        1559243016566, "uuid": "3c6285a821614d96912433c7d2ade069", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901400", "uuid": "96714a47116a4ad69d154081673a2782",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:14:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCING", "description": "", "previous_status": "AUTHENTICATE",
+        "ip_address": "172.30.0.7", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs5", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3i",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs5",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs2 state changed from AUTHENTICATE to SYNCING", "record_type":
+        "EVENT", "log_date": 1559243016692, "uuid": "1a7290b264584ef1b8d8d33e0065db98",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901100", "uuid": "9048da24f7ae435da4f8d49af6c36d76",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:11:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCING", "description": "", "previous_status": "AUTHENTICATE",
+        "ip_address": "172.30.0.4", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs2", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3i",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs2",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs6 state changed from CONNECTED to SYNCING", "record_type":
+        "EVENT", "log_date": 1559243016514, "uuid": "89b0fe12eb9d4e2e81a229de8898dd76",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 3209, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901500", "uuid": "7057eb117d5240898da6cd6250ef6507",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:15:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCING", "description": "", "previous_status": "CONNECTED", "ip_address":
+        "172.30.0.8", "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.0.0-60", "name": "admin-vs6", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s3i", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs6", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs6
+        state changed from AUTHENTICATE to CONNECTED", "record_type": "EVENT", "log_date":
+        1559243015866, "uuid": "dab528a2bab44be0895e969910cbd54a", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901500", "uuid": "7057eb117d5240898da6cd6250ef6507",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:15:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "CONNECTED", "description": "", "previous_status": "AUTHENTICATE",
+        "ip_address": "172.30.0.8", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs6", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs6",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs1 state changed from AUTHENTICATE to CONNECTED", "record_type":
+        "EVENT", "log_date": 1559242959838, "uuid": "87efb698abe74357b9c7b7fe3fce5fc3",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901000", "uuid": "c5fd56eaefbf4b73adeed22794447bb0",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:10:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "CONNECTED", "description": "", "previous_status": "AUTHENTICATE",
+        "ip_address": "172.30.0.3", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs1", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs1",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs5 state changed from UNRESPONSIVE to AUTHENTICATE", "record_type":
+        "EVENT", "log_date": 1559242843550, "uuid": "77d7b8dda34146d69f389c3756465cf8",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901400", "uuid": "96714a47116a4ad69d154081673a2782",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:14:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "AUTHENTICATE", "description": "", "previous_status": "UNRESPONSIVE",
+        "ip_address": "172.30.0.7", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs5", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs5",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs6 state changed from UNRESPONSIVE to AUTHENTICATE", "record_type":
+        "EVENT", "log_date": 1559242787328, "uuid": "bd6817c5520d475fae50d2b2fda19656",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901500", "uuid": "7057eb117d5240898da6cd6250ef6507",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:15:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "AUTHENTICATE", "description": "", "previous_status": "UNRESPONSIVE",
+        "ip_address": "172.30.0.8", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs6", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs6",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs1 state changed from UNRESPONSIVE to AUTHENTICATE", "record_type":
+        "EVENT", "log_date": 1559242782504, "uuid": "9f9e8e23b0ff47a4ab8366a74e833d4c",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901000", "uuid": "c5fd56eaefbf4b73adeed22794447bb0",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:10:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "AUTHENTICATE", "description": "", "previous_status": "UNRESPONSIVE",
+        "ip_address": "172.30.0.3", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs1", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs1",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs2 state changed from UNRESPONSIVE to AUTHENTICATE", "record_type":
+        "EVENT", "log_date": 1559242727808, "uuid": "96f2a593dfc044f0b03656e24863474d",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901100", "uuid": "9048da24f7ae435da4f8d49af6c36d76",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:11:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "AUTHENTICATE", "description": "", "previous_status": "UNRESPONSIVE",
+        "ip_address": "172.30.0.4", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs2", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs2",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs7 is unresponsive", "record_type": "ALARM", "log_date": 1558867756708,
+        "uuid": "c2c8cb2adf534f3c8764ef7b7b492ce3", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901600", "uuid": "873cb8288b814d3d9bdc8495ba76cbe5",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:16:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.9", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs7", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs7",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs7 state changed from SYNCED to UNRESPONSIVE", "record_type":
+        "EVENT", "log_date": 1558867756076, "uuid": "10e7ff4355934557aa2d9f9549e72871",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901600", "uuid": "873cb8288b814d3d9bdc8495ba76cbe5",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:16:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.9", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs7", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs7",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs2 is unresponsive", "record_type": "ALARM", "log_date": 1558867752470,
+        "uuid": "61dab8cdbbfc42ccb9239e1c01d2b4a4", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901100", "uuid": "9048da24f7ae435da4f8d49af6c36d76",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:11:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.4", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs2", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs2",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs2 state changed from SYNCED to UNRESPONSIVE", "record_type":
+        "EVENT", "log_date": 1558867751736, "uuid": "4de1a0a08331442caf8836134c3f9a68",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901100", "uuid": "9048da24f7ae435da4f8d49af6c36d76",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:11:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.4", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs2", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs2",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs5 is unresponsive", "record_type": "ALARM", "log_date": 1558867748232,
+        "uuid": "436fece27d2245beb36614cd58d28731", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901400", "uuid": "96714a47116a4ad69d154081673a2782",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:14:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.7", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs5", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs5",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs5 state changed from SYNCED to UNRESPONSIVE", "record_type":
+        "EVENT", "log_date": 1558867747946, "uuid": "2cf2b700b6954a1b82c4ebe17d07c7c1",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901400", "uuid": "96714a47116a4ad69d154081673a2782",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:14:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.7", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs5", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs5",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs4 is unresponsive", "record_type": "ALARM", "log_date": 1558867744574,
+        "uuid": "4c74c6297f534e46ab1b25fd71c3ddf1", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901300", "uuid": "2c5546079fd54c778074f5273eb4a29d",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:13:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.6", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs4", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs4",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs4 state changed from SYNCED to UNRESPONSIVE", "record_type":
+        "EVENT", "log_date": 1558867744274, "uuid": "8f402c0740e34683b69beeac72a37a6f",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901300", "uuid": "2c5546079fd54c778074f5273eb4a29d",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:13:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.6", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs4", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs4",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs6 is unresponsive", "record_type": "ALARM", "log_date": 1558867741086,
+        "uuid": "7fa3bca864a24eceaf02a338ab0246e2", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901500", "uuid": "7057eb117d5240898da6cd6250ef6507",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:15:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.8", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs6", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs6",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs6 state changed from SYNCED to UNRESPONSIVE", "record_type":
+        "EVENT", "log_date": 1558867741750, "uuid": "0eedf7eba3bc428e9a1a29ae0baaf388",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901500", "uuid": "7057eb117d5240898da6cd6250ef6507",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:15:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.8", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs6", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs6",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs3 is unresponsive", "record_type": "ALARM", "log_date": 1558867737764,
+        "uuid": "aba5d995f24646babec12a9615265bf5", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901200", "uuid": "34d71aaf8ada42a094879bfcd9ce0c89",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:12:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.5", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs3", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs3",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs3 state changed from SYNCED to UNRESPONSIVE", "record_type":
+        "EVENT", "log_date": 1558867737488, "uuid": "91bd138d4edf4fa78e1ee5ddb821be6d",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901200", "uuid": "34d71aaf8ada42a094879bfcd9ce0c89",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:12:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.5", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs3", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs3",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs1 is unresponsive", "record_type": "ALARM", "log_date": 1558867734624,
+        "uuid": "ab40f4e3e2e641a6b332ebb212f68e89", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901000", "uuid": "c5fd56eaefbf4b73adeed22794447bb0",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:10:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.3", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs1", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs1",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs1 state changed from SYNCED to UNRESPONSIVE", "record_type":
+        "EVENT", "log_date": 1558867734126, "uuid": "8e3ba24809c54d708791f98a3dd8c209",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901000", "uuid": "c5fd56eaefbf4b73adeed22794447bb0",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:10:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "UNRESPONSIVE", "description": "", "previous_status": "SYNCED",
+        "ip_address": "172.30.0.3", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs1", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs1",
+        "event_type": "ObjectModified"}, "severity": "CRITICAL"}, {"description":
+        "Switch admin-vs5 state changed from SYNCING to SYNCED", "record_type": "EVENT",
+        "log_date": 1553625447940, "uuid": "15db56270771465f8be0d8cc2c4c268e", "stream_id":
+        "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901400", "uuid": "96714a47116a4ad69d154081673a2782",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:14:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address":
+        "172.30.0.7", "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.0.0-60", "name": "admin-vs5", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s2i", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs5", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs5
+        state changed from CONNECTED to SYNCING", "record_type": "EVENT", "log_date":
+        1553625435060, "uuid": "371a8a9d3d274895b37a2aa39976fa09", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901400", "uuid": "96714a47116a4ad69d154081673a2782",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:14:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCING", "description": "", "previous_status": "CONNECTED", "ip_address":
+        "172.30.0.7", "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.0.0-60", "name": "admin-vs5", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s2i", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs5", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs5
+        state changed from UNRESPONSIVE to CONNECTED", "record_type": "EVENT", "log_date":
+        1553625434782, "uuid": "6917ca4906464fd4a25a3133d332c7a3", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901400", "uuid": "96714a47116a4ad69d154081673a2782",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:14:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "CONNECTED", "description": "", "previous_status": "UNRESPONSIVE",
+        "ip_address": "172.30.0.7", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs5", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s2i",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs5",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs4 state changed from SYNCING to SYNCED", "record_type": "EVENT",
+        "log_date": 1553625433708, "uuid": "f30809e67c6b4509b03c856d0f0d50fe", "stream_id":
+        "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901300", "uuid": "2c5546079fd54c778074f5273eb4a29d",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:13:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address":
+        "172.30.0.6", "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.0.0-60", "name": "admin-vs4", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s2i", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs4", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs6
+        state changed from SYNCING to SYNCED", "record_type": "EVENT", "log_date":
+        1553625419304, "uuid": "6f8eb3a254284ccd80c17b88e4a0c765", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901500", "uuid": "7057eb117d5240898da6cd6250ef6507",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:15:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address":
+        "172.30.0.8", "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.0.0-60", "name": "admin-vs6", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s3i", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs6", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs4
+        state changed from CONNECTED to SYNCING", "record_type": "EVENT", "log_date":
+        1553625409104, "uuid": "bcddac1c3f6a47599bbddf294f8ef94e", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901300", "uuid": "2c5546079fd54c778074f5273eb4a29d",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:13:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCING", "description": "", "previous_status": "CONNECTED", "ip_address":
+        "172.30.0.6", "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.0.0-60", "name": "admin-vs4", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s2i", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs4", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs4
+        state changed from UNRESPONSIVE to CONNECTED", "record_type": "EVENT", "log_date":
+        1553625409690, "uuid": "90741cd523f24ff090d829c82b395e2f", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901300", "uuid": "2c5546079fd54c778074f5273eb4a29d",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:13:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "CONNECTED", "description": "", "previous_status": "UNRESPONSIVE",
+        "ip_address": "172.30.0.6", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs4", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s2i",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs4",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs3 state changed from SYNCING to SYNCED", "record_type": "EVENT",
+        "log_date": 1553625407962, "uuid": "2a2767f9fc0c4369a142794461ca1471", "stream_id":
+        "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901200", "uuid": "34d71aaf8ada42a094879bfcd9ce0c89",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:12:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address":
+        "172.30.0.5", "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.0.0-60", "name": "admin-vs3", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s3i", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs3", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs1
+        state changed from SYNCING to SYNCED", "record_type": "EVENT", "log_date":
+        1553625406632, "uuid": "123272576a634d49b177889d7c6b204d", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901000", "uuid": "c5fd56eaefbf4b73adeed22794447bb0",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:10:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address":
+        "172.30.0.3", "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.0.0-60", "name": "admin-vs1", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s2i", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs1", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs7
+        state changed from SYNCING to SYNCED", "record_type": "EVENT", "log_date":
+        1553625406194, "uuid": "332f0635ff504c0a931b842a7ae35b76", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901600", "uuid": "873cb8288b814d3d9bdc8495ba76cbe5",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:16:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address":
+        "172.30.0.9", "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.0.0-60", "name": "admin-vs7", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s3i", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs7", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs6
+        state changed from AUTHENTICATE to SYNCING", "record_type": "EVENT", "log_date":
+        1553625405272, "uuid": "864caa9b636d4199bb090ba98f10233f", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901500", "uuid": "7057eb117d5240898da6cd6250ef6507",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:15:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCING", "description": "", "previous_status": "AUTHENTICATE",
+        "ip_address": "172.30.0.8", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs6", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3i",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs6",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs2 state changed from SYNCING to SYNCED", "record_type": "EVENT",
+        "log_date": 1553625405902, "uuid": "7410d5b87dcb48b3a32091d5ba1cf594", "stream_id":
+        "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901100", "uuid": "9048da24f7ae435da4f8d49af6c36d76",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:11:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address":
+        "172.30.0.4", "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.0.0-60", "name": "admin-vs2", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s3i", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs2", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs1
+        state changed from CONNECTED to SYNCING", "record_type": "EVENT", "log_date":
+        1553625362554, "uuid": "c95d3b134e754f85bbfc1c578ab47f41", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901000", "uuid": "c5fd56eaefbf4b73adeed22794447bb0",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:10:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCING", "description": "", "previous_status": "CONNECTED", "ip_address":
+        "172.30.0.3", "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.0.0-60", "name": "admin-vs1", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s3i", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs1", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs7
+        state changed from AUTHENTICATE to SYNCING", "record_type": "EVENT", "log_date":
+        1553625362478, "uuid": "7c7e42be5feb4ff0b85ff1375846938c", "stream_id": "fabric_events",
+        "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901600", "uuid": "873cb8288b814d3d9bdc8495ba76cbe5",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:16:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCING", "description": "", "previous_status": "AUTHENTICATE",
+        "ip_address": "172.30.0.9", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs7", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3i",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs7",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs2 state changed from AUTHENTICATE to SYNCING", "record_type":
+        "EVENT", "log_date": 1553625362144, "uuid": "92b6d68673f149e1851ed82f93302164",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901100", "uuid": "9048da24f7ae435da4f8d49af6c36d76",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:11:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCING", "description": "", "previous_status": "AUTHENTICATE",
+        "ip_address": "172.30.0.4", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs2", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3i",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs2",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs3 state changed from AUTHENTICATE to SYNCING", "record_type":
+        "EVENT", "log_date": 1553625357420, "uuid": "dccea8f653db4ca9b7113be2c0c0244c",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 1604, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901200", "uuid": "34d71aaf8ada42a094879bfcd9ce0c89",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:12:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "SYNCING", "description": "", "previous_status": "AUTHENTICATE",
+        "ip_address": "172.30.0.5", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs3", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3i",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs3",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs1 state changed from AUTHENTICATE to CONNECTED", "record_type":
+        "EVENT", "log_date": 1553625356560, "uuid": "b8106ccaacda4ab1a04b95820f81c602",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 0, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901000", "uuid": "c5fd56eaefbf4b73adeed22794447bb0",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:10:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "CONNECTED", "description": "", "previous_status": "AUTHENTICATE",
+        "ip_address": "172.30.0.3", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs1", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs1",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs7 state changed from UNRESPONSIVE to AUTHENTICATE", "record_type":
+        "EVENT", "log_date": 1553625300770, "uuid": "9ae449779f3e4c01a1aa2cc58dfe32a8",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 0, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901600", "uuid": "873cb8288b814d3d9bdc8495ba76cbe5",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:16:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "AUTHENTICATE", "description": "", "previous_status": "UNRESPONSIVE",
+        "ip_address": "172.30.0.9", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs7", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs7",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs6 state changed from UNRESPONSIVE to AUTHENTICATE", "record_type":
+        "EVENT", "log_date": 1553625240224, "uuid": "44ebad59db91464b9d223b112b34acbb",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 0, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901500", "uuid": "7057eb117d5240898da6cd6250ef6507",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:15:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "AUTHENTICATE", "description": "", "previous_status": "UNRESPONSIVE",
+        "ip_address": "172.30.0.8", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs6", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs6",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs3 state changed from UNRESPONSIVE to AUTHENTICATE", "record_type":
+        "EVENT", "log_date": 1553625178740, "uuid": "b9b4a58e404841f7971258f077235f4b",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 0, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901200", "uuid": "34d71aaf8ada42a094879bfcd9ce0c89",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:12:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "AUTHENTICATE", "description": "", "previous_status": "UNRESPONSIVE",
+        "ip_address": "172.30.0.5", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs3", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs3",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs1 state changed from UNRESPONSIVE to AUTHENTICATE", "record_type":
+        "EVENT", "log_date": 1553625178018, "uuid": "74fe0db7f5e4430a8154e5fcce5d325e",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 0, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901000", "uuid": "c5fd56eaefbf4b73adeed22794447bb0",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:10:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "AUTHENTICATE", "description": "", "previous_status": "UNRESPONSIVE",
+        "ip_address": "172.30.0.3", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs1", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs1",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs2 state changed from UNRESPONSIVE to AUTHENTICATE", "record_type":
+        "EVENT", "log_date": 1553625114660, "uuid": "475d94534eb34ce29d1d45413cabc6f0",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "a01322116dfc4cdba663e7cc90fe74d6",
+        "fitting_number": 0, "ip_gateway": "172.30.0.1", "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901100", "uuid": "9048da24f7ae435da4f8d49af6c36d76",
+        "segment": "", "ip_mode": "static", "ip_gateway_v6": "::", "mac_address":
+        "E0:39:D7:90:11:00", "ip_mode_v6": "disable", "serial_number": "DX010B2F046C03PL0000",
+        "status": "AUTHENTICATE", "description": "", "previous_status": "UNRESPONSIVE",
+        "ip_address": "172.30.0.4", "model": "HPE Composable Fabric FM 3032Q", "hw_revision":
+        "CEL_SEASTONE", "sw_version": "5.0.0-60", "name": "admin-vs2", "ip_mask":
+        "255.255.255.0", "configuration_number": 0, "operational_stage": "state_s3p",
+        "ip_mask_v6": "::"}, "object_type": "Switch", "object_name": "admin-vs2",
+        "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}], "time": "46.477mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '77153'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 12 Jul 2019 21:07:10 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+version: 1
