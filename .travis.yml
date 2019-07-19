@@ -6,7 +6,7 @@ python:
 install:
   - sudo pip install vcrpy
 script:
-  - nosetests --with-coverage --cover-package=pyhpecfm
+  - nosetests
 
 after_success:
     - coveralls
