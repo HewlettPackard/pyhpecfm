@@ -22,8 +22,8 @@ interactions:
     uri: https://10.101.0.212/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "923e31d9fc159a0b2412352ef162fbc20758f137775f340b5bf36cea821aa91943995e55dbd34f0436a6c6ce6468d653",
-        "time": "480.411mS"}'
+      string: '{"count": 1, "result": "f18ffc9e3176637e64a0d025e5b8172cf49ce0ef32cc1bcdfcf6e58ef2a3c9eb1f36ef14b1eb287c501d3b7249262d33",
+        "time": "363.863mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 29 Jul 2019 20:44:12 GMT
+      - Mon, 29 Jul 2019 21:04:10 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,7 +52,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer 923e31d9fc159a0b2412352ef162fbc20758f137775f340b5bf36cea821aa91943995e55dbd34f0436a6c6ce6468d653
+      - Bearer f18ffc9e3176637e64a0d025e5b8172cf49ce0ef32cc1bcdfcf6e58ef2a3c9eb1f36ef14b1eb287c501d3b7249262d33
       Connection:
       - keep-alive
       Content-Type:
@@ -69,7 +69,7 @@ interactions:
         "", "foreign_fabric_state": "Unmanaged", "name": "Test Fabric", "segmented":
         false, "health": {"status": "healthy", "health_issues": []}, "is_stable":
         true, "foreign_management_state": "Available", "foreign_manager_url": "",
-        "uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230"}], "time": "18.446mS"}'
+        "uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230"}], "time": "22.904mS"}'
     headers:
       Cache-Control:
       - no-store
@@ -80,7 +80,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 29 Jul 2019 20:44:12 GMT
+      - Mon, 29 Jul 2019 21:04:10 GMT
       Server:
       - nginx
       Strict-Transport-Security:

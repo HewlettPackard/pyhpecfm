@@ -22,8 +22,8 @@ interactions:
     uri: https://10.101.0.212/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "4b822d2c9b2950bc4d46d95c7dc4b0c425252e3229b788785d21b282bd7dfbe7189731fdae20b39859c7fa6c42d465bc",
-        "time": "294.290mS"}'
+      string: '{"count": 1, "result": "90aa1afe4eda6ce22640dfc707a832ca33e8f13cdb62b7936526b68658d5b4195e861f9b00d0fb303f5e082bf7881a13",
+        "time": "501.445mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 29 Jul 2019 20:44:35 GMT
+      - Mon, 29 Jul 2019 21:05:17 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,7 +52,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer 4b822d2c9b2950bc4d46d95c7dc4b0c425252e3229b788785d21b282bd7dfbe7189731fdae20b39859c7fa6c42d465bc
+      - Bearer 90aa1afe4eda6ce22640dfc707a832ca33e8f13cdb62b7936526b68658d5b4195e861f9b00d0fb303f5e082bf7881a13
       Connection:
       - keep-alive
       Content-Type:
@@ -1068,7 +1068,7 @@ interactions:
         "sw_version": "5.1.0-53", "name": "admin-vs3", "ip_mask": "0.0.0.0", "configuration_number":
         0, "operational_stage": "state_s2i", "ip_mask_v6": "::"}, "object_type": "Switch",
         "object_name": "admin-vs3", "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}],
-        "time": "27.946mS"}'
+        "time": "61.313mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -1079,7 +1079,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 29 Jul 2019 20:44:35 GMT
+      - Mon, 29 Jul 2019 21:05:17 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:

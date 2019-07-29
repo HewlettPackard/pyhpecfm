@@ -22,7 +22,7 @@ cfm = client.CFMClient(cfm_ip, cfm_username,cfm_password)
 #TODO TAKE OUT HARDCODED DATA LATER
 my_vcr = vcr.VCR(
     serializer='json',
-    cassette_library_dir='fixtures/cassettes',
+    cassette_library_dir='./test_pyhpecfm/fixtures/cassettes',
     record_mode='new_episodes',
     match_on=['uri', 'method'],
 )
@@ -32,7 +32,7 @@ class TestGetSwitches(TestCase):
     Test Case for pyhpecfm.fabric get_switches function
     """
 
-    @vcr.use_cassette(cassette_library_dir='fixtures/cassettes')
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
     def test_get_switches(self):
         """
         Simple test to return switches. URL has no parameters
@@ -47,7 +47,7 @@ class TestGetSwitches(TestCase):
         for i in test_switches[0].keys():
             self.assertIn(i, my_attributes)
 
-    @vcr.use_cassette(cassette_library_dir='fixtures/cassettes')
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
     def test_get_switches_single_param(self):
         """
         Test to return switches. Request is launched with a single parameter of ports.
@@ -62,7 +62,7 @@ class TestGetSwitches(TestCase):
         for i in test_switches[0].keys():
             self.assertIn(i, my_attributes)
 
-    @vcr.use_cassette(cassette_library_dir='fixtures/cassettes')
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
     def test_get_switches_multiple_param(self):
         """
         Test to return switches. Request is launched with multiple parameters of Ports = True and a specific
@@ -85,7 +85,7 @@ class TestGetPorts(TestCase):
     Test case for pyhpecfm.fabric get_ports function
     """
 
-    @vcr.use_cassette(cassette_library_dir='fixtures/cassettes')
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
     def test_get_ports(self):
         """
         """
@@ -113,7 +113,7 @@ class TestGetFabric(TestCase):
     Test
     case for pyhpecfm.fabric get_fabric function
     """
-    @vcr.use_cassette(cassette_library_dir='fixtures/cassettes')
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
     def test_get_fabric(self):
         """
         General test for get_fabric function
@@ -128,7 +128,7 @@ class TestGetFabric(TestCase):
         for i in test_fabric[0].keys():
             self.assertIn(i, my_attributes)
 
-    @vcr.use_cassette(cassette_library_dir='fixtures/cassettes')
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
     def test_get_specific_fabric(self):
         """
         Test for get_fabrics using specific UUID
@@ -154,7 +154,7 @@ class TestGetFabric_IP_Networks(TestCase):
     case for pyhpecfm.fabric get_fabric function
     """
 
-    @vcr.use_cassette(cassette_library_dir='fixtures/cassettes')
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
     def test_get_fabric_ip_networks(self):
         """
         General test for pyhpecfm.fabric.get_fabric_ip_networks function
@@ -177,7 +177,7 @@ class TestGetVLANGroups(TestCase):
     case for pyhpecfm.fabric get_vlan_groups function
     """
 
-    @vcr.use_cassette(cassette_library_dir='fixtures/cassettes')
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
     def test_get_vlan_groups(self):
         """
         General test for pyhpecfm.fabric.get_vlan_groups function
@@ -190,7 +190,7 @@ class TestGetVLANGroups(TestCase):
         for i in test_vlan_groups[0].keys():
             self.assertIn(i, my_attributes)
 
-    @vcr.use_cassette(cassette_library_dir='fixtures/cassettes')
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
     def test_get_vlan_groups_with_params(self):
         """
         General test for pyhpecfm.fabric.get_vlan_groups function with parameters to select
@@ -212,7 +212,7 @@ class TestPerformFit(TestCase):
     case for pyhpecfm.fabric perform_fit function
     """
 
-    @vcr.use_cassette(cassette_library_dir='fixtures/cassettes')
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
     def test_perform_fit(self):
         """
         General test for pyhpecfm.fabric.perform_fit function

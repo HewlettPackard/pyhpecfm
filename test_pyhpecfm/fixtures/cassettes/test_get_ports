@@ -22,8 +22,8 @@ interactions:
     uri: https://10.101.0.212/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "ffc98d0f1a5c06df5e090f3939ffc4567ef184105d05f611e664de60cd6b6d64761f9db8ae112cd2b119655a17f24afb",
-        "time": "307.634mS"}'
+      string: '{"count": 1, "result": "3b118f1852831012dedfa55493a9f65f0e699222caa510fec73c046d75fb87ccb473363bfe9006b66f1fec092d2e9979",
+        "time": "537.533mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 29 Jul 2019 20:44:13 GMT
+      - Mon, 29 Jul 2019 21:04:12 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,7 +52,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer ffc98d0f1a5c06df5e090f3939ffc4567ef184105d05f611e664de60cd6b6d64761f9db8ae112cd2b119655a17f24afb
+      - Bearer 3b118f1852831012dedfa55493a9f65f0e699222caa510fec73c046d75fb87ccb473363bfe9006b66f1fec092d2e9979
       Connection:
       - keep-alive
       Content-Type:
@@ -119,18 +119,18 @@ interactions:
         "", "segment": "89e34e91-9263-4e11-ad7d-6563c9bf0757", "model": "HPE Composable
         Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE", "sw_version": "5.1.0-53",
         "name": "admin-vs3", "ip_mask": "255.255.255.0", "configuration_number": 0,
-        "operational_stage": "S3P", "ip_mask_v6": "::"}], "time": "8.114mS"}'
+        "operational_stage": "S3P", "ip_mask_v6": "::"}], "time": "13.716mS"}'
     headers:
       Cache-Control:
       - no-cache
       Connection:
       - keep-alive
       Content-Length:
-      - '4525'
+      - '4526'
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 29 Jul 2019 20:44:13 GMT
+      - Mon, 29 Jul 2019 21:04:12 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -148,7 +148,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer ffc98d0f1a5c06df5e090f3939ffc4567ef184105d05f611e664de60cd6b6d64761f9db8ae112cd2b119655a17f24afb
+      - Bearer 3b118f1852831012dedfa55493a9f65f0e699222caa510fec73c046d75fb87ccb473363bfe9006b66f1fec092d2e9979
       Connection:
       - keep-alive
       Content-Type:
@@ -1150,7 +1150,7 @@ interactions:
         "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
         "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "5", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}], "time": "314.380mS"}'
+        "qsfp_4x25_gbps"}], "time": "554.150mS"}'
     headers:
       Cache-Control:
       - no-store
@@ -1161,7 +1161,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 29 Jul 2019 20:44:14 GMT
+      - Mon, 29 Jul 2019 21:04:13 GMT
       Server:
       - nginx
       Strict-Transport-Security:

@@ -36,7 +36,7 @@ class TestGetVersions(TestCase):
     """
 
 
-    @vcr.use_cassette(cassette_library_dir='fixtures/cassettes')
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
     def test_get_versions(self):
         """
         Test pyhpeimc.system.get_version function.
@@ -53,7 +53,7 @@ class TestGetAuditLogs(TestCase):
     Test Case for pyhpecfm.fabric get_switches function
     """
 
-    @vcr.use_cassette(cassette_library_dir='fixtures/cassettes')
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
     def test_get_audit_logs(self):
         """
         Test pyhpecfm.system.get_audit_logs function.
@@ -72,7 +72,7 @@ class TestGetBackups(TestCase):
     Test Cases for pyhpecfm.system get_backups function
     """
 
-    @vcr.use_cassette(cassette_library_dir='fixtures/cassettes')
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
     def test_get_backups(self):
         """
         Test pyhpecfm.system.get_backups function.
@@ -85,7 +85,7 @@ class TestGetBackups(TestCase):
         for i in my_backups[0].keys():
             self.assertIn(i, my_attributes)
 
-    @vcr.use_cassette(cassette_library_dir='fixtures/cassettes')
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
     def test_get_specific_backup(self):
         """
         Test pyhpecfm.system.get_backups function.
@@ -105,7 +105,7 @@ class TestCreateBackup(TestCase):
     Test Case for pyhpecfm.system create_backup function
     """
 
-    @vcr.use_cassette(cassette_library_dir='fixtures/cassettes')
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
     def test_create_backups(self):
         """
         Test pyhpecfm.system.create_backup function.

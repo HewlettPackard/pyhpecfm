@@ -22,8 +22,8 @@ interactions:
     uri: https://10.101.0.212/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "cf8c05c78602e5dcd7ea0121b35b6cae007a76b571c54846dcbf430bd0b6f770bd03697830d1457231033db6a5a13078",
-        "time": "383.740mS"}'
+      string: '{"count": 1, "result": "34866f9a96b38790091c9cc7ff70ba9393c69db2eb16ba7161448f69478a764ce2c024859bf64276f5de335ac535bf4e",
+        "time": "424.247mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 29 Jul 2019 20:44:28 GMT
+      - Mon, 29 Jul 2019 21:04:41 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,7 +52,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer cf8c05c78602e5dcd7ea0121b35b6cae007a76b571c54846dcbf430bd0b6f770bd03697830d1457231033db6a5a13078
+      - Bearer 34866f9a96b38790091c9cc7ff70ba9393c69db2eb16ba7161448f69478a764ce2c024859bf64276f5de335ac535bf4e
       Connection:
       - keep-alive
       Content-Type:
@@ -67,18 +67,18 @@ interactions:
     body:
       string: '{"count": 1, "result": [{"description": "my new vlan group", "lag_uuids":
         [], "uuid": "e8894abc-5580-432b-93b4-8221e101ee66", "vlans": "2", "name":
-        "My_New_VLAN_Group"}], "time": "6.026mS"}'
+        "My_New_VLAN_Group"}], "time": "11.059mS"}'
     headers:
       Cache-Control:
       - no-store
       Connection:
       - keep-alive
       Content-Length:
-      - '189'
+      - '190'
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 29 Jul 2019 20:44:28 GMT
+      - Mon, 29 Jul 2019 21:04:41 GMT
       Server:
       - nginx
       Strict-Transport-Security:

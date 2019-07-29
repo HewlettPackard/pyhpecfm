@@ -22,8 +22,8 @@ interactions:
     uri: https://10.101.0.212/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "c216390dfdba592bf58f34c5859356d5bb4779198405842ebfe0cb47bbf11628cca328fda6c19351aa9abcb60a6c612b",
-        "time": "374.488mS"}'
+      string: '{"count": 1, "result": "e8fef3bfd5eb8d0af607040e030f3a550e02d789c3fe2dc7f467ec4bd4b965f5bcf8b12fb49a10541492fc5304e68997",
+        "time": "513.460mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 29 Jul 2019 20:44:13 GMT
+      - Mon, 29 Jul 2019 21:04:11 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,7 +52,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer c216390dfdba592bf58f34c5859356d5bb4779198405842ebfe0cb47bbf11628cca328fda6c19351aa9abcb60a6c612b
+      - Bearer e8fef3bfd5eb8d0af607040e030f3a550e02d789c3fe2dc7f467ec4bd4b965f5bcf8b12fb49a10541492fc5304e68997
       Connection:
       - keep-alive
       Content-Type:
@@ -70,18 +70,18 @@ interactions:
         "New IP Fabric", "switch_addresses": [{"switch_uuid": "a4a2a3ba-d350-413a-8b18-6c30946efd3c",
         "ip_address": {"prefix_length": 24, "address": "10.101.50.1"}}], "vlan": 50,
         "uuid": "aeaee928-cea8-4495-9696-38eb4cae98d0", "mode": "manual", "description":
-        ""}], "time": "6.595mS"}'
+        ""}], "time": "27.701mS"}'
     headers:
       Cache-Control:
       - no-cache
       Connection:
       - keep-alive
       Content-Length:
-      - '423'
+      - '424'
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 29 Jul 2019 20:44:13 GMT
+      - Mon, 29 Jul 2019 21:04:11 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:

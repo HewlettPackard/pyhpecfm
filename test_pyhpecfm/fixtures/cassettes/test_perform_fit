@@ -22,8 +22,8 @@ interactions:
     uri: https://10.101.0.212/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "9b6d4bbd09a8d5b9ac0b56fe4f71390a159ac0fcae9eb94ec31f9d2199d31d7289e3f1ebc4dfd45741a0d5da3a9ee3b6",
-        "time": "299.732mS"}'
+      string: '{"count": 1, "result": "4f61d556b365443346e706ea5e6798b586345ce0d2e126f9e1c97da19a5a6137445aab6ba6eb09b389397d6c0464ba09",
+        "time": "348.101mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 29 Jul 2019 20:45:04 GMT
+      - Mon, 29 Jul 2019 21:04:41 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,7 +52,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer 9b6d4bbd09a8d5b9ac0b56fe4f71390a159ac0fcae9eb94ec31f9d2199d31d7289e3f1ebc4dfd45741a0d5da3a9ee3b6
+      - Bearer 4f61d556b365443346e706ea5e6798b586345ce0d2e126f9e1c97da19a5a6137445aab6ba6eb09b389397d6c0464ba09
       Connection:
       - keep-alive
       Content-Type:
@@ -69,7 +69,7 @@ interactions:
         "", "foreign_fabric_state": "Unmanaged", "name": "Test Fabric", "segmented":
         false, "health": {"status": "healthy", "health_issues": []}, "is_stable":
         true, "foreign_management_state": "Available", "foreign_manager_url": "",
-        "uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230"}], "time": "25.067mS"}'
+        "uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230"}], "time": "16.513mS"}'
     headers:
       Cache-Control:
       - no-store
@@ -80,7 +80,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 29 Jul 2019 20:45:04 GMT
+      - Mon, 29 Jul 2019 21:04:41 GMT
       Server:
       - nginx
       Strict-Transport-Security:
@@ -97,7 +97,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer 9b6d4bbd09a8d5b9ac0b56fe4f71390a159ac0fcae9eb94ec31f9d2199d31d7289e3f1ebc4dfd45741a0d5da3a9ee3b6
+      - Bearer 4f61d556b365443346e706ea5e6798b586345ce0d2e126f9e1c97da19a5a6137445aab6ba6eb09b389397d6c0464ba09
       Connection:
       - keep-alive
       Content-Length:
@@ -112,8 +112,8 @@ interactions:
     uri: https://10.101.0.212/api/v1/fits
   response:
     body:
-      string: '{"count": 1, "result": "0533e688-b7e6-4f10-a06b-776b09b12fbf", "time":
-        "3398.305mS"}'
+      string: '{"count": 1, "result": "43f939ad-180f-4dc2-bbdc-47ca1f61f3a0", "time":
+        "3588.524mS"}'
     headers:
       Connection:
       - keep-alive
@@ -122,7 +122,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 29 Jul 2019 20:45:07 GMT
+      - Mon, 29 Jul 2019 21:04:45 GMT
       Server:
       - nginx
       Strict-Transport-Security:

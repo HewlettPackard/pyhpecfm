@@ -22,8 +22,8 @@ interactions:
     uri: https://10.101.0.212/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "4a5aa4be198174d104b70ae8630058b5c47299e6dd515c4a06ead0202b0bf01777b8ffabddf20729bd24437752b51034",
-        "time": "350.091mS"}'
+      string: '{"count": 1, "result": "ec8884982502f40fe8ec016d2c9b7678296a23b8a7939ca136497f3e22f1266c5215864451eacc919fb00af5e5bf1c5c",
+        "time": "495.664mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 29 Jul 2019 20:44:21 GMT
+      - Mon, 29 Jul 2019 21:04:26 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,7 +52,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer 4a5aa4be198174d104b70ae8630058b5c47299e6dd515c4a06ead0202b0bf01777b8ffabddf20729bd24437752b51034
+      - Bearer ec8884982502f40fe8ec016d2c9b7678296a23b8a7939ca136497f3e22f1266c5215864451eacc919fb00af5e5bf1c5c
       Connection:
       - keep-alive
       Content-Type:
@@ -9361,7 +9361,7 @@ interactions:
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
         "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "2", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}], "ip_mask_v6": "::"}], "time": "3760.670mS"}'
+        "qsfp_4x25_gbps"}], "ip_mask_v6": "::"}], "time": "3653.839mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -9372,7 +9372,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 29 Jul 2019 20:44:25 GMT
+      - Mon, 29 Jul 2019 21:04:29 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:

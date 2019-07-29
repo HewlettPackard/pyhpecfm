@@ -22,8 +22,8 @@ interactions:
     uri: https://10.101.0.212/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "877654df32e68355c1a57e8f3af2a87424a2d4fab5d9450d8a5ab2be5998364de2885907037d5588244b1263ff54e2a3",
-        "time": "504.859mS"}'
+      string: '{"count": 1, "result": "517a9218ad20b748725375ac7e90b7666cf229ae86b3dc21016be5f64b1ec04ceee80dc8fdc540b1f1da25c4184146fa",
+        "time": "390.438mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 29 Jul 2019 20:44:15 GMT
+      - Mon, 29 Jul 2019 21:02:13 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,7 +52,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer 877654df32e68355c1a57e8f3af2a87424a2d4fab5d9450d8a5ab2be5998364de2885907037d5588244b1263ff54e2a3
+      - Bearer 517a9218ad20b748725375ac7e90b7666cf229ae86b3dc21016be5f64b1ec04ceee80dc8fdc540b1f1da25c4184146fa
       Connection:
       - keep-alive
       Content-Type:
@@ -119,7 +119,7 @@ interactions:
         "", "segment": "89e34e91-9263-4e11-ad7d-6563c9bf0757", "model": "HPE Composable
         Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE", "sw_version": "5.1.0-53",
         "name": "admin-vs3", "ip_mask": "255.255.255.0", "configuration_number": 0,
-        "operational_stage": "S3P", "ip_mask_v6": "::"}], "time": "17.626mS"}'
+        "operational_stage": "S3P", "ip_mask_v6": "::"}], "time": "14.545mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -130,7 +130,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 29 Jul 2019 20:44:15 GMT
+      - Mon, 29 Jul 2019 21:02:13 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
