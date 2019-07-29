@@ -59,7 +59,10 @@ def perform_fit(cfmclient, fabric_uuid, name, description):
     """
     Request a full fit across managed Composable Fabrics.
 
-    :param cfmclient:
+    :param cfmclient: CFM Client object
+    :param fabric_uuid: Valid Fabric UUID of an existing fabric
+    :param name: Simple name of the fit
+    :param description: Longer Description of the fitting request
     :return:
     """
     data = {
@@ -67,9 +70,9 @@ def perform_fit(cfmclient, fabric_uuid, name, description):
         'name': '{}'.format(name),
         'description': '{}'.format(description)
     }
-    path = 'fits'
+    path = 'v1/fits'
 
-    return cfmclient.post(path, data)
+    return cfmclient.post(path, data=data)
 
 
 ####################
@@ -170,18 +173,6 @@ def get_vlan_groups(cfmclient, params=None):
 # TODO DELETE VLAN GROUP FUNCTION
 
 
-def get_vlan_properties(cfmclient, fabric_uuid):
-    """
-    Get Composable Fabric vlan properties for a specific fabric.
-
-    :param cfmclient: object of type CFMClient
-    :param fabric_uuid: str representing a valid fabric UUID
-    :return: list of VLAN Group Property dictionary objects from the Composable Fabric
-    :rtype: list
-    """
-    path='v1/vlan_properties/{}'.format(fabric_uuid)
-
-    return cfmclient.get(path).json().get('result')
 
 ####################
 # VPC functions #

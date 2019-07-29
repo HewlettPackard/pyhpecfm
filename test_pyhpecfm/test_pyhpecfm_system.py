@@ -79,7 +79,8 @@ class TestGetBackups(TestCase):
         """
         cfm.connect()
         my_backups = system.get_backups(cfm)
-        my_attributes = ['url', 'checksum', 'uuid', 'name', 'date_created']
+        my_attributes = ['supported','image_version','url', 'checksum', 'uuid', 'name',
+                         'date_created']
         self.assertIs(type(my_backups), list)
         for i in my_backups[0].keys():
             self.assertIn(i, my_attributes)
@@ -93,7 +94,8 @@ class TestGetBackups(TestCase):
         my_backups = system.get_backups(cfm)
         my_uuid = my_backups[0]['uuid']
         single_backup = system.get_backups(cfm, my_uuid)
-        my_attributes = ['url', 'checksum', 'uuid', 'name', 'date_created']
+        my_attributes = ['supported','image_version','url', 'checksum', 'uuid', 'name',
+                         'date_created']
         self.assertIs(type(single_backup), dict)
         for i in single_backup.keys():
             self.assertIn(i, my_attributes)
@@ -104,15 +106,16 @@ class TestCreateBackup(TestCase):
     """
 
     @vcr.use_cassette(cassette_library_dir='fixtures/cassettes')
-    def test_get_backups(self):
+    def test_create_backups(self):
         """
         Test pyhpecfm.system.create_backup function.
         """
         cfm.connect()
         backup_result = system.create_backup(cfm)
-        my_attributes = ['url', 'checksum', 'uuid', 'name', 'date_created']
-        self.assertIs(type(backup_result), list)
-        for i in backup_result[0].keys():
+        my_attributes = ['supported','image_version','url', 'checksum', 'uuid', 'name',
+                         'date_created']
+        self.assertIs(type(backup_result), dict)
+        for i in backup_result.keys():
             self.assertIn(i, my_attributes)
 
 
