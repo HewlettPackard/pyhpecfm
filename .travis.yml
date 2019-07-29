@@ -5,7 +5,7 @@ python:
     - "3.7"
 
 script:
-  - nosetests
+  - nosetests --with-coverage --cover-package=pyhpecfm
 
 after_success:
     - coveralls
