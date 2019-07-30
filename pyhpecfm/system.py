@@ -57,5 +57,5 @@ def create_backup(cfmclient):
     :return: HTTP response
     """
     path = 'v1/backups'
-    response = cfmclient.get(path)
+    response = cfmclient.post(path)
     return response.json().get('result') if response else None

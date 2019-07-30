@@ -1,0 +1,12 @@
+language: python
+
+python:
+    - "3.6"
+    - "3.7"
+
+script:
+  - nosetests --with-coverage --cover-package=pyhpecfm
+
+after_success:
+    - coveralls
+
