@@ -1,4 +1,4 @@
 requests
 vcrpy
-coverage
+python-coveralls
 nose
