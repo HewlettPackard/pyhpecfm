@@ -1,0 +1,133 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Password:
+      - plexxi
+      X-Auth-Username:
+      - admin
+    method: POST
+    uri: https://10.101.0.212/api/v1/auth/token
+  response:
+    body:
+      string: '{"count": 1, "result": "914441474fe14120e717872f8841ec1dae2a578655a01f21a4f6b8ef4741d20abff78de81b03863a64cc9327b190faea",
+        "time": "511.365mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '143'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 30 Jul 2019 19:11:17 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 914441474fe14120e717872f8841ec1dae2a578655a01f21a4f6b8ef4741d20abff78de81b03863a64cc9327b190faea
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://10.101.0.212/api/v1/fabrics
+  response:
+    body:
+      string: '{"count": 1, "result": [{"description": "Test 5.1 build 45", "foreign_manager_id":
+        "", "foreign_fabric_state": "Unmanaged", "name": "Test Fabric", "segmented":
+        false, "health": {"status": "healthy", "health_issues": []}, "is_stable":
+        true, "foreign_management_state": "Available", "foreign_manager_url": "",
+        "uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230"}], "time": "38.476mS"}'
+    headers:
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '377'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 30 Jul 2019 19:11:17 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=10; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"fabric_uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230", "name": "Test Fit",
+      "description": "My Test Fit from Python Library"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 914441474fe14120e717872f8841ec1dae2a578655a01f21a4f6b8ef4741d20abff78de81b03863a64cc9327b190faea
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '125'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: POST
+    uri: https://10.101.0.212/api/v1/fits
+  response:
+    body:
+      string: '{"count": 1, "result": "d31279d8-8f8a-4dcf-a0e5-eb4bb019803c", "time":
+        "3540.711mS"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '84'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 30 Jul 2019 19:11:20 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+version: 1

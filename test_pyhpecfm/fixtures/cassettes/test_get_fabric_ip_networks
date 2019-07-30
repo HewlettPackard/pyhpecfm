@@ -1,0 +1,94 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Password:
+      - plexxi
+      X-Auth-Username:
+      - admin
+    method: POST
+    uri: https://10.101.0.212/api/v1/auth/token
+  response:
+    body:
+      string: '{"count": 1, "result": "775ae57fec70eb6ebf55dc7b5531ad7a6ebe564d341c01316ae7b77949411ad3bb44c2cdb49476aa4fe9dddb9689d6c7",
+        "time": "459.209mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '143'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 30 Jul 2019 19:10:41 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 775ae57fec70eb6ebf55dc7b5531ad7a6ebe564d341c01316ae7b77949411ad3bb44c2cdb49476aa4fe9dddb9689d6c7
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://10.101.0.212/api/v1/fabric_ip_networks
+  response:
+    body:
+      string: '{"count": 1, "result": [{"subnet": {"prefix_length": 24, "address":
+        "10.101.50.0"}, "fabric_uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230", "name":
+        "New IP Fabric", "switch_addresses": [{"switch_uuid": "a4a2a3ba-d350-413a-8b18-6c30946efd3c",
+        "ip_address": {"prefix_length": 24, "address": "10.101.50.1"}}], "vlan": 50,
+        "uuid": "aeaee928-cea8-4495-9696-38eb4cae98d0", "mode": "manual", "description":
+        ""}], "time": "9.214mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '423'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 30 Jul 2019 19:10:41 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+version: 1

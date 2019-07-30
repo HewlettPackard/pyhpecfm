@@ -1,0 +1,135 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Password:
+      - plexxi
+      X-Auth-Username:
+      - admin
+    method: POST
+    uri: https://10.101.0.212/api/v1/auth/token
+  response:
+    body:
+      string: '{"count": 1, "result": "10dac2e3600e77f1e8ee9e9e8c8f6d44c32dbf0b495baf9c5537aa0a27a7566f495737c6f2df8315ef3619b97e764302",
+        "time": "386.789mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '143'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 30 Jul 2019 19:10:40 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 10dac2e3600e77f1e8ee9e9e8c8f6d44c32dbf0b495baf9c5537aa0a27a7566f495737c6f2df8315ef3619b97e764302
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://10.101.0.212/api/v1/fabrics
+  response:
+    body:
+      string: '{"count": 1, "result": [{"description": "Test 5.1 build 45", "foreign_manager_id":
+        "", "foreign_fabric_state": "Unmanaged", "name": "Test Fabric", "segmented":
+        false, "health": {"status": "healthy", "health_issues": []}, "is_stable":
+        true, "foreign_management_state": "Available", "foreign_manager_url": "",
+        "uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230"}], "time": "29.788mS"}'
+    headers:
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '377'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 30 Jul 2019 19:10:40 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=10; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 10dac2e3600e77f1e8ee9e9e8c8f6d44c32dbf0b495baf9c5537aa0a27a7566f495737c6f2df8315ef3619b97e764302
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://10.101.0.212/api/v1/fabrics/7097d481-743e-459c-9fcd-d0aa0e4bf230
+  response:
+    body:
+      string: '{"count": 1, "result": {"description": "Test 5.1 build 45", "foreign_manager_id":
+        "", "foreign_fabric_state": "Unmanaged", "name": "Test Fabric", "segmented":
+        false, "health": {"status": "healthy", "health_issues": []}, "is_stable":
+        true, "foreign_management_state": "Available", "foreign_manager_url": "",
+        "uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230"}, "time": "23.937mS"}'
+    headers:
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '375'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 30 Jul 2019 19:10:40 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=10; includeSubDomains
+    status:
+      code: 200
+      message: OK
+version: 1

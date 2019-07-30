@@ -1,0 +1,86 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Password:
+      - plexxi
+      X-Auth-Username:
+      - admin
+    method: POST
+    uri: https://10.101.0.212/api/v1/auth/token
+  response:
+    body:
+      string: '{"count": 1, "result": "5a30423ecd3be73d3eb3161bddb77ea96395ca6790534b37ed74faaa63a536e385da1733e344dd65de1093749e14bf5b",
+        "time": "418.809mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '143'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 30 Jul 2019 19:11:27 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 5a30423ecd3be73d3eb3161bddb77ea96395ca6790534b37ed74faaa63a536e385da1733e344dd65de1093749e14bf5b
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://10.101.0.212/api/versions
+  response:
+    body:
+      string: '{"count": 1, "result": {"current": "1.0", "supported": ["1.0"], "software":
+        "5.1.0-5391"}, "time": "0.138mS"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '109'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 30 Jul 2019 19:11:27 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,95 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Password:
+      - plexxi
+      X-Auth-Username:
+      - admin
+    method: POST
+    uri: https://10.101.0.212/api/v1/auth/token
+  response:
+    body:
+      string: '{"count": 1, "result": "47393bf9fe5130c90adb569c546d9831e9bf85cd465090f6cf2b0ee74a933548c7f512b04f9bc7e31929d6ade3945f08",
+        "time": "523.394mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '143'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 30 Jul 2019 19:11:21 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 47393bf9fe5130c90adb569c546d9831e9bf85cd465090f6cf2b0ee74a933548c7f512b04f9bc7e31929d6ade3945f08
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: POST
+    uri: https://10.101.0.212/api/v1/backups
+  response:
+    body:
+      string: '{"count": 1, "result": {"image_version": "5.1.0-5391", "uuid": "07759b14b19f431e8e0bab4d295329d5",
+        "url": "/api/v1/files/backups/07759b14b19f431e8e0bab4d295329d5/composable-fabric-manager-backup-2019-07-30-191121620919.tar.gz?Authorization=47393bf9fe5130c90adb569c546d9831e9bf85cd465090f6cf2b0ee74a933548c7f512b04f9bc7e31929d6ade3945f08",
+        "checksum": "0c1acfcb20cc0e2c756df4f4b99db92314f61abf8d16b86ce236215bf446fe6d",
+        "supported": true, "date_created": 1564513881, "name": "composable-fabric-manager-backup-2019-07-30-191121620919.tar.gz"},
+        "time": "2530.401mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '563'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 30 Jul 2019 19:11:24 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+version: 1
