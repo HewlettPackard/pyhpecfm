@@ -96,6 +96,7 @@ def get_switches(cfmclient, params=None):
     return cfmclient.get('v1/switches', params).json().get('result')
 
 
+
 def create_switch(cfmclient, data, fabric_type=None):
     """
     Create a Composable Fabric switch.
@@ -104,6 +105,25 @@ def create_switch(cfmclient, data, fabric_type=None):
 
     return cfmclient.post('v1/switches', params, data).json().get('result')
 
+####################
+# Lag functions    #
+####################
+
+def get_lags(cfmclient,params=None):
+    """
+    Get a list of link aggregated objects
+
+    :param cfmclient: object of type CFMClient
+    :param params: dict of query parameters used to filter request from API
+    :return: list of dicts
+
+    >>> client= CFMClient('10.101.0.210', 'admin', 'plexxi')
+    >>> get_lags(client, params={'count_only': True})
+    >>> get_lags(client, params={'count_only': False, 'Type': internal})
+    >>> get_lags(client, params={'count_only': Flase,'mac_attachments': False ,'mac_learnining': True,'ports': True,'port_type': access,'tag': True,'type': provisioned,'vlan_groups': True})
+    """
+
+    return cfmclient.get('v1/lags', params).json().get('result')
 
 ##################
 # Port functions #
