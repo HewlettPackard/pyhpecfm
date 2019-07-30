@@ -1,5 +1,6 @@
 # PYHPECFM
 
+[![Build Status](https://travis-ci.org/netmanchris/pyhpecfm.svg?branch=master)](https://travis-ci.org/netmanchris/pyhpecfm)
 [![Coverage Status](https://coveralls.io/repos/github/netmanchris/pyhpecfm/badge.svg?branch=master)](https://coveralls.io/github/netmanchris/pyhpecfm?branch=master)
 
 **READ THIS FIRST**
