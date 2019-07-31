@@ -73,7 +73,7 @@ class CFMClient(object):
                 self._session = requests.session()
                 self._session.headers.update({'Accept': 'application/json'})
                 self._session.headers.update(
-                        {'Authorization': 'Bearer {}'.format(self._auth_token)})
+                    {'Authorization': 'Bearer {}'.format(self._auth_token)})
                 self._session.headers.update({'X-Auth-Refresh-Token': 'true'})
             else:
                 raise CFMApiError('Error retrieving authentication token')
@@ -175,14 +175,14 @@ class CFMClient(object):
                 attempts += 1
                 if self._session:
                     return self._process_request(
-                            self._session, method, path, params, request_headers, json, timeout,
-                            verify=self._verify_ssl, stream=stream)
+                        self._session, method, path, params, request_headers, json, timeout,
+                        verify=self._verify_ssl, stream=stream)
                 else:
                     with requests.session() as session:
                         session.headers.update({'Accept': 'application/json'})
                         return self._process_request(
-                                session, method, path, params, request_headers, json, timeout,
-                                verify=self._verify_ssl, stream=stream)
+                            session, method, path, params, request_headers, json, timeout,
+                            verify=self._verify_ssl, stream=stream)
             except requests.exceptions.ConnectionError as exception:
                 print('Request failed with error %s', exception)
                 if attempts >= self._max_connection_retries:
