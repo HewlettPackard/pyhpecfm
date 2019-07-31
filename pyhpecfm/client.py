@@ -81,7 +81,7 @@ class CFMClient(object):
         self._auth_token = None
         self._session = None
 
-    def delete(self, path, params= None):
+    def delete(self, path, params=None):
         """
         Helper function for HTTP DELETE commands
 
@@ -89,9 +89,9 @@ class CFMClient(object):
         :return: requests.Response API call response
         :rtype: requests.Response
         """
-        return self._call_api(method='DELETE', path=path, params= params)
+        return self._call_api(method='DELETE', path=path, params=params)
 
-    def get(self, path, params= None):
+    def get(self, path, params=None):
         """
         Helper function for HTTP GET commands
 
@@ -200,8 +200,7 @@ class CFMClient(object):
                     print('Exception in API call: %s', exception)
                     raise exception
             except requests.exceptions.ReadTimeout as exception:
-                print('ReadTimeout in API call attempt ( %s ) : %s', attempts,
-                                   exception)
+                print('ReadTimeout in API call attempt ( %s ) : %s', attempts, exception)
                 if method in ['GET', 'get'] and attempts < self._max_connection_retries:
                     #  Sleep for 2 seconds before re-trying
                     #  Using native sleep method as opposed to eventlet.sleep as we are
@@ -253,7 +252,7 @@ class CFMClient(object):
             response = session.request(**request)
         except requests.exceptions.SSLError as exception:
             print('%s %s failed due to SSL handshake error; ensure %s contains a '
-                               'certificate which can be used to validate HTTPS connections to %s',
+                  'certificate which can be used to validate HTTPS connections to %s',
                                method, path, verify, self._host)
             raise exception
 
