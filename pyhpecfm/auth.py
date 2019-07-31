@@ -79,6 +79,7 @@ class CFMClient(object):
     def get(self, path, params=None):
         """
         helper function used to issue HTTP get commands
+        :param params:
         :param path: str which describes the desired path
         :return: requests.Response containing full response of API call
         :rtype: requests.Response

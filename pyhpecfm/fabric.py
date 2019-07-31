@@ -82,10 +82,11 @@ def get_switches(cfmclient, params=None):
     :param cfmclient: object of type CFMClient
     :param params: dict of query parameters used to filter request from API
     :return: list of dicts
-    >>> client= CFMClient('10.101.0.210', 'admin', 'plexxi')
-    >>> get_switches(client, params={'ports': True})
-    >>> get_switches(client, params={'ports': True, 'software': True})
-    >>> get_switches(client, params={'ports': True, 'software': True, 'fabric': True})
+    >>> cfm = client.CFMClient('10.101.0.210', 'admin', 'plexxi')
+    >>> cfm.connect()
+    >>> get_switches(cfm, params={'ports': True})
+    >>> get_switches(cfm, params={'ports': True, 'software': True})
+    >>> get_switches(cfm, params={'ports': True, 'software': True, 'fabric': True})
     """
     return cfmclient.get('v1/switches', params).json().get('result')
 
@@ -103,7 +104,7 @@ def create_switch(cfmclient, data, fabric_type=None):
 ####################
 
 
-def get_lags(cfmclient,params=None):
+def get_lags(cfmclient, params=None):
     """
     Get a list of link aggregated objects
     :param cfmclient: object of type CFMClient
@@ -112,7 +113,8 @@ def get_lags(cfmclient,params=None):
     >>> client= CFMClient('10.101.0.210', 'admin', 'plexxi')
     >>> get_lags(client, params={'count_only': True})
     >>> get_lags(client, params={'count_only': False, 'Type': internal})
-    >>> get_lags(client, params={'count_only': Flase,'mac_attachments': False ,'mac_learnining': True,'ports': True,'port_type': access,'tag': True,'type': provisioned,'vlan_groups': True})
+    >>> get_lags(client, params={'count_only': False,'mac_attachments': False ,'mac_learnining':
+    True,'ports': True,'port_type': access,'tag': True,'type': provisioned,'vlan_groups': True})
     """
     return cfmclient.get('v1/lags', params).json().get('result')
 
@@ -131,7 +133,7 @@ def get_ports(cfmclient, switch_uuid=None):
     Composable Fabric Module
     :rtype: list
     """
-    path='v1/ports'
+    path = 'v1/ports'
     if switch_uuid:
         path += '?switches={}&type=access'.format(switch_uuid)
     return cfmclient.get(path).json().get('result')
@@ -169,6 +171,7 @@ def update_ports(cfmclient, port_uuids, field, value):
 def get_vlan_groups(cfmclient, params=None):
     """
     Get Composable Fabric vlan groups.
+    :param params:
     :param cfmclient: object of type CFMClient
     :return: list of VLAN Group dictionary objects in the Composable Fabric
     :rtype: list
@@ -212,6 +215,7 @@ def get_bgp(cfmclient, uuid):
     """
     path = 'v1/vpcs/{}/bgp'.format(uuid)
     return cfmclient.get(path).json().get('result')
+
 
 def get_bgp_leaf_spine(cfmclient, uuid):
     """
