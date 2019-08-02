@@ -22,8 +22,8 @@ interactions:
     uri: https://10.101.0.212/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "ce329d24615e7526c8430f5e1a1cf67d49e31f8466bda558c873e91095fec269eb44ee19aae6a91e82aaa44ec67ed77e",
-        "time": "518.584mS"}'
+      string: '{"count": 1, "result": "491e495e9904bff0f1c8dcc03eee85bd0702f5d63fd78ffb8a1bebb7e6e81b4dadead896a0663d19144197e95aa1c4d3",
+        "time": "472.803mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 30 Jul 2019 19:11:26 GMT
+      - Fri, 02 Aug 2019 19:34:16 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,7 +52,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer ce329d24615e7526c8430f5e1a1cf67d49e31f8466bda558c873e91095fec269eb44ee19aae6a91e82aaa44ec67ed77e
+      - Bearer 491e495e9904bff0f1c8dcc03eee85bd0702f5d63fd78ffb8a1bebb7e6e81b4dadead896a0663d19144197e95aa1c4d3
       Connection:
       - keep-alive
       Content-Type:
@@ -65,54 +65,62 @@ interactions:
     uri: https://10.101.0.212/api/v1/backups
   response:
     body:
-      string: '{"count": 9, "result": [{"image_version": "5.1.0-5391", "uuid": "4082f80ed8cf4c4da6cabcfa0b2de627",
-        "url": "/api/v1/files/backups/4082f80ed8cf4c4da6cabcfa0b2de627/composable-fabric-manager-backup-2019-07-29-203935451040.tar.gz?Authorization=ce329d24615e7526c8430f5e1a1cf67d49e31f8466bda558c873e91095fec269eb44ee19aae6a91e82aaa44ec67ed77e",
+      string: '{"count": 11, "result": [{"image_version": "5.1.0-5391", "uuid": "4082f80ed8cf4c4da6cabcfa0b2de627",
+        "url": "/api/v1/files/backups/4082f80ed8cf4c4da6cabcfa0b2de627/composable-fabric-manager-backup-2019-07-29-203935451040.tar.gz?Authorization=491e495e9904bff0f1c8dcc03eee85bd0702f5d63fd78ffb8a1bebb7e6e81b4dadead896a0663d19144197e95aa1c4d3",
         "checksum": "9efa6c06a5116edf58526c6c76a36e9d6138ac7a22becef6800d05b8a4e52b24",
         "supported": true, "date_created": 1564432775, "name": "composable-fabric-manager-backup-2019-07-29-203935451040.tar.gz"},
         {"image_version": "5.1.0-5391", "uuid": "305e8350d6c64541810889f9660a60eb",
-        "url": "/api/v1/files/backups/305e8350d6c64541810889f9660a60eb/composable-fabric-manager-backup-2019-07-29-204032152860.tar.gz?Authorization=ce329d24615e7526c8430f5e1a1cf67d49e31f8466bda558c873e91095fec269eb44ee19aae6a91e82aaa44ec67ed77e",
+        "url": "/api/v1/files/backups/305e8350d6c64541810889f9660a60eb/composable-fabric-manager-backup-2019-07-29-204032152860.tar.gz?Authorization=491e495e9904bff0f1c8dcc03eee85bd0702f5d63fd78ffb8a1bebb7e6e81b4dadead896a0663d19144197e95aa1c4d3",
         "checksum": "aad98701045f0850bb55bf17f95debd8856f12368c96c9efd6dd20dbe706293b",
         "supported": true, "date_created": 1564432832, "name": "composable-fabric-manager-backup-2019-07-29-204032152860.tar.gz"},
         {"image_version": "5.1.0-5391", "uuid": "49cd0b3938244cc292c9157b9fac1296",
-        "url": "/api/v1/files/backups/49cd0b3938244cc292c9157b9fac1296/composable-fabric-manager-backup-2019-07-29-204240623214.tar.gz?Authorization=ce329d24615e7526c8430f5e1a1cf67d49e31f8466bda558c873e91095fec269eb44ee19aae6a91e82aaa44ec67ed77e",
+        "url": "/api/v1/files/backups/49cd0b3938244cc292c9157b9fac1296/composable-fabric-manager-backup-2019-07-29-204240623214.tar.gz?Authorization=491e495e9904bff0f1c8dcc03eee85bd0702f5d63fd78ffb8a1bebb7e6e81b4dadead896a0663d19144197e95aa1c4d3",
         "checksum": "987e4047d6ea5d13fa124fb598419ceaae378236d8051d14686b4757af2431e4",
         "supported": true, "date_created": 1564432960, "name": "composable-fabric-manager-backup-2019-07-29-204240623214.tar.gz"},
         {"image_version": "5.1.0-5391", "uuid": "5ba9a9f78a944679982a89be50f61359",
-        "url": "/api/v1/files/backups/5ba9a9f78a944679982a89be50f61359/composable-fabric-manager-backup-2019-07-29-204432765245.tar.gz?Authorization=ce329d24615e7526c8430f5e1a1cf67d49e31f8466bda558c873e91095fec269eb44ee19aae6a91e82aaa44ec67ed77e",
+        "url": "/api/v1/files/backups/5ba9a9f78a944679982a89be50f61359/composable-fabric-manager-backup-2019-07-29-204432765245.tar.gz?Authorization=491e495e9904bff0f1c8dcc03eee85bd0702f5d63fd78ffb8a1bebb7e6e81b4dadead896a0663d19144197e95aa1c4d3",
         "checksum": "46d389b280da9db8461898ddc62e535b5455bdf8b597f8a29abba97f37fc3ab1",
         "supported": true, "date_created": 1564433072, "name": "composable-fabric-manager-backup-2019-07-29-204432765245.tar.gz"},
         {"image_version": "5.1.0-5391", "uuid": "f8677a7f2dbb485a9b4c0fd5426e9954",
-        "url": "/api/v1/files/backups/f8677a7f2dbb485a9b4c0fd5426e9954/composable-fabric-manager-backup-2019-07-29-210234481635.tar.gz?Authorization=ce329d24615e7526c8430f5e1a1cf67d49e31f8466bda558c873e91095fec269eb44ee19aae6a91e82aaa44ec67ed77e",
+        "url": "/api/v1/files/backups/f8677a7f2dbb485a9b4c0fd5426e9954/composable-fabric-manager-backup-2019-07-29-210234481635.tar.gz?Authorization=491e495e9904bff0f1c8dcc03eee85bd0702f5d63fd78ffb8a1bebb7e6e81b4dadead896a0663d19144197e95aa1c4d3",
         "checksum": "23ee6cf083eebc39d8fc3d8c318e37e1385e40083f735f3db5419fcac31a03e2",
         "supported": true, "date_created": 1564434154, "name": "composable-fabric-manager-backup-2019-07-29-210234481635.tar.gz"},
         {"image_version": "5.1.0-5391", "uuid": "bd22df04abcf401780f339c8ca214696",
-        "url": "/api/v1/files/backups/bd22df04abcf401780f339c8ca214696/composable-fabric-manager-backup-2019-07-29-210445708970.tar.gz?Authorization=ce329d24615e7526c8430f5e1a1cf67d49e31f8466bda558c873e91095fec269eb44ee19aae6a91e82aaa44ec67ed77e",
+        "url": "/api/v1/files/backups/bd22df04abcf401780f339c8ca214696/composable-fabric-manager-backup-2019-07-29-210445708970.tar.gz?Authorization=491e495e9904bff0f1c8dcc03eee85bd0702f5d63fd78ffb8a1bebb7e6e81b4dadead896a0663d19144197e95aa1c4d3",
         "checksum": "89c0b70ee4d818a6b325e6b675cb28e3c5d0cb5adc8a1df994063e7f923ad523",
         "supported": true, "date_created": 1564434285, "name": "composable-fabric-manager-backup-2019-07-29-210445708970.tar.gz"},
         {"image_version": "5.1.0-5391", "uuid": "d0417446ee4a47b8bf6a9f27bb106c6e",
-        "url": "/api/v1/files/backups/d0417446ee4a47b8bf6a9f27bb106c6e/composable-fabric-manager-backup-2019-07-29-210514869448.tar.gz?Authorization=ce329d24615e7526c8430f5e1a1cf67d49e31f8466bda558c873e91095fec269eb44ee19aae6a91e82aaa44ec67ed77e",
+        "url": "/api/v1/files/backups/d0417446ee4a47b8bf6a9f27bb106c6e/composable-fabric-manager-backup-2019-07-29-210514869448.tar.gz?Authorization=491e495e9904bff0f1c8dcc03eee85bd0702f5d63fd78ffb8a1bebb7e6e81b4dadead896a0663d19144197e95aa1c4d3",
         "checksum": "ca88e04da662957203422a442983fcaa7e58cb8037bea79e1486a8fb35edee58",
         "supported": true, "date_created": 1564434314, "name": "composable-fabric-manager-backup-2019-07-29-210514869448.tar.gz"},
         {"image_version": "5.1.0-5391", "uuid": "7911219560504a2eaa7f0e92829460bc",
-        "url": "/api/v1/files/backups/7911219560504a2eaa7f0e92829460bc/composable-fabric-manager-backup-2019-07-30-190939965779.tar.gz?Authorization=ce329d24615e7526c8430f5e1a1cf67d49e31f8466bda558c873e91095fec269eb44ee19aae6a91e82aaa44ec67ed77e",
+        "url": "/api/v1/files/backups/7911219560504a2eaa7f0e92829460bc/composable-fabric-manager-backup-2019-07-30-190939965779.tar.gz?Authorization=491e495e9904bff0f1c8dcc03eee85bd0702f5d63fd78ffb8a1bebb7e6e81b4dadead896a0663d19144197e95aa1c4d3",
         "checksum": "3ca39923635f0b19b581e57751c8ae905dfbdadd3edf70ecbcaf9d9c6a6301fd",
         "supported": true, "date_created": 1564513779, "name": "composable-fabric-manager-backup-2019-07-30-190939965779.tar.gz"},
         {"image_version": "5.1.0-5391", "uuid": "07759b14b19f431e8e0bab4d295329d5",
-        "url": "/api/v1/files/backups/07759b14b19f431e8e0bab4d295329d5/composable-fabric-manager-backup-2019-07-30-191121620919.tar.gz?Authorization=ce329d24615e7526c8430f5e1a1cf67d49e31f8466bda558c873e91095fec269eb44ee19aae6a91e82aaa44ec67ed77e",
+        "url": "/api/v1/files/backups/07759b14b19f431e8e0bab4d295329d5/composable-fabric-manager-backup-2019-07-30-191121620919.tar.gz?Authorization=491e495e9904bff0f1c8dcc03eee85bd0702f5d63fd78ffb8a1bebb7e6e81b4dadead896a0663d19144197e95aa1c4d3",
         "checksum": "0c1acfcb20cc0e2c756df4f4b99db92314f61abf8d16b86ce236215bf446fe6d",
-        "supported": true, "date_created": 1564513881, "name": "composable-fabric-manager-backup-2019-07-30-191121620919.tar.gz"}],
-        "time": "5.949mS"}'
+        "supported": true, "date_created": 1564513881, "name": "composable-fabric-manager-backup-2019-07-30-191121620919.tar.gz"},
+        {"image_version": "5.1.0-5391", "uuid": "f6b39bc89a654882a9e42aa094be93ff",
+        "url": "/api/v1/files/backups/f6b39bc89a654882a9e42aa094be93ff/composable-fabric-manager-backup-2019-08-02-193236009859.tar.gz?Authorization=491e495e9904bff0f1c8dcc03eee85bd0702f5d63fd78ffb8a1bebb7e6e81b4dadead896a0663d19144197e95aa1c4d3",
+        "checksum": "61305eea58dbcdbb56aa86d0700822a31e044b5c94006111b39e0b4b6259b50b",
+        "supported": true, "date_created": 1564774356, "name": "composable-fabric-manager-backup-2019-08-02-193236009859.tar.gz"},
+        {"image_version": "5.1.0-5391", "uuid": "20831713a6f64ddeb4390dd4ed6f03a1",
+        "url": "/api/v1/files/backups/20831713a6f64ddeb4390dd4ed6f03a1/composable-fabric-manager-backup-2019-08-02-193412481050.tar.gz?Authorization=491e495e9904bff0f1c8dcc03eee85bd0702f5d63fd78ffb8a1bebb7e6e81b4dadead896a0663d19144197e95aa1c4d3",
+        "checksum": "f655a2409ec6c1d254b21f719eb2e7a1ac4f9234565e054a32e9c256674b8ac2",
+        "supported": true, "date_created": 1564774452, "name": "composable-fabric-manager-backup-2019-08-02-193412481050.tar.gz"}],
+        "time": "8.855mS"}'
     headers:
       Cache-Control:
       - no-cache
       Connection:
       - keep-alive
       Content-Length:
-      - '4714'
+      - '5753'
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 30 Jul 2019 19:11:26 GMT
+      - Fri, 02 Aug 2019 19:34:16 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
