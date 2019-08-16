@@ -17,7 +17,7 @@ def get_fabrics(cfmclient, fabric_uuid=None):
     """
     Get a list of Fabrics currently defined in Composable Fabric.
     :param cfmclient:
-    :param fabric_uuid: switch_uuid: UUID of switch from which to fetch port data
+    :param fabric_uuid: switch_uuid: UUID of fabric
     :return: list of Dictionary objects where each dictionary represents a port on a
     Composable Fabric Module
     :rtype: list
@@ -26,6 +26,24 @@ def get_fabrics(cfmclient, fabric_uuid=None):
     if fabric_uuid:
         path += '/{}'.format(fabric_uuid)
     return cfmclient.get(path).json().get('result')
+
+
+def add_fabrics(cfmclient, switch_ip, name, description):
+    """
+    Function to add a new fabric for management under a specific CFM instance
+    :param cfmclient:
+    :param switch_ip: IP address of one switch in the fabric
+    :param name: Name of the new fabric
+    :param description: description of the fabric
+    :return:
+    """
+    path = 'v1/fabrics'
+    data = {
+        'host': '{}'.format(switch_ip),
+        'name': '{}'.format(name),
+        'description': '{}'.format(description)
+    }
+    return cfmclient.post(path, data=data).json().get('result')
 
 
 def get_fabric_ip_networks(cfmclient, fabric_uuid=None):
@@ -40,6 +58,47 @@ def get_fabric_ip_networks(cfmclient, fabric_uuid=None):
     if fabric_uuid:
         path += '/{}'.format(fabric_uuid)
     return cfmclient.get(path).json().get('result')
+
+
+def add_ip_fabric(cfmclient, fabric_uuid, name, description, mode, subnet, prefix_length, vlan, switch_uuid,
+                  switch_address):
+    """
+    Function to add new IP fabrics on specified CFM instance
+    :param cfmclient:
+    :param fabric_uuid: str UUID of the fabric on which this fabric IP network config should be created.Note that a
+    fabric IP network config cannot be associated with a different fabric after creation
+    :param name: str value Fabric IP Network name (displayed in UI)
+    :param description: str value of the description of the new IP Fabric to be created
+    :param mode: str value Fabric IP Network mode of operation
+    :param subnet: str value The IPv4 subnet for the fabric IP network.
+    :param prefix_length: str value the IPv4 subnet mask length for the fabric IP network
+    :param vlan: str value enter a VLAN ID for the fabric IP network, which can be between 0 and 4000
+    :param switch_uuid: str value UUID of the switch on which you would like to configure the switch address
+    :param switch_address: str value A unique IPv4 switch address that is in the subnet for this fabric IP Network.
+    :return: dict containing response of request
+    """
+    path = 'v1/fabric_ip_networks'
+    data = {
+        "fabric_uuid": '{}'.format(fabric_uuid),
+        "subnet": {
+            "prefix_length": int("{}".format(prefix_length)),
+            "address": "{}".format(subnet)
+        },
+        "description": "{}".format(description),
+        "vlan": int("{}".format(vlan)),
+        "name": "{}".format(name),
+        "switch_addresses": [
+            {
+                "switch_uuid": "{}".format(switch_uuid),
+                "ip_address": {
+                    "prefix_length": int("{}".format(prefix_length)),
+                    "address": "{}".format(switch_address)
+                }
+            }
+        ],
+        "mode": "{}".format(mode)
+    }
+    return cfmclient.post(path, data=data).json().get('result')
 
 
 #####################
@@ -134,6 +193,7 @@ def get_ports(cfmclient, switch_uuid=None):
         path += '?switches={}&type=access'.format(switch_uuid)
     return cfmclient.get(path).json().get('result')
 
+
 # TODO Write test for this function
 def update_ports(cfmclient, port_uuids, field, value):
     """
@@ -173,7 +233,6 @@ def get_vlan_groups(cfmclient, params=None):
     :rtype: list
     """
     return cfmclient.get('v1/vlan_groups', params).json().get('result')
-
 
 # TODO POST VLAN_GROUP FUNCTION
 

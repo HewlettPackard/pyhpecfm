@@ -19,11 +19,11 @@ interactions:
       X-Auth-Username:
       - admin
     method: POST
-    uri: https://10.101.0.212/api/v1/auth/token
+    uri: https://cfmtest.local/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "ff45c2d657a4f512ac8f674a4c1aa0cf5f6bce251f84444f027b471ad922dcce0606ea7e2b5c8301384f379095019248",
-        "time": "389.125mS"}'
+      string: '{"count": 1, "result": "1ca0de492b10eb83b1365165810ee2f52812ae932c2657707600a12baeaa60a07375b4accd9c37486d638af07960ceec",
+        "time": "438.698mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 02 Aug 2019 19:34:12 GMT
+      - Fri, 16 Aug 2019 21:33:44 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,7 +52,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer ff45c2d657a4f512ac8f674a4c1aa0cf5f6bce251f84444f027b471ad922dcce0606ea7e2b5c8301384f379095019248
+      - Bearer 1ca0de492b10eb83b1365165810ee2f52812ae932c2657707600a12baeaa60a07375b4accd9c37486d638af07960ceec
       Connection:
       - keep-alive
       Content-Length:
@@ -64,14 +64,14 @@ interactions:
       X-Auth-Refresh-Token:
       - 'true'
     method: POST
-    uri: https://10.101.0.212/api/v1/backups
+    uri: https://cfmtest.local/api/v1/backups
   response:
     body:
-      string: '{"count": 1, "result": {"image_version": "5.1.0-5391", "uuid": "20831713a6f64ddeb4390dd4ed6f03a1",
-        "url": "/api/v1/files/backups/20831713a6f64ddeb4390dd4ed6f03a1/composable-fabric-manager-backup-2019-08-02-193412481050.tar.gz?Authorization=ff45c2d657a4f512ac8f674a4c1aa0cf5f6bce251f84444f027b471ad922dcce0606ea7e2b5c8301384f379095019248",
-        "checksum": "f655a2409ec6c1d254b21f719eb2e7a1ac4f9234565e054a32e9c256674b8ac2",
-        "supported": true, "date_created": 1564774452, "name": "composable-fabric-manager-backup-2019-08-02-193412481050.tar.gz"},
-        "time": "2066.296mS"}'
+      string: '{"count": 1, "result": {"image_version": "5.1.0-5437", "uuid": "b131b91c90584941ab99723d1ca4bc01",
+        "url": "/api/v1/files/backups/b131b91c90584941ab99723d1ca4bc01/composable-fabric-manager-backup-2019-08-16-213349901156.tar.gz?Authorization=1ca0de492b10eb83b1365165810ee2f52812ae932c2657707600a12baeaa60a07375b4accd9c37486d638af07960ceec",
+        "checksum": "497d3c5cf51737f582f765a807e6220d82250474bf398e2b0071601d4a1b61c7",
+        "supported": true, "date_created": 1565991229, "name": "composable-fabric-manager-backup-2019-08-16-213349901156.tar.gz"},
+        "time": "2766.445mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -82,7 +82,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 02 Aug 2019 19:34:14 GMT
+      - Fri, 16 Aug 2019 21:33:52 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:

@@ -19,11 +19,11 @@ interactions:
       X-Auth-Username:
       - admin
     method: POST
-    uri: https://10.101.0.212/api/v1/auth/token
+    uri: https://cfmtest.local/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "244a4151cedba9f6082abda62fc8c2420e04c930bef4e628d77dbdb2fa6deb7e0226b0bac1b13bb7fd979231ece321f7",
-        "time": "290.256mS"}'
+      string: '{"count": 1, "result": "024140c71a54329a467c69360677492e51df3e134e8e592aa46df9fb9b2025fe16cbe672293f4785d7dfd7a545790d07",
+        "time": "310.616mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 02 Aug 2019 19:34:14 GMT
+      - Fri, 16 Aug 2019 21:33:58 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,7 +52,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer 244a4151cedba9f6082abda62fc8c2420e04c930bef4e628d77dbdb2fa6deb7e0226b0bac1b13bb7fd979231ece321f7
+      - Bearer 024140c71a54329a467c69360677492e51df3e134e8e592aa46df9fb9b2025fe16cbe672293f4785d7dfd7a545790d07
       Connection:
       - keep-alive
       Content-Type:
@@ -62,1024 +62,329 @@ interactions:
       X-Auth-Refresh-Token:
       - 'true'
     method: GET
-    uri: https://10.101.0.212/api/v1/audits
+    uri: https://cfmtest.local/api/v1/audits
   response:
     body:
-      string: '{"count": 75, "page": {"next_page": "/api/v1/audits?page_size=1000&before=ace18944-dbb9-4b9d-a9d1-63fbcec14ee8",
-        "prev_page": "/api/v1/audits?page_size=1000&after=604f3197-c50a-4be0-b30d-edbb371cedfe"},
-        "result": [{"description": "Port \"4.1\" on switch \"admin-vs2\" has changed
-        state. \"link_state\" has changed from \"down\" to \"up\".", "record_type":
-        "EVENT", "log_date": 1564171622684, "uuid": "604f3197-c50a-4be0-b30d-edbb371cedfe",
-        "stream_id": "fabric_events", "data": {"event_object": {"port_uuid": "3425e010-1f37-4e55-a8db-3633b6dd4987",
-        "speed_group": ["12", "13", "14", "15"], "link_state": "up", "cx_port_id":
-        "12", "form_factor": "qsfp", "speed": 25000, "read_only": false, "uuid": "3425e010-1f37-4e55-a8db-3633b6dd4987",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "f906c72c-f0d6-4621-bde0-665d9f4b955c", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Port \"5.1\"
-        on switch \"admin-vs5\" has changed state. \"link_state\" has changed from
-        \"down\" to \"up\".", "record_type": "EVENT", "log_date": 1564171622542, "uuid":
-        "2a0d5dc3-0bf9-4f4a-8931-02ae159decb2", "stream_id": "fabric_events", "data":
-        {"event_object": {"port_uuid": "7b3fc51b-4635-4a0b-9d91-6ac60c3aac5d", "speed_group":
-        ["16", "17", "18", "19"], "link_state": "up", "cx_port_id": "16", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "7b3fc51b-4635-4a0b-9d91-6ac60c3aac5d",
-        "downlink_switch_uuid": null, "silkscreen": "5", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "40063e1f-390a-4ea8-be49-06d4a93c115e", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "5.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "5.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Port \"4.1\"
-        on switch \"admin-vs5\" has changed state. \"link_state\" has changed from
-        \"down\" to \"up\".", "record_type": "EVENT", "log_date": 1564171622446, "uuid":
-        "3f58d735-305a-41dc-a0ca-cdae3b5df151", "stream_id": "fabric_events", "data":
-        {"event_object": {"port_uuid": "96c61262-78a4-4ad5-8e7f-25320fd24d9a", "speed_group":
-        ["12", "13", "14", "15"], "link_state": "up", "cx_port_id": "12", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "96c61262-78a4-4ad5-8e7f-25320fd24d9a",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "40063e1f-390a-4ea8-be49-06d4a93c115e", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Port \"4.1\"
-        on switch \"admin-vs6\" has changed state. \"link_state\" has changed from
-        \"down\" to \"up\".", "record_type": "EVENT", "log_date": 1564171622330, "uuid":
-        "87b88935-1a7b-4d22-948f-370af973ef00", "stream_id": "fabric_events", "data":
-        {"event_object": {"port_uuid": "01caa423-967a-47cb-a3f7-ba84bbfc64a7", "speed_group":
-        ["12", "13", "14", "15"], "link_state": "up", "cx_port_id": "12", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "01caa423-967a-47cb-a3f7-ba84bbfc64a7",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "810c3961-b5f4-4809-81e9-c009f832e0ee", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Port \"4.1\"
-        on switch \"admin-vs7\" has changed state. \"link_state\" has changed from
-        \"down\" to \"up\".", "record_type": "EVENT", "log_date": 1564171622094, "uuid":
-        "12501655-be3c-4c55-9e93-ce38059e9636", "stream_id": "fabric_events", "data":
-        {"event_object": {"port_uuid": "d9f9a23f-cc31-4764-8e56-008baa982d9a", "speed_group":
-        ["12", "13", "14", "15"], "link_state": "up", "cx_port_id": "12", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "d9f9a23f-cc31-4764-8e56-008baa982d9a",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "e0a6bd23-56b1-44ec-95d1-c681963886a5", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Port \"5.1\"
-        on switch \"admin-vs3\" has changed state. \"link_state\" has changed from
-        \"down\" to \"up\".", "record_type": "EVENT", "log_date": 1564171622952, "uuid":
-        "2dc0ad65-2975-49ef-81a2-bfc737c3cbd5", "stream_id": "fabric_events", "data":
-        {"event_object": {"port_uuid": "997dc6b3-0d21-4d85-9e72-807918f10fc7", "speed_group":
-        ["16", "17", "18", "19"], "link_state": "up", "cx_port_id": "16", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "997dc6b3-0d21-4d85-9e72-807918f10fc7",
-        "downlink_switch_uuid": null, "silkscreen": "5", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "f211c531-c345-4d37-b833-9b02ea0dc24b", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "5.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "5.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Port \"5.1\"
-        on switch \"admin-vs5\" has changed state. \"link_state\" has changed from
-        \"down\" to \"up\".", "record_type": "EVENT", "log_date": 1564171622860, "uuid":
-        "e7e1221e-d500-427f-86ab-f6a271e2e57d", "stream_id": "fabric_events", "data":
-        {"event_object": {"port_uuid": "7b3fc51b-4635-4a0b-9d91-6ac60c3aac5d", "speed_group":
-        ["16", "17", "18", "19"], "link_state": "up", "cx_port_id": "16", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "7b3fc51b-4635-4a0b-9d91-6ac60c3aac5d",
-        "downlink_switch_uuid": null, "silkscreen": "5", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "40063e1f-390a-4ea8-be49-06d4a93c115e", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "5.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "5.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Port \"4.1\"
-        on switch \"admin-vs2\" has changed state. \"link_state\" has changed from
-        \"down\" to \"up\".", "record_type": "EVENT", "log_date": 1564171622744, "uuid":
-        "b5c40f68-5b24-4c6d-90f8-e87d071d071f", "stream_id": "fabric_events", "data":
-        {"event_object": {"port_uuid": "3425e010-1f37-4e55-a8db-3633b6dd4987", "speed_group":
-        ["12", "13", "14", "15"], "link_state": "up", "cx_port_id": "12", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "3425e010-1f37-4e55-a8db-3633b6dd4987",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "f906c72c-f0d6-4621-bde0-665d9f4b955c", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Port \"4.1\"
-        on switch \"admin-vs5\" has changed state. \"link_state\" has changed from
-        \"down\" to \"up\".", "record_type": "EVENT", "log_date": 1564171622642, "uuid":
-        "cfd7cd99-988a-4c37-99f6-b10aa6360f84", "stream_id": "fabric_events", "data":
-        {"event_object": {"port_uuid": "96c61262-78a4-4ad5-8e7f-25320fd24d9a", "speed_group":
-        ["12", "13", "14", "15"], "link_state": "up", "cx_port_id": "12", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "96c61262-78a4-4ad5-8e7f-25320fd24d9a",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "40063e1f-390a-4ea8-be49-06d4a93c115e", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Port \"4.1\"
-        on switch \"admin-vs7\" has changed state. \"link_state\" has changed from
-        \"down\" to \"up\".", "record_type": "EVENT", "log_date": 1564171622560, "uuid":
-        "c1fc5768-bdd4-4daf-afad-f2441f7e2e67", "stream_id": "fabric_events", "data":
-        {"event_object": {"port_uuid": "d9f9a23f-cc31-4764-8e56-008baa982d9a", "speed_group":
-        ["12", "13", "14", "15"], "link_state": "up", "cx_port_id": "12", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "d9f9a23f-cc31-4764-8e56-008baa982d9a",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "e0a6bd23-56b1-44ec-95d1-c681963886a5", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Port \"4.1\"
-        on switch \"admin-vs6\" has changed state. \"link_state\" has changed from
-        \"down\" to \"up\".", "record_type": "EVENT", "log_date": 1564171622450, "uuid":
-        "8d0447c8-5ce4-4571-a176-2be61426f1d8", "stream_id": "fabric_events", "data":
-        {"event_object": {"port_uuid": "01caa423-967a-47cb-a3f7-ba84bbfc64a7", "speed_group":
-        ["12", "13", "14", "15"], "link_state": "up", "cx_port_id": "12", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "01caa423-967a-47cb-a3f7-ba84bbfc64a7",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "810c3961-b5f4-4809-81e9-c009f832e0ee", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Port \"4.1\"
-        on switch \"admin-vs5\" has changed state. \"link_state\" has changed from
-        \"down\" to \"up\".", "record_type": "EVENT", "log_date": 1564171622354, "uuid":
-        "d3351696-59fe-43c0-8f4c-4c59e76b4f24", "stream_id": "fabric_events", "data":
-        {"event_object": {"port_uuid": "96c61262-78a4-4ad5-8e7f-25320fd24d9a", "speed_group":
-        ["12", "13", "14", "15"], "link_state": "up", "cx_port_id": "12", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "96c61262-78a4-4ad5-8e7f-25320fd24d9a",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "40063e1f-390a-4ea8-be49-06d4a93c115e", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Port \"4.1\"
-        on switch \"admin-vs7\" has changed state. \"link_state\" has changed from
-        \"down\" to \"up\".", "record_type": "EVENT", "log_date": 1564171622242, "uuid":
-        "9ebb56d2-e463-4b73-bba0-edf7ec6abeea", "stream_id": "fabric_events", "data":
-        {"event_object": {"port_uuid": "d9f9a23f-cc31-4764-8e56-008baa982d9a", "speed_group":
-        ["12", "13", "14", "15"], "link_state": "up", "cx_port_id": "12", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "d9f9a23f-cc31-4764-8e56-008baa982d9a",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "e0a6bd23-56b1-44ec-95d1-c681963886a5", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Link state
-        of Port 6.1 on switch admin-vs3 is down", "record_type": "ALARM", "log_date":
-        1564171621110, "uuid": "9ccb0101-0fc0-4c9b-9533-68ed0651d297", "stream_id":
-        "fabric_events", "data": {"event_object": {"speed_group": ["20", "21", "22",
-        "23"], "link_state": "down", "cx_port_id": "20", "form_factor": "qsfp", "speed":
-        25000, "read_only": false, "uuid": "2f77091d-9864-4ec2-9634-93adb6fb3eef",
-        "downlink_switch_uuid": null, "silkscreen": "6", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "f211c531-c345-4d37-b833-9b02ea0dc24b", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "6.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "6.1", "event_type":
-        "ObjectModified"}, "severity": "CRITICAL"}, {"description": "Link state of
-        Port 6.1 on switch admin-vs5 is down", "record_type": "ALARM", "log_date":
-        1564171621208, "uuid": "90d657ed-c4f7-4e98-bb01-e6722aa112c2", "stream_id":
-        "fabric_events", "data": {"event_object": {"speed_group": ["20", "21", "22",
-        "23"], "link_state": "down", "cx_port_id": "20", "form_factor": "qsfp", "speed":
-        25000, "read_only": false, "uuid": "8a36c32f-3293-41ff-a8ac-66eb9928c3a4",
-        "downlink_switch_uuid": null, "silkscreen": "6", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "40063e1f-390a-4ea8-be49-06d4a93c115e", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "6.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "6.1", "event_type":
-        "ObjectModified"}, "severity": "CRITICAL"}, {"description": "Port \"4.1\"
-        on switch \"admin-vs6\" has changed state. \"link_state\" has changed from
-        \"down\" to \"up\".", "record_type": "EVENT", "log_date": 1564171622106, "uuid":
-        "1d8a09fe-7bc3-48b1-97d4-3afa3a84a988", "stream_id": "fabric_events", "data":
-        {"event_object": {"port_uuid": "01caa423-967a-47cb-a3f7-ba84bbfc64a7", "speed_group":
-        ["12", "13", "14", "15"], "link_state": "up", "cx_port_id": "12", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "01caa423-967a-47cb-a3f7-ba84bbfc64a7",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "810c3961-b5f4-4809-81e9-c009f832e0ee", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Link state
-        of Port 6.1 on switch admin-vs6 is down", "record_type": "ALARM", "log_date":
-        1564171621996, "uuid": "1dc93892-be59-4439-a698-64eea4be51c3", "stream_id":
-        "fabric_events", "data": {"event_object": {"speed_group": ["20", "21", "22",
-        "23"], "link_state": "down", "cx_port_id": "20", "form_factor": "qsfp", "speed":
-        25000, "read_only": false, "uuid": "e8ecc349-0f9f-4ef6-afba-98af1a2ab932",
-        "downlink_switch_uuid": null, "silkscreen": "6", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "810c3961-b5f4-4809-81e9-c009f832e0ee", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "6.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "6.1", "event_type":
-        "ObjectModified"}, "severity": "CRITICAL"}, {"description": "Port \"5.1\"
-        on switch \"admin-vs3\" has changed state. \"link_state\" has changed from
-        \"down\" to \"up\".", "record_type": "EVENT", "log_date": 1564171621964, "uuid":
-        "e977265d-cab1-4452-8376-f4d88edf3d9d", "stream_id": "fabric_events", "data":
-        {"event_object": {"port_uuid": "997dc6b3-0d21-4d85-9e72-807918f10fc7", "speed_group":
-        ["16", "17", "18", "19"], "link_state": "up", "cx_port_id": "16", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "997dc6b3-0d21-4d85-9e72-807918f10fc7",
-        "downlink_switch_uuid": null, "silkscreen": "5", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "f211c531-c345-4d37-b833-9b02ea0dc24b", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "5.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "5.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Port \"5.1\"
-        on switch \"admin-vs3\" has changed state. \"link_state\" has changed from
-        \"down\" to \"up\".", "record_type": "EVENT", "log_date": 1564171621876, "uuid":
-        "b9149bb9-adfd-4435-b977-a54452716937", "stream_id": "fabric_events", "data":
-        {"event_object": {"port_uuid": "997dc6b3-0d21-4d85-9e72-807918f10fc7", "speed_group":
-        ["16", "17", "18", "19"], "link_state": "up", "cx_port_id": "16", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "997dc6b3-0d21-4d85-9e72-807918f10fc7",
-        "downlink_switch_uuid": null, "silkscreen": "5", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "f211c531-c345-4d37-b833-9b02ea0dc24b", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "5.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "5.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Link state
-        of Port 4.1 on switch admin-vs7 is down", "record_type": "ALARM", "log_date":
-        1564171621836, "uuid": "b3adbff1-0165-4af1-a54d-06da4c8ec9e9", "stream_id":
-        "fabric_events", "data": {"event_object": {"speed_group": ["12", "13", "14",
-        "15"], "link_state": "down", "cx_port_id": "12", "form_factor": "qsfp", "speed":
-        25000, "read_only": false, "uuid": "d9f9a23f-cc31-4764-8e56-008baa982d9a",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "e0a6bd23-56b1-44ec-95d1-c681963886a5", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "CRITICAL"}, {"description": "Port \"4.1\"
-        on switch \"admin-vs3\" has changed state. \"link_state\" has changed from
-        \"down\" to \"up\".", "record_type": "EVENT", "log_date": 1564171621492, "uuid":
-        "8c352dd5-08ae-4f64-bb5d-15f3cf119581", "stream_id": "fabric_events", "data":
-        {"event_object": {"port_uuid": "a027bc5f-4adc-49a6-a2db-34f56f16a6ee", "speed_group":
-        ["12", "13", "14", "15"], "link_state": "up", "cx_port_id": "12", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "a027bc5f-4adc-49a6-a2db-34f56f16a6ee",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "f211c531-c345-4d37-b833-9b02ea0dc24b", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Link state
-        of Port 5.1 on switch admin-vs3 is down", "record_type": "ALARM", "log_date":
-        1564171621538, "uuid": "2b935702-660d-40d1-9068-5e859eb8c659", "stream_id":
-        "fabric_events", "data": {"event_object": {"speed_group": ["16", "17", "18",
-        "19"], "link_state": "down", "cx_port_id": "16", "form_factor": "qsfp", "speed":
-        25000, "read_only": false, "uuid": "997dc6b3-0d21-4d85-9e72-807918f10fc7",
-        "downlink_switch_uuid": null, "silkscreen": "5", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "f211c531-c345-4d37-b833-9b02ea0dc24b", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "5.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "5.1", "event_type":
-        "ObjectModified"}, "severity": "CRITICAL"}, {"description": "Link state of
-        Port 6.1 on switch admin-vs7 is down", "record_type": "ALARM", "log_date":
-        1564171621724, "uuid": "fda43ae0-f4af-4a9a-804c-c88874789b3a", "stream_id":
-        "fabric_events", "data": {"event_object": {"speed_group": ["20", "21", "22",
-        "23"], "link_state": "down", "cx_port_id": "20", "form_factor": "qsfp", "speed":
-        25000, "read_only": false, "uuid": "c90d8155-0a5b-42fe-b393-aaa9ccbdd5cd",
-        "downlink_switch_uuid": null, "silkscreen": "6", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "e0a6bd23-56b1-44ec-95d1-c681963886a5", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "6.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "6.1", "event_type":
-        "ObjectModified"}, "severity": "CRITICAL"}, {"description": "Link state of
-        Port 6.1 on switch admin-vs2 is down", "record_type": "ALARM", "log_date":
-        1564171621384, "uuid": "ac080435-2e19-4289-adaa-4297903afa06", "stream_id":
-        "fabric_events", "data": {"event_object": {"speed_group": ["20", "21", "22",
-        "23"], "link_state": "down", "cx_port_id": "20", "form_factor": "qsfp", "speed":
-        25000, "read_only": false, "uuid": "2dd154fa-f9a3-4e81-bd4c-9f07de018172",
-        "downlink_switch_uuid": null, "silkscreen": "6", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "f906c72c-f0d6-4621-bde0-665d9f4b955c", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "6.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "6.1", "event_type":
-        "ObjectModified"}, "severity": "CRITICAL"}, {"description": "The admin state
-        is set to enabled for Port 6.1 on Switch admin-vs5 by user admin", "record_type":
-        "EVENT", "log_date": 1564171621208, "uuid": "244d2c84-92a8-4004-a3d2-7a18e19c104e",
-        "stream_id": "fabric_events", "data": {"event_object": {"speed_group": ["20",
-        "21", "22", "23"], "link_state": "down", "cx_port_id": "20", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "8a36c32f-3293-41ff-a8ac-66eb9928c3a4",
-        "downlink_switch_uuid": null, "silkscreen": "6", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "40063e1f-390a-4ea8-be49-06d4a93c115e", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "6.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "6.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "The admin
-        state is set to enabled for Port 6.1 on Switch admin-vs3 by user admin", "record_type":
-        "EVENT", "log_date": 1564171621110, "uuid": "e26e604a-74a6-4189-a33f-9c12b15def97",
-        "stream_id": "fabric_events", "data": {"event_object": {"speed_group": ["20",
-        "21", "22", "23"], "link_state": "down", "cx_port_id": "20", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "2f77091d-9864-4ec2-9634-93adb6fb3eef",
-        "downlink_switch_uuid": null, "silkscreen": "6", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "f211c531-c345-4d37-b833-9b02ea0dc24b", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "6.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "6.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "The admin
-        state is set to enabled for Port 6.1 on Switch admin-vs6 by user admin", "record_type":
-        "EVENT", "log_date": 1564171621996, "uuid": "7c6ef9c8-b6ef-466a-9ca5-26df888eed86",
-        "stream_id": "fabric_events", "data": {"event_object": {"speed_group": ["20",
-        "21", "22", "23"], "link_state": "down", "cx_port_id": "20", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "e8ecc349-0f9f-4ef6-afba-98af1a2ab932",
-        "downlink_switch_uuid": null, "silkscreen": "6", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "810c3961-b5f4-4809-81e9-c009f832e0ee", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "6.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "6.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "The admin
-        state is set to enabled for Port 4.1 on Switch admin-vs7 by user admin", "record_type":
-        "EVENT", "log_date": 1564171621836, "uuid": "8d49d7d1-346f-49ed-a660-ca8786787f35",
-        "stream_id": "fabric_events", "data": {"event_object": {"speed_group": ["12",
-        "13", "14", "15"], "link_state": "down", "cx_port_id": "12", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "d9f9a23f-cc31-4764-8e56-008baa982d9a",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "e0a6bd23-56b1-44ec-95d1-c681963886a5", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Link state
-        of Port 5.1 on switch admin-vs5 is down", "record_type": "ALARM", "log_date":
-        1564171621162, "uuid": "67f8f0b2-0f35-40f3-89f1-a3d9d91bd2f3", "stream_id":
-        "fabric_events", "data": {"event_object": {"speed_group": ["16", "17", "18",
-        "19"], "link_state": "down", "cx_port_id": "16", "form_factor": "qsfp", "speed":
-        25000, "read_only": false, "uuid": "7b3fc51b-4635-4a0b-9d91-6ac60c3aac5d",
-        "downlink_switch_uuid": null, "silkscreen": "5", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "40063e1f-390a-4ea8-be49-06d4a93c115e", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "5.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "5.1", "event_type":
-        "ObjectModified"}, "severity": "CRITICAL"}, {"description": "Link state of
-        Port 4.1 on switch admin-vs2 is down", "record_type": "ALARM", "log_date":
-        1564171621272, "uuid": "d02f5cc4-a6ff-4d6f-bacd-1fcc3e490f34", "stream_id":
-        "fabric_events", "data": {"event_object": {"speed_group": ["12", "13", "14",
-        "15"], "link_state": "down", "cx_port_id": "12", "form_factor": "qsfp", "speed":
-        25000, "read_only": false, "uuid": "3425e010-1f37-4e55-a8db-3633b6dd4987",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "f906c72c-f0d6-4621-bde0-665d9f4b955c", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "CRITICAL"}, {"description": "The admin state
-        is set to enabled for Port 5.1 on Switch admin-vs3 by user admin", "record_type":
-        "EVENT", "log_date": 1564171621538, "uuid": "6c8dc30a-a2e9-41fe-80ab-6b65dd58d6b2",
-        "stream_id": "fabric_events", "data": {"event_object": {"speed_group": ["16",
-        "17", "18", "19"], "link_state": "down", "cx_port_id": "16", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "997dc6b3-0d21-4d85-9e72-807918f10fc7",
-        "downlink_switch_uuid": null, "silkscreen": "5", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "f211c531-c345-4d37-b833-9b02ea0dc24b", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "5.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "5.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "The admin
-        state is set to enabled for Port 6.1 on Switch admin-vs7 by user admin", "record_type":
-        "EVENT", "log_date": 1564171621724, "uuid": "0f87f751-2213-44f0-b418-b5204369a2fa",
-        "stream_id": "fabric_events", "data": {"event_object": {"speed_group": ["20",
-        "21", "22", "23"], "link_state": "down", "cx_port_id": "20", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "c90d8155-0a5b-42fe-b393-aaa9ccbdd5cd",
-        "downlink_switch_uuid": null, "silkscreen": "6", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "e0a6bd23-56b1-44ec-95d1-c681963886a5", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "6.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "6.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Link state
-        of Port 4.1 on switch admin-vs3 is down", "record_type": "ALARM", "log_date":
-        1564171620838, "uuid": "45a160c9-88b5-44f5-8a37-fd3efdbefdae", "stream_id":
-        "fabric_events", "data": {"event_object": {"speed_group": ["12", "13", "14",
-        "15"], "link_state": "down", "cx_port_id": "12", "form_factor": "qsfp", "speed":
-        25000, "read_only": false, "uuid": "a027bc5f-4adc-49a6-a2db-34f56f16a6ee",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "f211c531-c345-4d37-b833-9b02ea0dc24b", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "CRITICAL"}, {"description": "The admin state
-        is set to enabled for Port 6.1 on Switch admin-vs2 by user admin", "record_type":
-        "EVENT", "log_date": 1564171621384, "uuid": "a8abc110-aa07-4fad-8f5c-1500ac36da47",
-        "stream_id": "fabric_events", "data": {"event_object": {"speed_group": ["20",
-        "21", "22", "23"], "link_state": "down", "cx_port_id": "20", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "2dd154fa-f9a3-4e81-bd4c-9f07de018172",
-        "downlink_switch_uuid": null, "silkscreen": "6", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "f906c72c-f0d6-4621-bde0-665d9f4b955c", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "6.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "6.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Link state
-        of Port 5.1 on switch admin-vs6 is down", "record_type": "ALARM", "log_date":
-        1564171621040, "uuid": "ee4b0403-e6e1-4626-9f36-3dd0ec5225a6", "stream_id":
-        "fabric_events", "data": {"event_object": {"speed_group": ["16", "17", "18",
-        "19"], "link_state": "down", "cx_port_id": "16", "form_factor": "qsfp", "speed":
-        25000, "read_only": false, "uuid": "dc6110e1-997f-45a3-84e0-a87e682b5d42",
-        "downlink_switch_uuid": null, "silkscreen": "5", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "810c3961-b5f4-4809-81e9-c009f832e0ee", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "5.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "5.1", "event_type":
-        "ObjectModified"}, "severity": "CRITICAL"}, {"description": "Link state of
-        Port 4.1 on switch admin-vs6 is down", "record_type": "ALARM", "log_date":
-        1564171620934, "uuid": "e9860ad7-745f-46ac-9ef1-f00ff733e6a9", "stream_id":
-        "fabric_events", "data": {"event_object": {"speed_group": ["12", "13", "14",
-        "15"], "link_state": "down", "cx_port_id": "12", "form_factor": "qsfp", "speed":
-        25000, "read_only": false, "uuid": "01caa423-967a-47cb-a3f7-ba84bbfc64a7",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "810c3961-b5f4-4809-81e9-c009f832e0ee", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "CRITICAL"}, {"description": "The admin state
-        is set to enabled for Port 4.1 on Switch admin-vs2 by user admin", "record_type":
-        "EVENT", "log_date": 1564171621272, "uuid": "f145af70-3ac0-4353-be25-f0ffb05173d9",
-        "stream_id": "fabric_events", "data": {"event_object": {"speed_group": ["12",
-        "13", "14", "15"], "link_state": "down", "cx_port_id": "12", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "3425e010-1f37-4e55-a8db-3633b6dd4987",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "f906c72c-f0d6-4621-bde0-665d9f4b955c", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "The admin
-        state is set to enabled for Port 5.1 on Switch admin-vs5 by user admin", "record_type":
-        "EVENT", "log_date": 1564171621162, "uuid": "bdddcbc1-0de4-4306-b080-e323e534b55f",
-        "stream_id": "fabric_events", "data": {"event_object": {"speed_group": ["16",
-        "17", "18", "19"], "link_state": "down", "cx_port_id": "16", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "7b3fc51b-4635-4a0b-9d91-6ac60c3aac5d",
-        "downlink_switch_uuid": null, "silkscreen": "5", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "40063e1f-390a-4ea8-be49-06d4a93c115e", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "5.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "5.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "The admin
-        state is set to enabled for Port 5.1 on Switch admin-vs6 by user admin", "record_type":
-        "EVENT", "log_date": 1564171621040, "uuid": "c3b237e8-2e7b-4cd0-bd7a-0440ad67b3e9",
-        "stream_id": "fabric_events", "data": {"event_object": {"speed_group": ["16",
-        "17", "18", "19"], "link_state": "down", "cx_port_id": "16", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "dc6110e1-997f-45a3-84e0-a87e682b5d42",
-        "downlink_switch_uuid": null, "silkscreen": "5", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "810c3961-b5f4-4809-81e9-c009f832e0ee", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "5.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "5.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Link state
-        of Port 5.1 on switch admin-vs2 is down", "record_type": "ALARM", "log_date":
-        1564171620754, "uuid": "2d1ccf87-9ccc-4f2e-a5ad-6be8cd9e3538", "stream_id":
-        "fabric_events", "data": {"event_object": {"speed_group": ["16", "17", "18",
-        "19"], "link_state": "down", "cx_port_id": "16", "form_factor": "qsfp", "speed":
-        25000, "read_only": false, "uuid": "6286f232-a7ca-48d8-909d-8e78d4c0d2b8",
-        "downlink_switch_uuid": null, "silkscreen": "5", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "f906c72c-f0d6-4621-bde0-665d9f4b955c", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "5.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "5.1", "event_type":
-        "ObjectModified"}, "severity": "CRITICAL"}, {"description": "Link state of
-        Port 4.1 on switch admin-vs5 is down", "record_type": "ALARM", "log_date":
-        1564171620634, "uuid": "929a972e-d181-49f1-8211-fe54659f9da6", "stream_id":
-        "fabric_events", "data": {"event_object": {"speed_group": ["12", "13", "14",
-        "15"], "link_state": "down", "cx_port_id": "12", "form_factor": "qsfp", "speed":
-        25000, "read_only": false, "uuid": "96c61262-78a4-4ad5-8e7f-25320fd24d9a",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "40063e1f-390a-4ea8-be49-06d4a93c115e", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "CRITICAL"}, {"description": "The admin state
-        is set to enabled for Port 4.1 on Switch admin-vs6 by user admin", "record_type":
-        "EVENT", "log_date": 1564171620934, "uuid": "5ac51a64-0f1f-4d58-96c8-e798675844f0",
-        "stream_id": "fabric_events", "data": {"event_object": {"speed_group": ["12",
-        "13", "14", "15"], "link_state": "down", "cx_port_id": "12", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "01caa423-967a-47cb-a3f7-ba84bbfc64a7",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "810c3961-b5f4-4809-81e9-c009f832e0ee", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "The admin
-        state is set to enabled for Port 4.1 on Switch admin-vs3 by user admin", "record_type":
-        "EVENT", "log_date": 1564171620838, "uuid": "ab6fd9ba-48e9-4c28-99cb-79c2a54053dd",
-        "stream_id": "fabric_events", "data": {"event_object": {"speed_group": ["12",
-        "13", "14", "15"], "link_state": "down", "cx_port_id": "12", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "a027bc5f-4adc-49a6-a2db-34f56f16a6ee",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "f211c531-c345-4d37-b833-9b02ea0dc24b", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "The admin
-        state is set to enabled for Port 5.1 on Switch admin-vs2 by user admin", "record_type":
-        "EVENT", "log_date": 1564171620754, "uuid": "c44c4170-5dbc-409c-88c4-b43d3a838a16",
-        "stream_id": "fabric_events", "data": {"event_object": {"speed_group": ["16",
-        "17", "18", "19"], "link_state": "down", "cx_port_id": "16", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "6286f232-a7ca-48d8-909d-8e78d4c0d2b8",
-        "downlink_switch_uuid": null, "silkscreen": "5", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "f906c72c-f0d6-4621-bde0-665d9f4b955c", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "5.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "5.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "The admin
-        state is set to enabled for Port 4.1 on Switch admin-vs5 by user admin", "record_type":
-        "EVENT", "log_date": 1564171620634, "uuid": "f972554b-400e-446e-9ec5-658fb0e35b77",
-        "stream_id": "fabric_events", "data": {"event_object": {"speed_group": ["12",
-        "13", "14", "15"], "link_state": "down", "cx_port_id": "12", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "96c61262-78a4-4ad5-8e7f-25320fd24d9a",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "40063e1f-390a-4ea8-be49-06d4a93c115e", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Link state
-        of Port 5.1 on switch admin-vs7 is down", "record_type": "ALARM", "log_date":
-        1564171620426, "uuid": "d76829d9-124d-44a6-8efc-d8907366c816", "stream_id":
-        "fabric_events", "data": {"event_object": {"speed_group": ["16", "17", "18",
-        "19"], "link_state": "down", "cx_port_id": "16", "form_factor": "qsfp", "speed":
-        25000, "read_only": false, "uuid": "7fdb3ee2-c276-42e3-a9d0-3c21cc2bff1d",
-        "downlink_switch_uuid": null, "silkscreen": "5", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "e0a6bd23-56b1-44ec-95d1-c681963886a5", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "5.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "5.1", "event_type":
-        "ObjectModified"}, "severity": "CRITICAL"}, {"description": "The admin state
-        is set to enabled for Port 5.1 on Switch admin-vs7 by user admin", "record_type":
-        "EVENT", "log_date": 1564171620426, "uuid": "2697189b-4511-4275-920d-c67c677a2d9b",
-        "stream_id": "fabric_events", "data": {"event_object": {"speed_group": ["16",
-        "17", "18", "19"], "link_state": "down", "cx_port_id": "16", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "7fdb3ee2-c276-42e3-a9d0-3c21cc2bff1d",
-        "downlink_switch_uuid": null, "silkscreen": "5", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "e0a6bd23-56b1-44ec-95d1-c681963886a5", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "5.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "5.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Port \"5.1\"
-        on switch \"admin-vs1\" has changed state. \"link_state\" has changed from
-        \"down\" to \"up\".", "record_type": "EVENT", "log_date": 1564171549046, "uuid":
-        "36ead4cd-89e3-4b88-9948-5bc4cff102cd", "stream_id": "fabric_events", "data":
-        {"event_object": {"port_uuid": "047f582e-9835-4786-be51-2bc6cceb4e98", "speed_group":
-        ["16", "17", "18", "19"], "link_state": "up", "cx_port_id": "16", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "047f582e-9835-4786-be51-2bc6cceb4e98",
-        "downlink_switch_uuid": null, "silkscreen": "5", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "a4a2a3ba-d350-413a-8b18-6c30946efd3c", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "5.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "5.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Link state
-        of Port 5.1 on switch admin-vs1 is down", "record_type": "ALARM", "log_date":
-        1564171547312, "uuid": "fa8ca19a-e627-490e-845a-6124c597cac0", "stream_id":
-        "fabric_events", "data": {"event_object": {"speed_group": ["16", "17", "18",
-        "19"], "link_state": "down", "cx_port_id": "16", "form_factor": "qsfp", "speed":
-        25000, "read_only": false, "uuid": "047f582e-9835-4786-be51-2bc6cceb4e98",
-        "downlink_switch_uuid": null, "silkscreen": "5", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "a4a2a3ba-d350-413a-8b18-6c30946efd3c", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "5.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "5.1", "event_type":
-        "ObjectModified"}, "severity": "CRITICAL"}, {"description": "Port \"5.1\"
-        on switch \"admin-vs1\" has changed state. \"link_state\" has changed from
-        \"down\" to \"up\".", "record_type": "EVENT", "log_date": 1564171549906, "uuid":
-        "b1ae389d-1b5e-40f6-989d-239496329750", "stream_id": "fabric_events", "data":
-        {"event_object": {"port_uuid": "047f582e-9835-4786-be51-2bc6cceb4e98", "speed_group":
-        ["16", "17", "18", "19"], "link_state": "up", "cx_port_id": "16", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "047f582e-9835-4786-be51-2bc6cceb4e98",
-        "downlink_switch_uuid": null, "silkscreen": "5", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "a4a2a3ba-d350-413a-8b18-6c30946efd3c", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "5.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "5.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Link state
-        of Port 6.1 on switch admin-vs1 is down", "record_type": "ALARM", "log_date":
-        1564171547444, "uuid": "5a7aca5d-5ac6-41c3-a214-298707cdbc6f", "stream_id":
-        "fabric_events", "data": {"event_object": {"speed_group": ["20", "21", "22",
-        "23"], "link_state": "down", "cx_port_id": "20", "form_factor": "qsfp", "speed":
-        25000, "read_only": false, "uuid": "ccffa7c4-06ab-443f-9383-3f76ffd63126",
-        "downlink_switch_uuid": null, "silkscreen": "6", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "a4a2a3ba-d350-413a-8b18-6c30946efd3c", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "6.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "6.1", "event_type":
-        "ObjectModified"}, "severity": "CRITICAL"}, {"description": "Link state of
-        Port 4.1 on switch admin-vs1 is down", "record_type": "ALARM", "log_date":
-        1564171547148, "uuid": "d6dabc65-4629-4dee-8b09-6fb93c5c3b1f", "stream_id":
-        "fabric_events", "data": {"event_object": {"speed_group": ["12", "13", "14",
-        "15"], "link_state": "down", "cx_port_id": "12", "form_factor": "qsfp", "speed":
-        25000, "read_only": false, "uuid": "d274f4f5-bccd-45bd-8d0d-f230e8093587",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "a4a2a3ba-d350-413a-8b18-6c30946efd3c", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "CRITICAL"}, {"description": "Port \"4.1\"
-        on switch \"admin-vs1\" has changed state. \"link_state\" has changed from
-        \"down\" to \"up\".", "record_type": "EVENT", "log_date": 1564171547674, "uuid":
-        "5c2bb4b9-31ce-49c4-82ca-28d407705960", "stream_id": "fabric_events", "data":
-        {"event_object": {"port_uuid": "d274f4f5-bccd-45bd-8d0d-f230e8093587", "speed_group":
-        ["12", "13", "14", "15"], "link_state": "up", "cx_port_id": "12", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "d274f4f5-bccd-45bd-8d0d-f230e8093587",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "a4a2a3ba-d350-413a-8b18-6c30946efd3c", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "The admin
-        state is set to enabled for Port 6.1 on Switch admin-vs1 by user admin", "record_type":
-        "EVENT", "log_date": 1564171547444, "uuid": "dc2d9e34-8790-4016-9c16-32ccd27cf4ac",
-        "stream_id": "fabric_events", "data": {"event_object": {"speed_group": ["20",
-        "21", "22", "23"], "link_state": "down", "cx_port_id": "20", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "ccffa7c4-06ab-443f-9383-3f76ffd63126",
-        "downlink_switch_uuid": null, "silkscreen": "6", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "a4a2a3ba-d350-413a-8b18-6c30946efd3c", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "6.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "6.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "The admin
-        state is set to enabled for Port 5.1 on Switch admin-vs1 by user admin", "record_type":
-        "EVENT", "log_date": 1564171547312, "uuid": "3db53989-dd89-49d7-b372-9ca2f35a45f2",
-        "stream_id": "fabric_events", "data": {"event_object": {"speed_group": ["16",
-        "17", "18", "19"], "link_state": "down", "cx_port_id": "16", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "047f582e-9835-4786-be51-2bc6cceb4e98",
-        "downlink_switch_uuid": null, "silkscreen": "5", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "a4a2a3ba-d350-413a-8b18-6c30946efd3c", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "5.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "5.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "The admin
-        state is set to enabled for Port 4.1 on Switch admin-vs1 by user admin", "record_type":
-        "EVENT", "log_date": 1564171547148, "uuid": "749e2775-8009-4510-9071-38114f13a9b9",
-        "stream_id": "fabric_events", "data": {"event_object": {"speed_group": ["12",
-        "13", "14", "15"], "link_state": "down", "cx_port_id": "12", "form_factor":
-        "qsfp", "speed": 25000, "read_only": false, "uuid": "d274f4f5-bccd-45bd-8d0d-f230e8093587",
-        "downlink_switch_uuid": null, "silkscreen": "4", "type": "access", "loop_detection_mode":
-        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
-        "a4a2a3ba-d350-413a-8b18-6c30946efd3c", "admin_state": "enabled", "qsfp_mode":
-        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
-        0, "port_label": "4.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
-        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
-        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "4.1", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs6
-        state changed from SYNCING to SYNCED", "record_type": "EVENT", "log_date":
-        1564163777558, "uuid": "0015eccc-a9b4-44ee-9010-3529d141c161", "stream_id":
-        "fabric_events", "data": {"event_object": {"fabric_uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230",
-        "fitting_number": 0, "ip_gateway": ["172.30.0.1"], "hostip_state": "discovered",
-        "ip_address_v6": "::", "id": "E039D7901500", "api_versions": [1, 2], "uuid":
-        "810c3961-b5f4-4809-81e9-c009f832e0ee", "segment": "89e34e91-9263-4e11-ad7d-6563c9bf0757",
-        "ip_mode": "static", "ip_gateway_v6": ["::"], "mac_address": "E0:39:D7:90:15:00",
-        "ip_mode_v6": "static", "serial_number": "DX010B2F046C03PL0000", "status":
-        "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address": "172.30.0.8",
-        "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
-        "sw_version": "5.1.0-53", "name": "admin-vs6", "ip_mask": "255.255.255.0",
-        "configuration_number": 0, "operational_stage": "state_s3p", "ip_mask_v6":
-        "::"}, "object_type": "Switch", "object_name": "admin-vs6", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs7
-        state changed from SYNCING to SYNCED", "record_type": "EVENT", "log_date":
-        1564163777382, "uuid": "df718bd2-5c94-476f-a8a8-d0481fbfa683", "stream_id":
-        "fabric_events", "data": {"event_object": {"fabric_uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230",
+      string: '{"count": 23, "page": {"next_page": "/api/v1/audits?page_size=1000&before=dc521048-62a7-49ee-b74b-b58def756c97",
+        "prev_page": "/api/v1/audits?page_size=1000&after=98127c49-62a8-4606-b372-a8c224e0e74b"},
+        "result": [{"description": "Switch admin-vs7 state changed from SYNCING to
+        SYNCED", "record_type": "EVENT", "log_date": 1565981939378, "uuid": "98127c49-62a8-4606-b372-a8c224e0e74b",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
         "fitting_number": 0, "ip_gateway": ["172.30.0.1"], "hostip_state": "discovered",
         "ip_address_v6": "::", "id": "E039D7901600", "api_versions": [1, 2], "uuid":
-        "e0a6bd23-56b1-44ec-95d1-c681963886a5", "segment": "89e34e91-9263-4e11-ad7d-6563c9bf0757",
+        "64e35834-7323-4c56-8f71-7978e6e9dfb2", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab",
         "ip_mode": "static", "ip_gateway_v6": ["::"], "mac_address": "E0:39:D7:90:16:00",
         "ip_mode_v6": "static", "serial_number": "DX010B2F046C03PL0000", "status":
         "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address": "172.30.0.9",
         "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
-        "sw_version": "5.1.0-53", "name": "admin-vs7", "ip_mask": "255.255.255.0",
+        "sw_version": "5.1.0-94", "name": "admin-vs7", "ip_mask": "255.255.255.0",
         "configuration_number": 0, "operational_stage": "state_s3p", "ip_mask_v6":
         "::"}, "object_type": "Switch", "object_name": "admin-vs7", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs5
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs6
         state changed from SYNCING to SYNCED", "record_type": "EVENT", "log_date":
-        1564163770830, "uuid": "07041841-338d-47d2-8376-9dae864a7479", "stream_id":
-        "fabric_events", "data": {"event_object": {"fabric_uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230",
+        1565981939132, "uuid": "cf276e48-0d5a-4240-9739-87c05f4c858c", "stream_id":
+        "fabric_events", "data": {"event_object": {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
         "fitting_number": 0, "ip_gateway": ["172.30.0.1"], "hostip_state": "discovered",
-        "ip_address_v6": "::", "id": "E039D7901400", "api_versions": [1, 2], "uuid":
-        "40063e1f-390a-4ea8-be49-06d4a93c115e", "segment": "89e34e91-9263-4e11-ad7d-6563c9bf0757",
-        "ip_mode": "static", "ip_gateway_v6": ["::"], "mac_address": "E0:39:D7:90:14:00",
+        "ip_address_v6": "::", "id": "E039D7901500", "api_versions": [1, 2], "uuid":
+        "7b25932f-2d59-413f-9c72-eef5e152429f", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab",
+        "ip_mode": "static", "ip_gateway_v6": ["::"], "mac_address": "E0:39:D7:90:15:00",
         "ip_mode_v6": "static", "serial_number": "DX010B2F046C03PL0000", "status":
-        "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address": "172.30.0.7",
+        "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address": "172.30.0.8",
         "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
-        "sw_version": "5.1.0-53", "name": "admin-vs5", "ip_mask": "255.255.255.0",
+        "sw_version": "5.1.0-94", "name": "admin-vs6", "ip_mask": "255.255.255.0",
         "configuration_number": 0, "operational_stage": "state_s3p", "ip_mask_v6":
-        "::"}, "object_type": "Switch", "object_name": "admin-vs5", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs3
-        state changed from SYNCING to SYNCED", "record_type": "EVENT", "log_date":
-        1564163769882, "uuid": "71e4e85a-498b-4875-941f-97d24154ac49", "stream_id":
-        "fabric_events", "data": {"event_object": {"fabric_uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230",
-        "fitting_number": 0, "ip_gateway": ["172.30.0.1"], "hostip_state": "discovered",
-        "ip_address_v6": "::", "id": "E039D7901200", "api_versions": [1, 2], "uuid":
-        "f211c531-c345-4d37-b833-9b02ea0dc24b", "segment": "89e34e91-9263-4e11-ad7d-6563c9bf0757",
-        "ip_mode": "static", "ip_gateway_v6": ["::"], "mac_address": "E0:39:D7:90:12:00",
-        "ip_mode_v6": "static", "serial_number": "DX010B2F046C03PL0000", "status":
-        "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address": "172.30.0.5",
-        "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
-        "sw_version": "5.1.0-53", "name": "admin-vs3", "ip_mask": "255.255.255.0",
-        "configuration_number": 0, "operational_stage": "state_s3p", "ip_mask_v6":
-        "::"}, "object_type": "Switch", "object_name": "admin-vs3", "event_type":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs6", "event_type":
         "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs1
         state changed from SYNCING to SYNCED", "record_type": "EVENT", "log_date":
-        1564163768688, "uuid": "b5f17b7f-3b5d-4d84-bc13-fbb8908ef0bb", "stream_id":
-        "fabric_events", "data": {"event_object": {"fabric_uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230",
+        1565981929438, "uuid": "5d7d9537-e895-426a-b9e3-c3a8d33b5760", "stream_id":
+        "fabric_events", "data": {"event_object": {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
         "fitting_number": 0, "ip_gateway": ["172.30.0.1"], "hostip_state": "discovered",
         "ip_address_v6": "::", "id": "E039D7901000", "api_versions": [1, 2], "uuid":
-        "a4a2a3ba-d350-413a-8b18-6c30946efd3c", "segment": "89e34e91-9263-4e11-ad7d-6563c9bf0757",
+        "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab",
         "ip_mode": "static", "ip_gateway_v6": ["::"], "mac_address": "E0:39:D7:90:10:00",
         "ip_mode_v6": "static", "serial_number": "DX010B2F046C03PL0000", "status":
         "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address": "172.30.0.3",
         "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
-        "sw_version": "5.1.0-53", "name": "admin-vs1", "ip_mask": "255.255.255.0",
+        "sw_version": "5.1.0-94", "name": "admin-vs1", "ip_mask": "255.255.255.0",
         "configuration_number": 0, "operational_stage": "state_s3p", "ip_mask_v6":
         "::"}, "object_type": "Switch", "object_name": "admin-vs1", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs5
+        state changed from SYNCING to SYNCED", "record_type": "EVENT", "log_date":
+        1565981928032, "uuid": "ac629ee2-d0e4-4c90-a083-5dc77e349a1d", "stream_id":
+        "fabric_events", "data": {"event_object": {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
+        "fitting_number": 0, "ip_gateway": ["172.30.0.1"], "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901400", "api_versions": [1, 2], "uuid":
+        "d97ee0bb-750d-4029-9444-42b614d0927b", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab",
+        "ip_mode": "static", "ip_gateway_v6": ["::"], "mac_address": "E0:39:D7:90:14:00",
+        "ip_mode_v6": "static", "serial_number": "DX010B2F046C03PL0000", "status":
+        "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address": "172.30.0.7",
+        "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.1.0-94", "name": "admin-vs5", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s3p", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs5", "event_type":
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs3
+        state changed from SYNCING to SYNCED", "record_type": "EVENT", "log_date":
+        1565981927850, "uuid": "0a180fc4-1344-4f3b-a5f4-eb35aeb4d7fa", "stream_id":
+        "fabric_events", "data": {"event_object": {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
+        "fitting_number": 0, "ip_gateway": ["172.30.0.1"], "hostip_state": "discovered",
+        "ip_address_v6": "::", "id": "E039D7901200", "api_versions": [1, 2], "uuid":
+        "b1da22dc-9678-4267-bc78-38aed26e5194", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab",
+        "ip_mode": "static", "ip_gateway_v6": ["::"], "mac_address": "E0:39:D7:90:12:00",
+        "ip_mode_v6": "static", "serial_number": "DX010B2F046C03PL0000", "status":
+        "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address": "172.30.0.5",
+        "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
+        "sw_version": "5.1.0-94", "name": "admin-vs3", "ip_mask": "255.255.255.0",
+        "configuration_number": 0, "operational_stage": "state_s3p", "ip_mask_v6":
+        "::"}, "object_type": "Switch", "object_name": "admin-vs3", "event_type":
         "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs2
         state changed from SYNCING to SYNCED", "record_type": "EVENT", "log_date":
-        1564163767578, "uuid": "e7f32daf-d8f6-4b69-ac0d-59d61c1c657b", "stream_id":
-        "fabric_events", "data": {"event_object": {"fabric_uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230",
+        1565981927882, "uuid": "6fe953f7-bfe9-42d6-b1c2-95494641d4c1", "stream_id":
+        "fabric_events", "data": {"event_object": {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
         "fitting_number": 0, "ip_gateway": ["172.30.0.1"], "hostip_state": "discovered",
         "ip_address_v6": "::", "id": "E039D7901100", "api_versions": [1, 2], "uuid":
-        "f906c72c-f0d6-4621-bde0-665d9f4b955c", "segment": "89e34e91-9263-4e11-ad7d-6563c9bf0757",
+        "31203a3b-694a-458a-aee4-2283240b84d3", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab",
         "ip_mode": "static", "ip_gateway_v6": ["::"], "mac_address": "E0:39:D7:90:11:00",
         "ip_mode_v6": "static", "serial_number": "DX010B2F046C03PL0000", "status":
         "SYNCED", "description": "", "previous_status": "SYNCING", "ip_address": "172.30.0.4",
         "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
-        "sw_version": "5.1.0-53", "name": "admin-vs2", "ip_mask": "255.255.255.0",
+        "sw_version": "5.1.0-94", "name": "admin-vs2", "ip_mask": "255.255.255.0",
         "configuration_number": 0, "operational_stage": "state_s3p", "ip_mask_v6":
         "::"}, "object_type": "Switch", "object_name": "admin-vs2", "event_type":
-        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Switch admin-vs7
-        state changed from CONNECTED to SYNCING", "record_type": "EVENT", "log_date":
-        1564163757118, "uuid": "e698f585-5e39-4b6f-abc5-17e89f5e974c", "stream_id":
-        "fabric_events", "data": {"event_object": {"fabric_uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230",
+        "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description": "Link state
+        of Port 31.4 on switch admin-vs1 is down", "record_type": "ALARM", "log_date":
+        1565981916490, "uuid": "32801b7b-4bbd-4943-8604-08e1ff5ba78a", "stream_id":
+        "fabric_events", "data": {"event_object": {"port_uuid": "df3c4785-6228-4b3c-a4fc-a7caab0d66dd",
+        "speed_group": ["120", "121", "122", "123"], "link_state": "down", "cx_port_id":
+        "123", "form_factor": "qsfp", "speed": 25000, "read_only": false, "uuid":
+        "df3c4785-6228-4b3c-a4fc-a7caab0d66dd", "downlink_switch_uuid": null, "silkscreen":
+        "31", "type": "fabric", "loop_detection_mode": "disabled", "description":
+        "", "permitted_speeds": [25000], "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f",
+        "admin_state": "enabled", "qsfp_mode": "qsfp_4x25_gbps", "holddown": ["not_applicable"],
+        "fec": "disabled", "lacp_id": 0, "port_label": "31.4", "name": "", "fec_mode":
+        "CL74", "is_uplink": false, "loop_detection_interval": 1000, "permitted_qsfp_modes":
+        ["4x25"]}, "object_type": "Port", "object_name": "31.4", "event_type": "ObjectModified"},
+        "severity": "CRITICAL"}, {"description": "Link state of Port 31.1 on switch
+        admin-vs1 is down", "record_type": "ALARM", "log_date": 1565981916306, "uuid":
+        "d99abc66-f72e-4c18-9ec6-d5e91a949692", "stream_id": "fabric_events", "data":
+        {"event_object": {"port_uuid": "884a5cdf-69d5-43da-90b6-02d2742f2900", "speed_group":
+        ["120", "121", "122", "123"], "link_state": "down", "cx_port_id": "120", "form_factor":
+        "qsfp", "speed": 25000, "read_only": false, "uuid": "884a5cdf-69d5-43da-90b6-02d2742f2900",
+        "downlink_switch_uuid": null, "silkscreen": "31", "type": "fabric", "loop_detection_mode":
+        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
+        "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state": "enabled", "qsfp_mode":
+        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
+        0, "port_label": "31.1", "name": "", "fec_mode": "CL74", "is_uplink": false,
+        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["1x100", "1x40",
+        "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name": "31.1", "event_type":
+        "ObjectModified"}, "severity": "CRITICAL"}, {"description": "Port \"31.4\"
+        on switch \"admin-vs1\" has changed state. \"link_state\" has changed from
+        \"up\" to \"down\".", "record_type": "EVENT", "log_date": 1565981916490, "uuid":
+        "d6364efa-9388-4ddb-8e9f-9ce775fffb9f", "stream_id": "fabric_events", "data":
+        {"event_object": {"port_uuid": "df3c4785-6228-4b3c-a4fc-a7caab0d66dd", "speed_group":
+        ["120", "121", "122", "123"], "link_state": "down", "cx_port_id": "123", "form_factor":
+        "qsfp", "speed": 25000, "read_only": false, "uuid": "df3c4785-6228-4b3c-a4fc-a7caab0d66dd",
+        "downlink_switch_uuid": null, "silkscreen": "31", "type": "fabric", "loop_detection_mode":
+        "disabled", "description": "", "permitted_speeds": [25000], "switch_uuid":
+        "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state": "enabled", "qsfp_mode":
+        "qsfp_4x25_gbps", "holddown": ["not_applicable"], "fec": "disabled", "lacp_id":
+        0, "port_label": "31.4", "name": "", "fec_mode": "CL74", "is_uplink": false,
+        "loop_detection_interval": 1000, "permitted_qsfp_modes": ["4x25"]}, "object_type":
+        "Port", "object_name": "31.4", "event_type": "ObjectModified"}, "severity":
+        "INFORMATIONAL"}, {"description": "Port \"31.1\" on switch \"admin-vs1\" has
+        changed state. \"link_state\" has changed from \"up\" to \"down\".", "record_type":
+        "EVENT", "log_date": 1565981916306, "uuid": "70452f3c-b86b-44a2-9036-9419b45225bc",
+        "stream_id": "fabric_events", "data": {"event_object": {"port_uuid": "884a5cdf-69d5-43da-90b6-02d2742f2900",
+        "speed_group": ["120", "121", "122", "123"], "link_state": "down", "cx_port_id":
+        "120", "form_factor": "qsfp", "speed": 25000, "read_only": false, "uuid":
+        "884a5cdf-69d5-43da-90b6-02d2742f2900", "downlink_switch_uuid": null, "silkscreen":
+        "31", "type": "fabric", "loop_detection_mode": "disabled", "description":
+        "", "permitted_speeds": [25000], "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f",
+        "admin_state": "enabled", "qsfp_mode": "qsfp_4x25_gbps", "holddown": ["not_applicable"],
+        "fec": "disabled", "lacp_id": 0, "port_label": "31.1", "name": "", "fec_mode":
+        "CL74", "is_uplink": false, "loop_detection_interval": 1000, "permitted_qsfp_modes":
+        ["1x100", "1x40", "2x50", "4x10", "4x25"]}, "object_type": "Port", "object_name":
+        "31.1", "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}, {"description":
+        "Switch admin-vs7 state changed from CONNECTED to SYNCING", "record_type":
+        "EVENT", "log_date": 1565981912084, "uuid": "1cf67147-bfe4-4ac0-b167-ff24f9cde90a",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
         "fitting_number": 0, "ip_gateway": ["0.0.0.0"], "hostip_state": "unknown",
         "ip_address_v6": "::", "id": "E039D7901600", "api_versions": [1, 2], "uuid":
-        "e0a6bd23-56b1-44ec-95d1-c681963886a5", "segment": "89e34e91-9263-4e11-ad7d-6563c9bf0757",
+        "64e35834-7323-4c56-8f71-7978e6e9dfb2", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab",
         "ip_mode": "static", "ip_gateway_v6": ["::"], "mac_address": "E0:39:D7:90:16:00",
         "ip_mode_v6": "dhcp", "serial_number": "DX010B2F046C03PL0000", "status": "SYNCING",
         "description": "", "previous_status": "CONNECTED", "ip_address": "172.30.0.9",
         "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
-        "sw_version": "5.1.0-53", "name": "admin-vs7", "ip_mask": "0.0.0.0", "configuration_number":
+        "sw_version": "5.1.0-94", "name": "admin-vs7", "ip_mask": "0.0.0.0", "configuration_number":
         0, "operational_stage": "state_s3i", "ip_mask_v6": "::"}, "object_type": "Switch",
         "object_name": "admin-vs7", "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"},
         {"description": "Switch admin-vs6 state changed from CONNECTED to SYNCING",
-        "record_type": "EVENT", "log_date": 1564163756840, "uuid": "98c9585a-3c3d-4657-bf0c-c3af3c0086b1",
-        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230",
+        "record_type": "EVENT", "log_date": 1565981912682, "uuid": "87345d1a-e814-4606-9deb-d25650309cb1",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
         "fitting_number": 0, "ip_gateway": ["0.0.0.0"], "hostip_state": "unknown",
         "ip_address_v6": "::", "id": "E039D7901500", "api_versions": [1, 2], "uuid":
-        "810c3961-b5f4-4809-81e9-c009f832e0ee", "segment": "89e34e91-9263-4e11-ad7d-6563c9bf0757",
+        "7b25932f-2d59-413f-9c72-eef5e152429f", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab",
         "ip_mode": "static", "ip_gateway_v6": ["::"], "mac_address": "E0:39:D7:90:15:00",
         "ip_mode_v6": "dhcp", "serial_number": "DX010B2F046C03PL0000", "status": "SYNCING",
         "description": "", "previous_status": "CONNECTED", "ip_address": "172.30.0.8",
         "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
-        "sw_version": "5.1.0-53", "name": "admin-vs6", "ip_mask": "0.0.0.0", "configuration_number":
+        "sw_version": "5.1.0-94", "name": "admin-vs6", "ip_mask": "0.0.0.0", "configuration_number":
         0, "operational_stage": "state_s3i", "ip_mask_v6": "::"}, "object_type": "Switch",
         "object_name": "admin-vs6", "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"},
         {"description": "Switch admin-vs5 state changed from CONNECTED to SYNCING",
-        "record_type": "EVENT", "log_date": 1564163756394, "uuid": "de1b5cc3-03d9-45cc-98ad-c3d40405a646",
-        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230",
+        "record_type": "EVENT", "log_date": 1565981912238, "uuid": "44ed305b-ba0d-42bc-8efc-83a025d50404",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
         "fitting_number": 0, "ip_gateway": ["0.0.0.0"], "hostip_state": "unknown",
         "ip_address_v6": "::", "id": "E039D7901400", "api_versions": [1, 2], "uuid":
-        "40063e1f-390a-4ea8-be49-06d4a93c115e", "segment": "89e34e91-9263-4e11-ad7d-6563c9bf0757",
+        "d97ee0bb-750d-4029-9444-42b614d0927b", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab",
         "ip_mode": "static", "ip_gateway_v6": ["::"], "mac_address": "E0:39:D7:90:14:00",
         "ip_mode_v6": "dhcp", "serial_number": "DX010B2F046C03PL0000", "status": "SYNCING",
         "description": "", "previous_status": "CONNECTED", "ip_address": "172.30.0.7",
         "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
-        "sw_version": "5.1.0-53", "name": "admin-vs5", "ip_mask": "0.0.0.0", "configuration_number":
+        "sw_version": "5.1.0-94", "name": "admin-vs5", "ip_mask": "0.0.0.0", "configuration_number":
         0, "operational_stage": "state_s3i", "ip_mask_v6": "::"}, "object_type": "Switch",
         "object_name": "admin-vs5", "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"},
         {"description": "Switch admin-vs3 state changed from CONNECTED to SYNCING",
-        "record_type": "EVENT", "log_date": 1564163756180, "uuid": "2f23e435-0357-4352-80ca-dd0d54b2a1eb",
-        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230",
+        "record_type": "EVENT", "log_date": 1565981911922, "uuid": "b1e60536-c9c7-48b8-af8b-36ecbbfc2787",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
         "fitting_number": 0, "ip_gateway": ["0.0.0.0"], "hostip_state": "unknown",
         "ip_address_v6": "::", "id": "E039D7901200", "api_versions": [1, 2], "uuid":
-        "f211c531-c345-4d37-b833-9b02ea0dc24b", "segment": "89e34e91-9263-4e11-ad7d-6563c9bf0757",
+        "b1da22dc-9678-4267-bc78-38aed26e5194", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab",
         "ip_mode": "static", "ip_gateway_v6": ["::"], "mac_address": "E0:39:D7:90:12:00",
         "ip_mode_v6": "dhcp", "serial_number": "DX010B2F046C03PL0000", "status": "SYNCING",
         "description": "", "previous_status": "CONNECTED", "ip_address": "172.30.0.5",
         "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
-        "sw_version": "5.1.0-53", "name": "admin-vs3", "ip_mask": "0.0.0.0", "configuration_number":
+        "sw_version": "5.1.0-94", "name": "admin-vs3", "ip_mask": "0.0.0.0", "configuration_number":
         0, "operational_stage": "state_s3i", "ip_mask_v6": "::"}, "object_type": "Switch",
         "object_name": "admin-vs3", "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"},
         {"description": "Switch admin-vs2 state changed from CONNECTED to SYNCING",
-        "record_type": "EVENT", "log_date": 1564163756918, "uuid": "f5b84faf-ab04-480c-8218-14609159c667",
-        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230",
+        "record_type": "EVENT", "log_date": 1565981911716, "uuid": "99e26108-ab6a-4be3-842e-6e29489f9ac7",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
         "fitting_number": 0, "ip_gateway": ["0.0.0.0"], "hostip_state": "unknown",
         "ip_address_v6": "::", "id": "E039D7901100", "api_versions": [1, 2], "uuid":
-        "f906c72c-f0d6-4621-bde0-665d9f4b955c", "segment": "89e34e91-9263-4e11-ad7d-6563c9bf0757",
+        "31203a3b-694a-458a-aee4-2283240b84d3", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab",
         "ip_mode": "static", "ip_gateway_v6": ["::"], "mac_address": "E0:39:D7:90:11:00",
         "ip_mode_v6": "dhcp", "serial_number": "DX010B2F046C03PL0000", "status": "SYNCING",
         "description": "", "previous_status": "CONNECTED", "ip_address": "172.30.0.4",
         "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
-        "sw_version": "5.1.0-53", "name": "admin-vs2", "ip_mask": "0.0.0.0", "configuration_number":
+        "sw_version": "5.1.0-94", "name": "admin-vs2", "ip_mask": "0.0.0.0", "configuration_number":
         0, "operational_stage": "state_s3i", "ip_mask_v6": "::"}, "object_type": "Switch",
         "object_name": "admin-vs2", "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"},
         {"description": "Switch admin-vs1 state changed from CONNECTED to SYNCING",
-        "record_type": "EVENT", "log_date": 1564163756740, "uuid": "ab1b1d11-ddf8-4e1f-a26a-6bce1344ad01",
-        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230",
+        "record_type": "EVENT", "log_date": 1565981911542, "uuid": "04ce6a3a-be74-4859-868b-3d0e686dc3ed",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
         "fitting_number": 0, "ip_gateway": ["0.0.0.0"], "hostip_state": "unknown",
         "ip_address_v6": "::", "id": "E039D7901000", "api_versions": [1, 2], "uuid":
-        "a4a2a3ba-d350-413a-8b18-6c30946efd3c", "segment": "89e34e91-9263-4e11-ad7d-6563c9bf0757",
+        "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab",
         "ip_mode": "static", "ip_gateway_v6": ["::"], "mac_address": "E0:39:D7:90:10:00",
         "ip_mode_v6": "dhcp", "serial_number": "DX010B2F046C03PL0000", "status": "SYNCING",
         "description": "", "previous_status": "CONNECTED", "ip_address": "172.30.0.3",
         "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
-        "sw_version": "5.1.0-53", "name": "admin-vs1", "ip_mask": "0.0.0.0", "configuration_number":
+        "sw_version": "5.1.0-94", "name": "admin-vs1", "ip_mask": "0.0.0.0", "configuration_number":
         0, "operational_stage": "state_s3i", "ip_mask_v6": "::"}, "object_type": "Switch",
         "object_name": "admin-vs1", "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"},
         {"description": "Switch admin-vs7 state changed from UNINITIALIZED to CONNECTED",
-        "record_type": "EVENT", "log_date": 1564163756584, "uuid": "0b801d0d-b702-40cb-8537-8e61ee6b356e",
-        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230",
+        "record_type": "EVENT", "log_date": 1565981911412, "uuid": "4caf3421-122b-4bab-9a5d-77ed5f98c025",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
         "fitting_number": 0, "ip_gateway": ["0.0.0.0"], "hostip_state": "unknown",
         "ip_address_v6": "::", "id": "E039D7901600", "api_versions": [1, 2], "uuid":
-        "e0a6bd23-56b1-44ec-95d1-c681963886a5", "segment": "89e34e91-9263-4e11-ad7d-6563c9bf0757",
+        "64e35834-7323-4c56-8f71-7978e6e9dfb2", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab",
         "ip_mode": "static", "ip_gateway_v6": ["::"], "mac_address": "E0:39:D7:90:16:00",
         "ip_mode_v6": "dhcp", "serial_number": "DX010B2F046C03PL0000", "status": "CONNECTED",
         "description": "", "previous_status": "UNINITIALIZED", "ip_address": "172.30.0.9",
         "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
-        "sw_version": "5.1.0-53", "name": "admin-vs7", "ip_mask": "0.0.0.0", "configuration_number":
+        "sw_version": "5.1.0-94", "name": "admin-vs7", "ip_mask": "0.0.0.0", "configuration_number":
         0, "operational_stage": "state_s3i", "ip_mask_v6": "::"}, "object_type": "Switch",
         "object_name": "admin-vs7", "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"},
         {"description": "Switch admin-vs6 state changed from UNINITIALIZED to CONNECTED",
-        "record_type": "EVENT", "log_date": 1564163756378, "uuid": "2903fd44-138e-48e7-b531-8e45098a147b",
-        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230",
+        "record_type": "EVENT", "log_date": 1565981911268, "uuid": "fcf8569b-d97d-4e6d-bd94-792f011510f9",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
         "fitting_number": 0, "ip_gateway": ["0.0.0.0"], "hostip_state": "unknown",
         "ip_address_v6": "::", "id": "E039D7901500", "api_versions": [1, 2], "uuid":
-        "810c3961-b5f4-4809-81e9-c009f832e0ee", "segment": "89e34e91-9263-4e11-ad7d-6563c9bf0757",
+        "7b25932f-2d59-413f-9c72-eef5e152429f", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab",
         "ip_mode": "static", "ip_gateway_v6": ["::"], "mac_address": "E0:39:D7:90:15:00",
         "ip_mode_v6": "dhcp", "serial_number": "DX010B2F046C03PL0000", "status": "CONNECTED",
         "description": "", "previous_status": "UNINITIALIZED", "ip_address": "172.30.0.8",
         "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
-        "sw_version": "5.1.0-53", "name": "admin-vs6", "ip_mask": "0.0.0.0", "configuration_number":
+        "sw_version": "5.1.0-94", "name": "admin-vs6", "ip_mask": "0.0.0.0", "configuration_number":
         0, "operational_stage": "state_s3i", "ip_mask_v6": "::"}, "object_type": "Switch",
         "object_name": "admin-vs6", "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"},
         {"description": "Switch admin-vs5 state changed from UNINITIALIZED to CONNECTED",
-        "record_type": "EVENT", "log_date": 1564163756220, "uuid": "631c90b5-dd38-49b0-9c8b-11ce622422be",
-        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230",
+        "record_type": "EVENT", "log_date": 1565981911058, "uuid": "4a8191d6-860a-4493-8c31-f3db9d0445ca",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
         "fitting_number": 0, "ip_gateway": ["0.0.0.0"], "hostip_state": "unknown",
         "ip_address_v6": "::", "id": "E039D7901400", "api_versions": [1, 2], "uuid":
-        "40063e1f-390a-4ea8-be49-06d4a93c115e", "segment": "89e34e91-9263-4e11-ad7d-6563c9bf0757",
+        "d97ee0bb-750d-4029-9444-42b614d0927b", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab",
         "ip_mode": "static", "ip_gateway_v6": ["::"], "mac_address": "E0:39:D7:90:14:00",
         "ip_mode_v6": "dhcp", "serial_number": "DX010B2F046C03PL0000", "status": "CONNECTED",
         "description": "", "previous_status": "UNINITIALIZED", "ip_address": "172.30.0.7",
         "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
-        "sw_version": "5.1.0-53", "name": "admin-vs5", "ip_mask": "0.0.0.0", "configuration_number":
+        "sw_version": "5.1.0-94", "name": "admin-vs5", "ip_mask": "0.0.0.0", "configuration_number":
         0, "operational_stage": "state_s3i", "ip_mask_v6": "::"}, "object_type": "Switch",
         "object_name": "admin-vs5", "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"},
         {"description": "Switch admin-vs2 state changed from UNINITIALIZED to CONNECTED",
-        "record_type": "EVENT", "log_date": 1564163756088, "uuid": "d71f2c98-ea16-4a5d-b43a-e051aeec0371",
-        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230",
+        "record_type": "EVENT", "log_date": 1565981911828, "uuid": "a78af498-2bfe-4f5d-abab-79cae711ee85",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
         "fitting_number": 0, "ip_gateway": ["0.0.0.0"], "hostip_state": "unknown",
         "ip_address_v6": "::", "id": "E039D7901100", "api_versions": [1, 2], "uuid":
-        "f906c72c-f0d6-4621-bde0-665d9f4b955c", "segment": "89e34e91-9263-4e11-ad7d-6563c9bf0757",
+        "31203a3b-694a-458a-aee4-2283240b84d3", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab",
         "ip_mode": "static", "ip_gateway_v6": ["::"], "mac_address": "E0:39:D7:90:11:00",
         "ip_mode_v6": "dhcp", "serial_number": "DX010B2F046C03PL0000", "status": "CONNECTED",
         "description": "", "previous_status": "UNINITIALIZED", "ip_address": "172.30.0.4",
         "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
-        "sw_version": "5.1.0-53", "name": "admin-vs2", "ip_mask": "0.0.0.0", "configuration_number":
+        "sw_version": "5.1.0-94", "name": "admin-vs2", "ip_mask": "0.0.0.0", "configuration_number":
         0, "operational_stage": "state_s3i", "ip_mask_v6": "::"}, "object_type": "Switch",
         "object_name": "admin-vs2", "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"},
         {"description": "Switch admin-vs1 state changed from UNINITIALIZED to CONNECTED",
-        "record_type": "EVENT", "log_date": 1564163755974, "uuid": "d574afd8-d9dd-4e85-aa99-b8804845914b",
-        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230",
+        "record_type": "EVENT", "log_date": 1565981911646, "uuid": "8d522d26-5606-4486-9db9-53e2fc83ddfb",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
         "fitting_number": 0, "ip_gateway": ["0.0.0.0"], "hostip_state": "unknown",
         "ip_address_v6": "::", "id": "E039D7901000", "api_versions": null, "uuid":
-        "a4a2a3ba-d350-413a-8b18-6c30946efd3c", "segment": "89e34e91-9263-4e11-ad7d-6563c9bf0757",
+        "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab",
         "ip_mode": "static", "ip_gateway_v6": ["::"], "mac_address": "E0:39:D7:90:10:00",
         "ip_mode_v6": "dhcp", "serial_number": "DX010B2F046C03PL0000", "status": "CONNECTED",
         "description": "", "previous_status": "UNINITIALIZED", "ip_address": "172.30.0.3",
         "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
-        "sw_version": "5.1.0-53", "name": "admin-vs1", "ip_mask": "0.0.0.0", "configuration_number":
+        "sw_version": "5.1.0-94", "name": "admin-vs1", "ip_mask": "0.0.0.0", "configuration_number":
         0, "operational_stage": "state_s2i", "ip_mask_v6": "::"}, "object_type": "Switch",
         "object_name": "admin-vs1", "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"},
         {"description": "Switch admin-vs3 state changed from AUTHENTICATE to CONNECTED",
-        "record_type": "EVENT", "log_date": 1564163755544, "uuid": "7bb98026-c7f9-4583-8aa6-3285a7453d72",
-        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230",
+        "record_type": "EVENT", "log_date": 1565981910686, "uuid": "95588d4e-9354-496b-9208-79a4d0a1720f",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
         "fitting_number": 0, "ip_gateway": ["0.0.0.0"], "hostip_state": "unknown",
         "ip_address_v6": "::", "id": "E039D7901200", "api_versions": null, "uuid":
-        "f211c531-c345-4d37-b833-9b02ea0dc24b", "segment": "89e34e91-9263-4e11-ad7d-6563c9bf0757",
+        "b1da22dc-9678-4267-bc78-38aed26e5194", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab",
         "ip_mode": "static", "ip_gateway_v6": ["::"], "mac_address": "E0:39:D7:90:12:00",
         "ip_mode_v6": "dhcp", "serial_number": "DX010B2F046C03PL0000", "status": "CONNECTED",
         "description": "", "previous_status": "AUTHENTICATE", "ip_address": "172.30.0.5",
         "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
-        "sw_version": "5.1.0-53", "name": "admin-vs3", "ip_mask": "0.0.0.0", "configuration_number":
+        "sw_version": "5.1.0-94", "name": "admin-vs3", "ip_mask": "0.0.0.0", "configuration_number":
         0, "operational_stage": "state_s2i", "ip_mask_v6": "::"}, "object_type": "Switch",
         "object_name": "admin-vs3", "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"},
         {"description": "Switch admin-vs3 state changed from UNINITIALIZED to AUTHENTICATE",
-        "record_type": "EVENT", "log_date": 1564163754976, "uuid": "ace18944-dbb9-4b9d-a9d1-63fbcec14ee8",
-        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230",
+        "record_type": "EVENT", "log_date": 1565981910500, "uuid": "dc521048-62a7-49ee-b74b-b58def756c97",
+        "stream_id": "fabric_events", "data": {"event_object": {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
         "fitting_number": 0, "ip_gateway": ["0.0.0.0"], "hostip_state": "unknown",
         "ip_address_v6": "::", "id": "E039D7901200", "api_versions": null, "uuid":
-        "f211c531-c345-4d37-b833-9b02ea0dc24b", "segment": "89e34e91-9263-4e11-ad7d-6563c9bf0757",
+        "b1da22dc-9678-4267-bc78-38aed26e5194", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab",
         "ip_mode": "static", "ip_gateway_v6": ["::"], "mac_address": "E0:39:D7:90:12:00",
         "ip_mode_v6": "dhcp", "serial_number": "DX010B2F046C03PL0000", "status": "AUTHENTICATE",
         "description": "", "previous_status": "UNINITIALIZED", "ip_address": "172.30.0.5",
         "model": "HPE Composable Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE",
-        "sw_version": "5.1.0-53", "name": "admin-vs3", "ip_mask": "0.0.0.0", "configuration_number":
+        "sw_version": "5.1.0-94", "name": "admin-vs3", "ip_mask": "0.0.0.0", "configuration_number":
         0, "operational_stage": "state_s2i", "ip_mask_v6": "::"}, "object_type": "Switch",
         "object_name": "admin-vs3", "event_type": "ObjectModified"}, "severity": "INFORMATIONAL"}],
-        "time": "26.140mS"}'
+        "time": "23.529mS"}'
     headers:
       Cache-Control:
       - no-cache
       Connection:
       - keep-alive
       Content-Length:
-      - '81503'
+      - '25931'
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 02 Aug 2019 19:34:14 GMT
+      - Fri, 16 Aug 2019 21:34:03 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:

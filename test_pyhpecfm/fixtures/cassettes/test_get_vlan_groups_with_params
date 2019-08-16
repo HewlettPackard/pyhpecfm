@@ -19,11 +19,11 @@ interactions:
       X-Auth-Username:
       - admin
     method: POST
-    uri: https://10.101.0.212/api/v1/auth/token
+    uri: https://cfmtest.local/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "d8a343784ecb29f68dd1d6153dc68e273b721d5d9e63607ce991df27d34c123cfe226adfde8bfb6b079f2108b4ef8736",
-        "time": "516.865mS"}'
+      string: '{"count": 1, "result": "a5eec543d0fa1de4ff35d7f00abad8eb8a99e998742c334814cd4c5ebee3cb44ccbf9d7859a2c2878f1e2120e44122bd",
+        "time": "314.160mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 02 Aug 2019 19:34:07 GMT
+      - Fri, 16 Aug 2019 21:33:20 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,7 +52,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer d8a343784ecb29f68dd1d6153dc68e273b721d5d9e63607ce991df27d34c123cfe226adfde8bfb6b079f2108b4ef8736
+      - Bearer a5eec543d0fa1de4ff35d7f00abad8eb8a99e998742c334814cd4c5ebee3cb44ccbf9d7859a2c2878f1e2120e44122bd
       Connection:
       - keep-alive
       Content-Type:
@@ -62,23 +62,23 @@ interactions:
       X-Auth-Refresh-Token:
       - 'true'
     method: GET
-    uri: https://10.101.0.212/api/v1/vlan_groups?name=My_New_VLAN_Group
+    uri: https://cfmtest.local/api/v1/vlan_groups?name=My_New_VLAN_Group
   response:
     body:
-      string: '{"count": 1, "result": [{"description": "my new vlan group", "lag_uuids":
-        [], "uuid": "e8894abc-5580-432b-93b4-8221e101ee66", "vlans": "2", "name":
-        "My_New_VLAN_Group"}], "time": "10.096mS"}'
+      string: '{"count": 1, "result": [{"lag_uuids": [], "description": "My_New_VLAN_Group
+        description", "vlans": "2", "uuid": "fd9107ea-1b63-4e4d-beb5-e069fcfd4c83",
+        "name": "My_New_VLAN_Group"}], "time": "11.555mS"}'
     headers:
       Cache-Control:
       - no-store
       Connection:
       - keep-alive
       Content-Length:
-      - '190'
+      - '202'
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 02 Aug 2019 19:34:07 GMT
+      - Fri, 16 Aug 2019 21:33:25 GMT
       Server:
       - nginx
       Strict-Transport-Security:

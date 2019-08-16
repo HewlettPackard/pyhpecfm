@@ -19,11 +19,11 @@ interactions:
       X-Auth-Username:
       - admin
     method: POST
-    uri: https://10.101.0.212/api/v1/auth/token
+    uri: https://cfmtest.local/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "f50e3f8ad33be2faa6f84bf5da61ffaf5719671cbfb417d5cb99211ca43a06f284b60b9648af9bab3dfba97317642e59",
-        "time": "407.858mS"}'
+      string: '{"count": 1, "result": "db20ae5b0fc404821cf264c944ac6968e30fb49936efed3a793daf4026b4abe074ef22aeed18f6d405f7db36ea792d4b",
+        "time": "505.988mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 02 Aug 2019 19:34:17 GMT
+      - Fri, 16 Aug 2019 21:34:29 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,7 +52,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer f50e3f8ad33be2faa6f84bf5da61ffaf5719671cbfb417d5cb99211ca43a06f284b60b9648af9bab3dfba97317642e59
+      - Bearer db20ae5b0fc404821cf264c944ac6968e30fb49936efed3a793daf4026b4abe074ef22aeed18f6d405f7db36ea792d4b
       Connection:
       - keep-alive
       Content-Type:
@@ -62,11 +62,11 @@ interactions:
       X-Auth-Refresh-Token:
       - 'true'
     method: GET
-    uri: https://10.101.0.212/api/versions
+    uri: https://cfmtest.local/api/versions
   response:
     body:
       string: '{"count": 1, "result": {"current": "1.0", "supported": ["1.0"], "software":
-        "5.1.0-5391"}, "time": "0.224mS"}'
+        "5.1.0-5437"}, "time": "0.225mS"}'
     headers:
       Connection:
       - keep-alive
@@ -75,7 +75,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 02 Aug 2019 19:34:17 GMT
+      - Fri, 16 Aug 2019 21:34:34 GMT
       Server:
       - nginx
       Strict-Transport-Security:

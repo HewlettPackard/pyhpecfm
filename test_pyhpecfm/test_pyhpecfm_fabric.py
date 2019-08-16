@@ -17,7 +17,8 @@ cfm_username = os.environ['CFM_USERNAME']
 cfm_password = os.environ['CFM_PASSWORD']
 
 cfm = client.CFMClient(cfm_ip, cfm_username,cfm_password)
-#cfm.connect()
+
+SKIPTEST=True
 
 #TODO TAKE OUT HARDCODED DATA LATER
 my_vcr = vcr.VCR(
@@ -107,6 +108,26 @@ class TestGetPorts(TestCase):
             self.assertIn(i, my_attributes)
 
 
+class TestAddFabric(TestCase):
+    """
+    Test
+    case for pyhpecfm.fabric add_fabric function
+    """
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
+    def test_add_fabric(self):
+        """
+        General test for add_fabric function
+        """
+        if SKIPTEST:
+            raise SkipTest
+        cfm.connect()
+        new_fabric = fabric.add_fabrics(cfm, '172.30.0.4', 'New Fabric', 'My New Fabric')
+        my_attributes = ['description', 'foreign_manager_id', 'switches', 'foreign_fabric_state', 'name', 'segmented',
+                         'health', 'is_stable', 'foreign_management_state', 'foreign_manager_url', 'uuid']
+        self.assertIs(type(test_fabric), dict)
+        for i in test_fabric.keys():
+            self.assertIn(i, my_attributes)
+
 
 class TestGetFabric(TestCase):
     """
@@ -148,10 +169,32 @@ class TestGetFabric(TestCase):
 
 #TODO NEED CREATE IP FABRIC FUNCTION
 #TODO NEED DELETE IP FABRIC FUNCTION
+
+class TestAddFabric_IP_Networks(TestCase):
+    """
+    Test case for pyhpecfm.fabric.add_ip_fabric function
+    """
+
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
+    def test_add_fabric_ip_networks(self):
+        """
+        General test for pyhpecfm.fabric.add_fabric_ip_networks function
+        """
+        cfm.connect()
+        fabric_uuid = fabric.get_fabrics(cfm)[0]['uuid']
+        switch_uuid = fabric.get_switches(cfm)[0]['uuid']
+        test_fabric = fabric.add_ip_fabric(cfm, fabric_uuid, 'new ip fabric', 'my new fabric description', 'manual', '172.16.0.0', '24', '10',switch_uuid,'172.16.0.1')
+
+        my_attributes = ['subnet', 'fabric_uuid', 'name', 'switch_addresses', 'vlan', 'uuid',
+                         'mode', 'description']
+        self.assertIs(type(test_fabric), dict)
+        for i in test_fabric.keys():
+            self.assertIn(i, my_attributes)
+
 class TestGetFabric_IP_Networks(TestCase):
     """
     Test
-    case for pyhpecfm.fabric get_fabric function
+    case for pyhpecfm.fabric get_ip_fabric function
     """
 
     @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')

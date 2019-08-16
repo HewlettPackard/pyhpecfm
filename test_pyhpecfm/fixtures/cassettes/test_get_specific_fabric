@@ -19,11 +19,11 @@ interactions:
       X-Auth-Username:
       - admin
     method: POST
-    uri: https://10.101.0.212/api/v1/auth/token
+    uri: https://cfmtest.local/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "4aff01135c8ca8b3c3e08c2cc05654aff8d9cb20551eadf472e73fbc2f7231a55f390a9124a364c98c761f8699080798",
-        "time": "376.097mS"}'
+      string: '{"count": 1, "result": "87414006f4e650a306cf05588e7b2dad59330e777b7b8ac7feaae28a3d62c597c27a63a61ae141270ab2b5530c379f5a",
+        "time": "497.505mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 02 Aug 2019 19:33:26 GMT
+      - Fri, 16 Aug 2019 21:31:56 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,7 +52,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer 4aff01135c8ca8b3c3e08c2cc05654aff8d9cb20551eadf472e73fbc2f7231a55f390a9124a364c98c761f8699080798
+      - Bearer 87414006f4e650a306cf05588e7b2dad59330e777b7b8ac7feaae28a3d62c597c27a63a61ae141270ab2b5530c379f5a
       Connection:
       - keep-alive
       Content-Type:
@@ -62,25 +62,25 @@ interactions:
       X-Auth-Refresh-Token:
       - 'true'
     method: GET
-    uri: https://10.101.0.212/api/v1/fabrics
+    uri: https://cfmtest.local/api/v1/fabrics
   response:
     body:
-      string: '{"count": 1, "result": [{"description": "Test 5.1 build 45", "foreign_manager_id":
-        "", "foreign_fabric_state": "Unmanaged", "name": "Test Fabric", "segmented":
+      string: '{"count": 1, "result": [{"description": "my new test fabric", "foreign_manager_id":
+        "", "foreign_fabric_state": "Unmanaged", "name": "test fabric", "segmented":
         false, "health": {"status": "healthy", "health_issues": []}, "is_stable":
         true, "foreign_management_state": "Available", "foreign_manager_url": "",
-        "uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230"}], "time": "27.718mS"}'
+        "uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff"}], "time": "31.065mS"}'
     headers:
       Cache-Control:
       - no-store
       Connection:
       - keep-alive
       Content-Length:
-      - '377'
+      - '378'
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 02 Aug 2019 19:33:26 GMT
+      - Fri, 16 Aug 2019 21:32:01 GMT
       Server:
       - nginx
       Strict-Transport-Security:
@@ -96,7 +96,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer 4aff01135c8ca8b3c3e08c2cc05654aff8d9cb20551eadf472e73fbc2f7231a55f390a9124a364c98c761f8699080798
+      - Bearer 87414006f4e650a306cf05588e7b2dad59330e777b7b8ac7feaae28a3d62c597c27a63a61ae141270ab2b5530c379f5a
       Connection:
       - keep-alive
       Content-Type:
@@ -106,25 +106,25 @@ interactions:
       X-Auth-Refresh-Token:
       - 'true'
     method: GET
-    uri: https://10.101.0.212/api/v1/fabrics/7097d481-743e-459c-9fcd-d0aa0e4bf230
+    uri: https://cfmtest.local/api/v1/fabrics/7f2ca010-df98-45d1-b211-c268ee1b04ff
   response:
     body:
-      string: '{"count": 1, "result": {"description": "Test 5.1 build 45", "foreign_manager_id":
-        "", "foreign_fabric_state": "Unmanaged", "name": "Test Fabric", "segmented":
+      string: '{"count": 1, "result": {"description": "my new test fabric", "foreign_manager_id":
+        "", "foreign_fabric_state": "Unmanaged", "name": "test fabric", "segmented":
         false, "health": {"status": "healthy", "health_issues": []}, "is_stable":
         true, "foreign_management_state": "Available", "foreign_manager_url": "",
-        "uuid": "7097d481-743e-459c-9fcd-d0aa0e4bf230"}, "time": "27.235mS"}'
+        "uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff"}, "time": "26.841mS"}'
     headers:
       Cache-Control:
       - no-store
       Connection:
       - keep-alive
       Content-Length:
-      - '375'
+      - '376'
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 02 Aug 2019 19:33:26 GMT
+      - Fri, 16 Aug 2019 21:32:01 GMT
       Server:
       - nginx
       Strict-Transport-Security:
