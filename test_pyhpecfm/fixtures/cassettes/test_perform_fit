@@ -1,0 +1,133 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Password:
+      - plexxi
+      X-Auth-Username:
+      - admin
+    method: POST
+    uri: https://cfmtest.local/api/v1/auth/token
+  response:
+    body:
+      string: '{"count": 1, "result": "bf4fb0eef82f4aee5cf200da0de7272539e0d82c24e5e4aff2252afd1ec90414005cb7f242905f17477be55ceda0bc01",
+        "time": "500.418mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '143'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 16 Aug 2019 21:33:30 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer bf4fb0eef82f4aee5cf200da0de7272539e0d82c24e5e4aff2252afd1ec90414005cb7f242905f17477be55ceda0bc01
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://cfmtest.local/api/v1/fabrics
+  response:
+    body:
+      string: '{"count": 1, "result": [{"description": "my new test fabric", "foreign_manager_id":
+        "", "foreign_fabric_state": "Unmanaged", "name": "test fabric", "segmented":
+        false, "health": {"status": "healthy", "health_issues": []}, "is_stable":
+        true, "foreign_management_state": "Available", "foreign_manager_url": "",
+        "uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff"}], "time": "33.568mS"}'
+    headers:
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '378'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 16 Aug 2019 21:33:35 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=10; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff", "name": "Test Fit",
+      "description": "My Test Fit from Python Library"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer bf4fb0eef82f4aee5cf200da0de7272539e0d82c24e5e4aff2252afd1ec90414005cb7f242905f17477be55ceda0bc01
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '125'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: POST
+    uri: https://cfmtest.local/api/v1/fits
+  response:
+    body:
+      string: '{"count": 1, "result": "414e46ef-adfd-47db-b14d-b66b51b05b78", "time":
+        "3679.070mS"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '84'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 16 Aug 2019 21:33:39 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+version: 1

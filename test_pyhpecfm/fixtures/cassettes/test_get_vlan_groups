@@ -1,0 +1,89 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Password:
+      - plexxi
+      X-Auth-Username:
+      - admin
+    method: POST
+    uri: https://cfmtest.local/api/v1/auth/token
+  response:
+    body:
+      string: '{"count": 1, "result": "160bce9864fa3c88e2dedea9babf6296a71bb143220f339fcd569355102c14178d5c4a68565a902b4c985ca1a8829d22",
+        "time": "457.700mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '143'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 16 Aug 2019 21:33:09 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 160bce9864fa3c88e2dedea9babf6296a71bb143220f339fcd569355102c14178d5c4a68565a902b4c985ca1a8829d22
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://cfmtest.local/api/v1/vlan_groups
+  response:
+    body:
+      string: '{"count": 1, "result": [{"lag_uuids": [], "description": "My_New_VLAN_Group
+        description", "vlans": "2", "uuid": "fd9107ea-1b63-4e4d-beb5-e069fcfd4c83",
+        "name": "My_New_VLAN_Group"}], "time": "11.869mS"}'
+    headers:
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '202'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 16 Aug 2019 21:33:14 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=10; includeSubDomains
+    status:
+      code: 200
+      message: OK
+version: 1

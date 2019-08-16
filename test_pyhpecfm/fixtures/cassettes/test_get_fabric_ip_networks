@@ -1,0 +1,94 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Password:
+      - plexxi
+      X-Auth-Username:
+      - admin
+    method: POST
+    uri: https://cfmtest.local/api/v1/auth/token
+  response:
+    body:
+      string: '{"count": 1, "result": "f9cd983ea1b89385f9634d2dbffc543f3d29fedf22b7e4db60c272c277d6fef3aa4f72ce593f5254e6dc33d7bfbd81cd",
+        "time": "501.591mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '143'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 16 Aug 2019 21:32:07 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer f9cd983ea1b89385f9634d2dbffc543f3d29fedf22b7e4db60c272c277d6fef3aa4f72ce593f5254e6dc33d7bfbd81cd
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://cfmtest.local/api/v1/fabric_ip_networks
+  response:
+    body:
+      string: '{"count": 1, "result": [{"subnet": {"prefix_length": 24, "address":
+        "172.16.0.0"}, "fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff", "name":
+        "new ip fabric", "switch_addresses": [{"switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3",
+        "ip_address": {"prefix_length": 24, "address": "172.16.0.1"}}], "vlan": 10,
+        "uuid": "0d6f42e1-8be3-4b60-a6b8-5394400f4e34", "mode": "manual", "description":
+        "my new fabric description"}], "time": "267.013mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '448'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 16 Aug 2019 21:32:12 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+version: 1

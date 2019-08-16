@@ -11,6 +11,7 @@ import requests
 # noinspection PyUnresolvedReferences
 from requests.packages.urllib3.exceptions import \
     InsecureRequestWarning  # pylint: disable=import-error
+
 # noinspection PyUnresolvedReferences
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)  # pylint: disable=no-member
 
@@ -71,7 +72,8 @@ class CFMClient(object):
             if self._auth_token:
                 self._session = requests.session()
                 self._session.headers.update({'Accept': 'application/json'})
-                self._session.headers.update({'Authorization': 'Bearer {}'.format(self._auth_token)})
+                self._session.headers.update(
+                    {'Authorization': 'Bearer {}'.format(self._auth_token)})
                 self._session.headers.update({'X-Auth-Refresh-Token': 'true'})
             else:
                 raise CFMApiError('Error retrieving authentication token')
@@ -81,20 +83,22 @@ class CFMClient(object):
         self._auth_token = None
         self._session = None
 
-    def delete(self, path, params= None):
+    def delete(self, path, params=None):
         """
         Helper function for HTTP DELETE commands
 
+        :param params:
         :param path: str the requested path
         :return: requests.Response API call response
         :rtype: requests.Response
         """
-        return self._call_api(method='DELETE', path=path, params= params)
+        return self._call_api(method='DELETE', path=path, params=params)
 
-    def get(self, path, params= None):
+    def get(self, path, params=None):
         """
         Helper function for HTTP GET commands
 
+        :param params:
         :param path: str the requested path
         :return: requests.Response API call response
         :rtype: requests.Response
@@ -116,8 +120,9 @@ class CFMClient(object):
         """
         Helper function for HTTP POST commands
 
+        :param data:
+        :param params:
         :param path: str the requested path
-        :param json: dict the data to send
         :return: requests.Response API call response
         :rtype: requests.Response
         """
@@ -154,8 +159,10 @@ class CFMClient(object):
         if self._auth_token:
             # Set Auth Token in Header
             request_headers.update(
-                {'Authorization': 'Bearer {}'.format(self._auth_token),
-                 'X-Auth-Refresh-Token': 'true'}
+                    {
+                        'Authorization': 'Bearer {}'.format(self._auth_token),
+                        'X-Auth-Refresh-Token': 'true'
+                    }
             )
         elif path != 'v1/auth/token':
             # If this is not a login request, then there is a problem with the auth token.
@@ -200,8 +207,7 @@ class CFMClient(object):
                     print('Exception in API call: %s', exception)
                     raise exception
             except requests.exceptions.ReadTimeout as exception:
-                print('ReadTimeout in API call attempt ( %s ) : %s', attempts,
-                                   exception)
+                print('ReadTimeout in API call attempt ( %s ) : %s', attempts, exception)
                 if method in ['GET', 'get'] and attempts < self._max_connection_retries:
                     #  Sleep for 2 seconds before re-trying
                     #  Using native sleep method as opposed to eventlet.sleep as we are
@@ -253,8 +259,8 @@ class CFMClient(object):
             response = session.request(**request)
         except requests.exceptions.SSLError as exception:
             print('%s %s failed due to SSL handshake error; ensure %s contains a '
-                               'certificate which can be used to validate HTTPS connections to %s',
-                               method, path, verify, self._host)
+                  'certificate which can be used to validate HTTPS connections to %s',
+                  method, path, verify, self._host)
             raise exception
 
         try:

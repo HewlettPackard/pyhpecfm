@@ -1,5 +1,8 @@
 # PYHPECFM
 
+[![Build Status](https://travis-ci.org/netmanchris/pyhpecfm.svg?branch=master)](https://travis-ci.org/netmanchris/pyhpecfm)
+[![Coverage Status](https://coveralls.io/repos/github/netmanchris/pyhpecfm/badge.svg?branch=master)](https://coveralls.io/github/netmanchris/pyhpecfm?branch=master)
+
 **READ THIS FIRST**
 This library is currently in alpha state and should not be used for production installations. 
 Support is not offered at this time, but GITHUB issues are welcome if bugs or potential feature 

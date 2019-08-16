@@ -37,7 +37,7 @@ def get_backups(cfmclient, uuid=None):
     """
     Function to get a list of current backups located on the Composable Fabric Manager
     represented by the cfcmclient object.
-    :param cfcmclient: Composable Fabric Manager connection object of type CFMClient
+    :param cfmclient: Composable Fabric Manager connection object of type CFMClient
     :param uuid: str that represents the unique identifier for a specific backup
     :return: single dictionary if UUID. List of dictionaries where each dictionary represents a
     single backup.
@@ -53,9 +53,9 @@ def create_backup(cfmclient):
     """
     Function to initiate a new backup on the Composable Fabric Manager represented by the
     CFCMClinet object
-    :param cfcmclient:Composable Fabric Manager connection object of type CFMClient
+    :param cfmclient: Composable Fabric Manager connection object of type CFMClient
     :return: HTTP response
     """
     path = 'v1/backups'
-    response = cfmclient.get(path)
+    response = cfmclient.post(path)
     return response.json().get('result') if response else None

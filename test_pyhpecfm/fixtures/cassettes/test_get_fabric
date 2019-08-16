@@ -1,0 +1,91 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Password:
+      - plexxi
+      X-Auth-Username:
+      - admin
+    method: POST
+    uri: https://cfmtest.local/api/v1/auth/token
+  response:
+    body:
+      string: '{"count": 1, "result": "3d413db8048c0053dda2f6e9bd03e3efb31a32d2d7516dc65fe84f08e1a021b73713123f0bda3f8da3f469af1d75b853",
+        "time": "311.382mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '143'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 16 Aug 2019 21:31:46 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 3d413db8048c0053dda2f6e9bd03e3efb31a32d2d7516dc65fe84f08e1a021b73713123f0bda3f8da3f469af1d75b853
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://cfmtest.local/api/v1/fabrics
+  response:
+    body:
+      string: '{"count": 1, "result": [{"description": "my new test fabric", "foreign_manager_id":
+        "", "foreign_fabric_state": "Unmanaged", "name": "test fabric", "segmented":
+        false, "health": {"status": "healthy", "health_issues": []}, "is_stable":
+        true, "foreign_management_state": "Available", "foreign_manager_url": "",
+        "uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff"}], "time": "32.415mS"}'
+    headers:
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '378'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 16 Aug 2019 21:31:51 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=10; includeSubDomains
+    status:
+      code: 200
+      message: OK
+version: 1

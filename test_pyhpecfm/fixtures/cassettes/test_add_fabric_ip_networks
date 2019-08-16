@@ -1,0 +1,239 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Password:
+      - plexxi
+      X-Auth-Username:
+      - admin
+    method: POST
+    uri: https://cfmtest.local/api/v1/auth/token
+  response:
+    body:
+      string: '{"count": 1, "result": "ff0b74f1d3abeac4b5a1d67e7efc5671070459a984d115a940f992e9beed9d1ba99dec514ae854c738ef8b5ff76eb097",
+        "time": "371.153mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '143'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 16 Aug 2019 21:31:35 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer ff0b74f1d3abeac4b5a1d67e7efc5671070459a984d115a940f992e9beed9d1ba99dec514ae854c738ef8b5ff76eb097
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://cfmtest.local/api/v1/fabrics
+  response:
+    body:
+      string: '{"count": 1, "result": [{"description": "my new test fabric", "foreign_manager_id":
+        "", "foreign_fabric_state": "Unmanaged", "name": "test fabric", "segmented":
+        false, "health": {"status": "healthy", "health_issues": []}, "is_stable":
+        true, "foreign_management_state": "Available", "foreign_manager_url": "",
+        "uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff"}], "time": "30.655mS"}'
+    headers:
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '378'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 16 Aug 2019 21:31:40 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=10; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer ff0b74f1d3abeac4b5a1d67e7efc5671070459a984d115a940f992e9beed9d1ba99dec514ae854c738ef8b5ff76eb097
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://cfmtest.local/api/v1/switches
+  response:
+    body:
+      string: '{"count": 6, "result": [{"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
+        "fitting_number": 0, "ip_gateway": ["172.30.0.1"], "in_default_segment": true,
+        "hostip_state": "discovered", "ip_address_v6": "::", "uuid": "31203a3b-694a-458a-aee4-2283240b84d3",
+        "ip_address": "172.30.0.4", "ip_mode": "static", "ip_gateway_v6": ["::"],
+        "health": "HEALTHY", "mac_address": "E0:39:D7:90:11:00", "ip_mode_v6": "static",
+        "serial_number": "DX010B2F046C03PL0000", "status": "SYNCED", "description":
+        "", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab", "model": "HPE Composable
+        Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE", "sw_version": "5.1.0-94",
+        "name": "admin-vs2", "ip_mask": "255.255.255.0", "configuration_number": 0,
+        "operational_stage": "S3P", "ip_mask_v6": "::"}, {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
+        "fitting_number": 0, "ip_gateway": ["172.30.0.1"], "in_default_segment": true,
+        "hostip_state": "discovered", "ip_address_v6": "::", "uuid": "7b25932f-2d59-413f-9c72-eef5e152429f",
+        "ip_address": "172.30.0.8", "ip_mode": "static", "ip_gateway_v6": ["::"],
+        "health": "HEALTHY", "mac_address": "E0:39:D7:90:15:00", "ip_mode_v6": "static",
+        "serial_number": "DX010B2F046C03PL0000", "status": "SYNCED", "description":
+        "", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab", "model": "HPE Composable
+        Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE", "sw_version": "5.1.0-94",
+        "name": "admin-vs6", "ip_mask": "255.255.255.0", "configuration_number": 0,
+        "operational_stage": "S3P", "ip_mask_v6": "::"}, {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
+        "fitting_number": 0, "ip_gateway": ["172.30.0.1"], "in_default_segment": true,
+        "hostip_state": "discovered", "ip_address_v6": "::", "uuid": "b1da22dc-9678-4267-bc78-38aed26e5194",
+        "ip_address": "172.30.0.5", "ip_mode": "static", "ip_gateway_v6": ["::"],
+        "health": "HEALTHY", "mac_address": "E0:39:D7:90:12:00", "ip_mode_v6": "static",
+        "serial_number": "DX010B2F046C03PL0000", "status": "SYNCED", "description":
+        "", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab", "model": "HPE Composable
+        Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE", "sw_version": "5.1.0-94",
+        "name": "admin-vs3", "ip_mask": "255.255.255.0", "configuration_number": 0,
+        "operational_stage": "S3P", "ip_mask_v6": "::"}, {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
+        "fitting_number": 0, "ip_gateway": ["172.30.0.1"], "in_default_segment": true,
+        "hostip_state": "discovered", "ip_address_v6": "::", "uuid": "64e35834-7323-4c56-8f71-7978e6e9dfb2",
+        "ip_address": "172.30.0.9", "ip_mode": "static", "ip_gateway_v6": ["::"],
+        "health": "HEALTHY", "mac_address": "E0:39:D7:90:16:00", "ip_mode_v6": "static",
+        "serial_number": "DX010B2F046C03PL0000", "status": "SYNCED", "description":
+        "", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab", "model": "HPE Composable
+        Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE", "sw_version": "5.1.0-94",
+        "name": "admin-vs7", "ip_mask": "255.255.255.0", "configuration_number": 0,
+        "operational_stage": "S3P", "ip_mask_v6": "::"}, {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
+        "fitting_number": 0, "ip_gateway": ["172.30.0.1"], "in_default_segment": true,
+        "hostip_state": "discovered", "ip_address_v6": "::", "uuid": "d97ee0bb-750d-4029-9444-42b614d0927b",
+        "ip_address": "172.30.0.7", "ip_mode": "static", "ip_gateway_v6": ["::"],
+        "health": "HEALTHY", "mac_address": "E0:39:D7:90:14:00", "ip_mode_v6": "static",
+        "serial_number": "DX010B2F046C03PL0000", "status": "SYNCED", "description":
+        "", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab", "model": "HPE Composable
+        Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE", "sw_version": "5.1.0-94",
+        "name": "admin-vs5", "ip_mask": "255.255.255.0", "configuration_number": 0,
+        "operational_stage": "S3P", "ip_mask_v6": "::"}, {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
+        "fitting_number": 0, "ip_gateway": ["172.30.0.1"], "in_default_segment": true,
+        "hostip_state": "discovered", "ip_address_v6": "::", "uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f",
+        "ip_address": "172.30.0.3", "ip_mode": "static", "ip_gateway_v6": ["::"],
+        "health": "HEALTHY", "mac_address": "E0:39:D7:90:10:00", "ip_mode_v6": "static",
+        "serial_number": "DX010B2F046C03PL0000", "status": "SYNCED", "description":
+        "", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab", "model": "HPE Composable
+        Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE", "sw_version": "5.1.0-94",
+        "name": "admin-vs1", "ip_mask": "255.255.255.0", "configuration_number": 0,
+        "operational_stage": "S3P", "ip_mask_v6": "::"}], "time": "12.903mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4526'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 16 Aug 2019 21:31:40 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff", "subnet": {"prefix_length":
+      24, "address": "172.16.0.0"}, "description": "my new fabric description", "vlan":
+      10, "name": "new ip fabric", "switch_addresses": [{"switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3",
+      "ip_address": {"prefix_length": 24, "address": "172.16.0.1"}}], "mode": "manual"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer ff0b74f1d3abeac4b5a1d67e7efc5671070459a984d115a940f992e9beed9d1ba99dec514ae854c738ef8b5ff76eb097
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '353'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.21.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: POST
+    uri: https://cfmtest.local/api/v1/fabric_ip_networks
+  response:
+    body:
+      string: '{"count": 1, "result": {"subnet": {"prefix_length": 24, "address":
+        "172.16.0.0"}, "fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff", "name":
+        "new ip fabric", "switch_addresses": [{"switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3",
+        "ip_address": {"prefix_length": 24, "address": "172.16.0.1"}}], "vlan": 10,
+        "uuid": "0d6f42e1-8be3-4b60-a6b8-5394400f4e34", "mode": "manual", "description":
+        "my new fabric description"}, "time": "180.451mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '446'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 16 Aug 2019 21:31:40 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+version: 1
