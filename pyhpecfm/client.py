@@ -82,6 +82,10 @@ class CFMClient(object):
         """Disconnect from CFM API session and delete token."""
         self._auth_token = None
         self._session = None
+        
+    def is_connected(self):
+        """report connection status of the CFMClient object."""
+        return self._auth_token != None
 
     def delete(self, path, params=None):
         """
