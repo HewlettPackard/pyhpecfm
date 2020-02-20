@@ -33,3 +33,6 @@ command in the **pyhpecfm** folder where the setup.py is located.
 
 For help with the pyhpecfm library or for requesting new functionality to be added, please open up a GITHUB issue and we will do our best to help you out.
 
+## Contributing
+
+Please see https://github.com/HewlettPackard/pyhpecfm/blob/master/CONTRIBUTING.MD for more information on contributing to this project.
