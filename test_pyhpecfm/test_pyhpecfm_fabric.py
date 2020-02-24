@@ -121,7 +121,7 @@ class TestAddFabric(TestCase):
         if SKIPTEST:
             raise SkipTest
         cfm.connect()
-        new_fabric = fabric.add_fabrics(cfm, '172.30.0.4', 'New Fabric', 'My New Fabric')
+        test_fabric = fabric.add_fabrics(cfm, '172.30.0.4', 'New Fabric', 'My New Fabric')
         my_attributes = ['description', 'foreign_manager_id', 'switches', 'foreign_fabric_state', 'name', 'segmented',
                          'health', 'is_stable', 'foreign_management_state', 'foreign_manager_url', 'uuid']
         self.assertIs(type(test_fabric), dict)
