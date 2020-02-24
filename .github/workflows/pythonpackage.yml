@@ -30,4 +30,4 @@ jobs:
     - name: Test with nosetest
       run: |
         pip install nosetest
-        nosetests --with-coverage --cover-package=
+        nosetests --with-coverage --cover-package=pyhpecfm
