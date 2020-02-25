@@ -119,6 +119,23 @@ class TestCreateBackup(TestCase):
             self.assertIn(i, my_attributes)
 
 
+class TestGetAuthSources(TestCase):
+    """
+    Test Cases for pyhpecfm.system get_auth_sources function
+    """
+
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
+    def test_get_auth_sources(self):
+        """
+        Test pyhpecfm.system.auth_sources function.
+        """
+        cfm.connect()
+        my_sources = system.get_auth_sources(cfm)
+        my_attributes = ['type', 'config', 'uuid', 'name', 'description']
+        self.assertIs(type(my_sources), list)
+        self.assertIs(type(my_sources[0]), dict)
+        for i in my_sources[0].keys():
+            self.assertIn(i, my_attributes)
 
 
 

@@ -52,10 +52,22 @@ def get_backups(cfmclient, uuid=None):
 def create_backup(cfmclient):
     """
     Function to initiate a new backup on the Composable Fabric Manager represented by the
-    CFCMClinet object
+    CFCMClient object
     :param cfmclient: Composable Fabric Manager connection object of type CFMClient
     :return: HTTP response
     """
     path = 'v1/backups'
     response = cfmclient.post(path)
     return response.json().get('result') if response else None
+
+def get_auth_sources(cfmclient):
+    """
+    Function to query current auth sources from a Composable Fabric Manager represented
+    by the CFMClient object
+    :param cfmclient: Composable Fabric Manager connection object of type CFMClient
+    :return:
+    """
+    path = 'v1/auth/sources'
+    response = cfmclient.get(path)
+    return response.json().get('result')
+
