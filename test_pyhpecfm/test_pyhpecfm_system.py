@@ -170,6 +170,7 @@ class TestGetUsers(TestCase):
         for i in my_users[0].keys():
             self.assertIn(i, my_attributes)
 
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
     def test_get_admin_user(self):
         """
         Test pyhpecfm.system.users function.
