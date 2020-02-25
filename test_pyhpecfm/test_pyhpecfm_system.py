@@ -138,6 +138,24 @@ class TestGetAuthSources(TestCase):
             self.assertIn(i, my_attributes)
 
 
+class TestGetUsers(TestCase):
+    """
+    Test Cases for pyhpecfm.system get_users function
+    """
+
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
+    def test_get_users(self):
+        """
+        Test pyhpecfm.system.users function.
+        """
+        cfm.connect()
+        my_users = system.get_users(cfm)
+        my_attributes = ['username', 'token_lifetime', 'uuid', 'auth_source_uuid', 'auth_source_name', 'distinguished_name', 'role', 'immutable', 'preferences']
+        self.assertIs(type(my_users), list)
+        self.assertIs(type(my_users[0]), dict)
+        for i in my_users[0].keys():
+            self.assertIn(i, my_attributes)
+
 
 
 

@@ -65,9 +65,19 @@ def get_auth_sources(cfmclient):
     Function to query current auth sources from a Composable Fabric Manager represented
     by the CFMClient object
     :param cfmclient: Composable Fabric Manager connection object of type CFMClient
-    :return:
+    :return:list of dict where each dict represents a CFM auth source
     """
     path = 'v1/auth/sources'
     response = cfmclient.get(path)
     return response.json().get('result')
 
+def get_users(cfmclient):
+    """
+        Function to query current local users from a Composable Fabric Manager represented
+        by the CFMClient object
+        :param cfmclient: Composable Fabric Manager connection object of type CFMClient
+        :return:
+        """
+    path = 'v1/users'
+    response = cfmclient.get(path)
+    return response.json().get('result')
