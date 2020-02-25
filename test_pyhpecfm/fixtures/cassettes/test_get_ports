@@ -13,7 +13,7 @@ interactions:
       Content-Type:
       - application/json;charset=UTF-8
       User-Agent:
-      - python-requests/2.21.0
+      - python-requests/2.23.0
       X-Auth-Password:
       - plexxi
       X-Auth-Username:
@@ -22,8 +22,8 @@ interactions:
     uri: https://cfmtest.local/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "87c546acb7fbf4b4c31c3bc2c59f8f37da70952d05b2b1200152dcd7271fe105f3c44f5c37473d530bc52d3cbfd73511",
-        "time": "517.951mS"}'
+      string: '{"count": 1, "result": "73fbafdacad834b3179a75798ed6864d645450a9d864b2838630f9db2e38664650c6b2797ccb30a1349666559c48dec3",
+        "time": "372.773mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 16 Aug 2019 21:32:18 GMT
+      - Tue, 25 Feb 2020 20:32:58 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,31 +52,31 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer 87c546acb7fbf4b4c31c3bc2c59f8f37da70952d05b2b1200152dcd7271fe105f3c44f5c37473d530bc52d3cbfd73511
+      - Bearer 73fbafdacad834b3179a75798ed6864d645450a9d864b2838630f9db2e38664650c6b2797ccb30a1349666559c48dec3
       Connection:
       - keep-alive
       Content-Type:
       - application/json;charset=UTF-8
       User-Agent:
-      - python-requests/2.21.0
+      - python-requests/2.23.0
       X-Auth-Refresh-Token:
       - 'true'
     method: GET
     uri: https://cfmtest.local/api/v1/switches
   response:
     body:
-      string: '{"count": 6, "result": [{"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
-        "fitting_number": 0, "ip_gateway": ["172.30.0.1"], "in_default_segment": true,
-        "hostip_state": "discovered", "ip_address_v6": "::", "uuid": "31203a3b-694a-458a-aee4-2283240b84d3",
-        "ip_address": "172.30.0.4", "ip_mode": "static", "ip_gateway_v6": ["::"],
-        "health": "HEALTHY", "mac_address": "E0:39:D7:90:11:00", "ip_mode_v6": "static",
+      string: '{"count": 7, "result": [{"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
+        "fitting_number": 13335, "ip_gateway": ["172.30.0.1"], "in_default_segment":
+        true, "hostip_state": "discovered", "ip_address_v6": "::", "uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f",
+        "ip_address": "172.30.0.3", "ip_mode": "static", "ip_gateway_v6": ["::"],
+        "health": "HEALTHY", "mac_address": "E0:39:D7:90:10:00", "ip_mode_v6": "static",
         "serial_number": "DX010B2F046C03PL0000", "status": "SYNCED", "description":
         "", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab", "model": "HPE Composable
         Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE", "sw_version": "5.1.0-94",
-        "name": "admin-vs2", "ip_mask": "255.255.255.0", "configuration_number": 0,
+        "name": "admin-vs1", "ip_mask": "255.255.255.0", "configuration_number": 0,
         "operational_stage": "S3P", "ip_mask_v6": "::"}, {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
-        "fitting_number": 0, "ip_gateway": ["172.30.0.1"], "in_default_segment": true,
-        "hostip_state": "discovered", "ip_address_v6": "::", "uuid": "7b25932f-2d59-413f-9c72-eef5e152429f",
+        "fitting_number": 13335, "ip_gateway": ["172.30.0.1"], "in_default_segment":
+        true, "hostip_state": "discovered", "ip_address_v6": "::", "uuid": "7b25932f-2d59-413f-9c72-eef5e152429f",
         "ip_address": "172.30.0.8", "ip_mode": "static", "ip_gateway_v6": ["::"],
         "health": "HEALTHY", "mac_address": "E0:39:D7:90:15:00", "ip_mode_v6": "static",
         "serial_number": "DX010B2F046C03PL0000", "status": "SYNCED", "description":
@@ -84,8 +84,35 @@ interactions:
         Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE", "sw_version": "5.1.0-94",
         "name": "admin-vs6", "ip_mask": "255.255.255.0", "configuration_number": 0,
         "operational_stage": "S3P", "ip_mask_v6": "::"}, {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
-        "fitting_number": 0, "ip_gateway": ["172.30.0.1"], "in_default_segment": true,
-        "hostip_state": "discovered", "ip_address_v6": "::", "uuid": "b1da22dc-9678-4267-bc78-38aed26e5194",
+        "fitting_number": 13335, "ip_gateway": ["172.30.0.1"], "in_default_segment":
+        true, "hostip_state": "discovered", "ip_address_v6": "::", "uuid": "64e35834-7323-4c56-8f71-7978e6e9dfb2",
+        "ip_address": "172.30.0.6", "ip_mode": "static", "ip_gateway_v6": ["::"],
+        "health": "HEALTHY", "mac_address": "E0:39:D7:90:16:00", "ip_mode_v6": "static",
+        "serial_number": "DX010B2F046C03PL0000", "status": "SYNCED", "description":
+        "", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab", "model": "HPE Composable
+        Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE", "sw_version": "5.1.0-94",
+        "name": "admin-vs7", "ip_mask": "255.255.255.0", "configuration_number": 0,
+        "operational_stage": "S3P", "ip_mask_v6": "::"}, {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
+        "fitting_number": 13335, "ip_gateway": ["172.30.0.1"], "in_default_segment":
+        true, "hostip_state": "discovered", "ip_address_v6": "::", "uuid": "d97ee0bb-750d-4029-9444-42b614d0927b",
+        "ip_address": "172.30.0.7", "ip_mode": "static", "ip_gateway_v6": ["::"],
+        "health": "HEALTHY", "mac_address": "E0:39:D7:90:14:00", "ip_mode_v6": "static",
+        "serial_number": "DX010B2F046C03PL0000", "status": "SYNCED", "description":
+        "", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab", "model": "HPE Composable
+        Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE", "sw_version": "5.1.0-94",
+        "name": "admin-vs5", "ip_mask": "255.255.255.0", "configuration_number": 0,
+        "operational_stage": "S3P", "ip_mask_v6": "::"}, {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
+        "fitting_number": 13335, "ip_gateway": ["172.30.0.1"], "in_default_segment":
+        true, "hostip_state": "discovered", "ip_address_v6": "::", "uuid": "31203a3b-694a-458a-aee4-2283240b84d3",
+        "ip_address": "172.30.0.4", "ip_mode": "static", "ip_gateway_v6": ["::"],
+        "health": "HEALTHY", "mac_address": "E0:39:D7:90:11:00", "ip_mode_v6": "static",
+        "serial_number": "DX010B2F046C03PL0000", "status": "SYNCED", "description":
+        "", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab", "model": "HPE Composable
+        Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE", "sw_version": "5.1.0-94",
+        "name": "admin-vs2", "ip_mask": "255.255.255.0", "configuration_number": 0,
+        "operational_stage": "S3P", "ip_mask_v6": "::"}, {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
+        "fitting_number": 13335, "ip_gateway": ["172.30.0.1"], "in_default_segment":
+        true, "hostip_state": "discovered", "ip_address_v6": "::", "uuid": "b1da22dc-9678-4267-bc78-38aed26e5194",
         "ip_address": "172.30.0.5", "ip_mode": "static", "ip_gateway_v6": ["::"],
         "health": "HEALTHY", "mac_address": "E0:39:D7:90:12:00", "ip_mode_v6": "static",
         "serial_number": "DX010B2F046C03PL0000", "status": "SYNCED", "description":
@@ -94,43 +121,25 @@ interactions:
         "name": "admin-vs3", "ip_mask": "255.255.255.0", "configuration_number": 0,
         "operational_stage": "S3P", "ip_mask_v6": "::"}, {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
         "fitting_number": 0, "ip_gateway": ["172.30.0.1"], "in_default_segment": true,
-        "hostip_state": "discovered", "ip_address_v6": "::", "uuid": "64e35834-7323-4c56-8f71-7978e6e9dfb2",
+        "hostip_state": "discovered", "ip_address_v6": "::", "uuid": "fde70a08-ed52-4905-b59b-e55205bf8fe7",
         "ip_address": "172.30.0.9", "ip_mode": "static", "ip_gateway_v6": ["::"],
-        "health": "HEALTHY", "mac_address": "E0:39:D7:90:16:00", "ip_mode_v6": "static",
+        "health": "HEALTHY", "mac_address": "E0:39:D7:90:13:00", "ip_mode_v6": "static",
         "serial_number": "DX010B2F046C03PL0000", "status": "SYNCED", "description":
         "", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab", "model": "HPE Composable
         Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE", "sw_version": "5.1.0-94",
-        "name": "admin-vs7", "ip_mask": "255.255.255.0", "configuration_number": 0,
-        "operational_stage": "S3P", "ip_mask_v6": "::"}, {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
-        "fitting_number": 0, "ip_gateway": ["172.30.0.1"], "in_default_segment": true,
-        "hostip_state": "discovered", "ip_address_v6": "::", "uuid": "d97ee0bb-750d-4029-9444-42b614d0927b",
-        "ip_address": "172.30.0.7", "ip_mode": "static", "ip_gateway_v6": ["::"],
-        "health": "HEALTHY", "mac_address": "E0:39:D7:90:14:00", "ip_mode_v6": "static",
-        "serial_number": "DX010B2F046C03PL0000", "status": "SYNCED", "description":
-        "", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab", "model": "HPE Composable
-        Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE", "sw_version": "5.1.0-94",
-        "name": "admin-vs5", "ip_mask": "255.255.255.0", "configuration_number": 0,
-        "operational_stage": "S3P", "ip_mask_v6": "::"}, {"fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff",
-        "fitting_number": 0, "ip_gateway": ["172.30.0.1"], "in_default_segment": true,
-        "hostip_state": "discovered", "ip_address_v6": "::", "uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f",
-        "ip_address": "172.30.0.3", "ip_mode": "static", "ip_gateway_v6": ["::"],
-        "health": "HEALTHY", "mac_address": "E0:39:D7:90:10:00", "ip_mode_v6": "static",
-        "serial_number": "DX010B2F046C03PL0000", "status": "SYNCED", "description":
-        "", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab", "model": "HPE Composable
-        Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE", "sw_version": "5.1.0-94",
-        "name": "admin-vs1", "ip_mask": "255.255.255.0", "configuration_number": 0,
-        "operational_stage": "S3P", "ip_mask_v6": "::"}], "time": "14.269mS"}'
+        "name": "admin-vs4", "ip_mask": "255.255.255.0", "configuration_number": 0,
+        "operational_stage": "S3P", "ip_mask_v6": "::"}], "time": "14.706mS"}'
     headers:
       Cache-Control:
       - no-cache
       Connection:
       - keep-alive
       Content-Length:
-      - '4526'
+      - '5297'
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 16 Aug 2019 21:32:23 GMT
+      - Tue, 25 Feb 2020 20:33:03 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -148,1009 +157,1009 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer 87c546acb7fbf4b4c31c3bc2c59f8f37da70952d05b2b1200152dcd7271fe105f3c44f5c37473d530bc52d3cbfd73511
+      - Bearer 73fbafdacad834b3179a75798ed6864d645450a9d864b2838630f9db2e38664650c6b2797ccb30a1349666559c48dec3
       Connection:
       - keep-alive
       Content-Type:
       - application/json;charset=UTF-8
       User-Agent:
-      - python-requests/2.21.0
+      - python-requests/2.23.0
       X-Auth-Refresh-Token:
       - 'true'
     method: GET
-    uri: https://cfmtest.local/api/v1/ports?switches=31203a3b-694a-458a-aee4-2283240b84d3&type=access
+    uri: https://cfmtest.local/api/v1/ports?switches=dd5da679-e8dd-473a-87d8-2c5de2bf792f&type=access
   response:
     body:
       string: '{"count": 81, "result": [{"native_vlan": 1, "description": "", "name":
-        "", "holddown": ["not_applicable"], "speed_group": ["71f5b4ff-2bec-4086-81da-37e28e424dc2",
-        "e874f79d-2738-40b4-8d1c-8c5f2b4ef791", "7c304cf9-9005-4fef-b1be-7bf1477aa140",
-        "ff4d10cd-d19a-4c8d-af1c-849a528125d8"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        "", "holddown": ["not_applicable"], "speed_group": ["bd86a741-f7ef-44ab-9a6b-747d984dc8ae",
+        "807290f4-63d4-42c6-8cfc-7a8522677a86", "d7a7f51c-7a6c-4665-a7fd-75238642c683",
+        "22aab1e8-6211-424b-ba6f-932ef4bf0a8d"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "15.1", "uuid": "71f5b4ff-2bec-4086-81da-37e28e424dc2", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
-        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "15", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["6440f1ef-b1a2-4aa3-8913-a5901b08db72",
-        "d2be5c70-f481-48b8-a1bb-621fcf1f9a21", "05b35653-cd50-42ac-aa76-fadd7db9236a",
-        "8a0514ea-5789-4366-9a89-8c7e85316ae1"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "10.1", "uuid": "6440f1ef-b1a2-4aa3-8913-a5901b08db72", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
-        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "10", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["71f5b4ff-2bec-4086-81da-37e28e424dc2",
-        "e874f79d-2738-40b4-8d1c-8c5f2b4ef791", "7c304cf9-9005-4fef-b1be-7bf1477aa140",
-        "ff4d10cd-d19a-4c8d-af1c-849a528125d8"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "15.3", "uuid": "7c304cf9-9005-4fef-b1be-7bf1477aa140", "fec_mode": "CL74",
+        "15.3", "uuid": "d7a7f51c-7a6c-4665-a7fd-75238642c683", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
         "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "15", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["eeee8f5f-6c08-42ef-9db8-107eacc98ae3",
-        "4494fde1-9c85-45ea-92dc-c048de679ade", "851a13c8-9d98-43a5-a14a-619914c18951",
-        "80a44c1f-3d64-4e86-83f3-fe34b940df37"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["b45d4ef2-4416-4a9e-8672-a3795fdd0ca2",
+        "fd85b2f4-f67c-4cd4-8341-67c3b7bd328a", "22493d66-f9bb-46c3-8ba4-56e3074afed0",
+        "8dfe4df9-5ed6-455f-b497-b8c762a6624f"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "19.1", "uuid": "eeee8f5f-6c08-42ef-9db8-107eacc98ae3", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
-        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "19", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["f8858bdf-d6f4-40db-a0e3-e8e7eebc9969",
-        "eaff4696-f6a7-42f7-a0a9-1751be07f666", "b5a2cb39-1415-41c7-9a1f-b0915b8a2fe9",
-        "93091444-7b69-4b9c-be71-b1cb830cb9c6"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "5.2", "uuid": "eaff4696-f6a7-42f7-a0a9-1751be07f666", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "5", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["139c64d5-cca1-48c7-8d2a-fa958be74a5f",
-        "34623a04-fc4d-4923-8560-869bfb14b4bd", "2fba5665-0f3f-442d-b1a1-08e999df0a06",
-        "b62995d4-f048-444f-9b8c-26f8c4aee5cf"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "20.3", "uuid": "2fba5665-0f3f-442d-b1a1-08e999df0a06", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "20", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["6d94611d-abfa-4575-bf66-e7cd20d4bb9c",
-        "911bdd74-c1b0-4383-b76e-1ea5fa70a2b6", "035a7c80-c1b7-467b-9416-05c816a50d30",
-        "80123eb3-bc23-4a53-a93e-8ff72d29bc67"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "14.3", "uuid": "035a7c80-c1b7-467b-9416-05c816a50d30", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "14", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["d8b2571c-8e55-4f8a-907c-52c54e7b23c3",
-        "e3ffa199-0f55-4cab-882f-237d752fdfb0", "ca07faf2-037f-4bc3-b8b7-e0924522e3c2",
-        "ebdf61a8-be70-4c89-9992-2435084cd605"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "1.1", "uuid": "d8b2571c-8e55-4f8a-907c-52c54e7b23c3", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
-        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "1", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["f8858bdf-d6f4-40db-a0e3-e8e7eebc9969",
-        "eaff4696-f6a7-42f7-a0a9-1751be07f666", "b5a2cb39-1415-41c7-9a1f-b0915b8a2fe9",
-        "93091444-7b69-4b9c-be71-b1cb830cb9c6"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "5.1", "uuid": "f8858bdf-d6f4-40db-a0e3-e8e7eebc9969", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
-        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "5", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["91b16c7c-37df-491e-84d6-2e36830ad9b1",
-        "84314d9a-bd27-4ebf-b295-93d8562ae2b8", "b245754e-eb72-4983-b37d-4c9aad97a495",
-        "48d358a4-125a-4444-be97-762766de9b9a"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "8.1", "uuid": "91b16c7c-37df-491e-84d6-2e36830ad9b1", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
-        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "8", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["0e25a798-a53c-4781-a24a-e9930a985fb6",
-        "6dd5e4c5-8424-4c06-91b8-8bffff198463", "f08a23e6-b94a-49f3-9e0f-368e3a0effe8",
-        "71e6697e-bdbe-4b22-985f-159f5e1703d0"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "12.3", "uuid": "f08a23e6-b94a-49f3-9e0f-368e3a0effe8", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "12", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["bf7e47d5-8e68-4604-afd5-d58c22263067",
-        "37d780f9-6a21-4353-9f82-237393e8127c", "472cceef-15bc-4a64-a201-c672280b14d7",
-        "56085a2b-8a44-46a1-887f-b051d71bd22d"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "9.1", "uuid": "bf7e47d5-8e68-4604-afd5-d58c22263067", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
-        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "9", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["d8b2571c-8e55-4f8a-907c-52c54e7b23c3",
-        "e3ffa199-0f55-4cab-882f-237d752fdfb0", "ca07faf2-037f-4bc3-b8b7-e0924522e3c2",
-        "ebdf61a8-be70-4c89-9992-2435084cd605"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "1.4", "uuid": "ebdf61a8-be70-4c89-9992-2435084cd605", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "1", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["534f942d-6357-43bf-b98c-7eec17e8b787",
-        "45f8c699-de73-479d-bf2d-90626a0dafae", "eba03cd2-f754-4165-ba90-c8e5413d2c1c",
-        "9223b75e-2cde-4047-b55b-4faa9568dee4"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "2.2", "uuid": "45f8c699-de73-479d-bf2d-90626a0dafae", "fec_mode": "CL74",
+        "2.2", "uuid": "fd85b2f4-f67c-4cd4-8341-67c3b7bd328a", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
         "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "2", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["139c64d5-cca1-48c7-8d2a-fa958be74a5f",
-        "34623a04-fc4d-4923-8560-869bfb14b4bd", "2fba5665-0f3f-442d-b1a1-08e999df0a06",
-        "b62995d4-f048-444f-9b8c-26f8c4aee5cf"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["aa5d3ef9-0b96-4e28-9aef-a1784ba73e33",
+        "9a106f7d-db1c-4e10-a491-c92dbae2ee34", "de379202-3e39-4fee-85bb-aa3620d1adf9",
+        "de60bcc3-2ee6-40ab-817f-46992d51865b"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "20.1", "uuid": "139c64d5-cca1-48c7-8d2a-fa958be74a5f", "fec_mode": "CL74",
+        "11.4", "uuid": "de60bcc3-2ee6-40ab-817f-46992d51865b", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
-        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "20", "type": "access",
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "11", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["bf7e47d5-8e68-4604-afd5-d58c22263067",
-        "37d780f9-6a21-4353-9f82-237393e8127c", "472cceef-15bc-4a64-a201-c672280b14d7",
-        "56085a2b-8a44-46a1-887f-b051d71bd22d"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["4a16a001-4239-4067-a116-f406704b0bf6",
+        "9cd59908-8169-4f8a-a046-490080a06067", "c925884f-b31e-4e15-86a3-f1ab7dfea6d0",
+        "105df8bb-5a6e-4547-802d-e90e7fe7011f"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "9.3", "uuid": "472cceef-15bc-4a64-a201-c672280b14d7", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "9", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["eeee8f5f-6c08-42ef-9db8-107eacc98ae3",
-        "4494fde1-9c85-45ea-92dc-c048de679ade", "851a13c8-9d98-43a5-a14a-619914c18951",
-        "80a44c1f-3d64-4e86-83f3-fe34b940df37"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "19.4", "uuid": "80a44c1f-3d64-4e86-83f3-fe34b940df37", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "19", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["534f942d-6357-43bf-b98c-7eec17e8b787",
-        "45f8c699-de73-479d-bf2d-90626a0dafae", "eba03cd2-f754-4165-ba90-c8e5413d2c1c",
-        "9223b75e-2cde-4047-b55b-4faa9568dee4"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "2.1", "uuid": "534f942d-6357-43bf-b98c-7eec17e8b787", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
-        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "2", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["8f8ff48a-9137-4c72-add0-8a06b4720dfa",
-        "b56a9b36-6c87-4050-bd03-f9adeee7109b", "57fb0b04-b430-4088-ac7c-c15da54834a1",
-        "840570f2-26cd-4d4d-a671-2ffa00456abd"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "4.2", "uuid": "b56a9b36-6c87-4050-bd03-f9adeee7109b", "fec_mode": "CL74",
+        "4.2", "uuid": "9cd59908-8169-4f8a-a046-490080a06067", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
         "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "4", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["60ff30ea-eea5-4d6d-bee2-97faff433ced",
-        "2279f6a7-dae0-4680-bad2-a50aae05fff7", "5b90e9e1-e53b-41b4-86f0-21b83e7599b5",
-        "59ad125b-fcb8-462b-9035-4ee3aae8ae15"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["4eabc4d3-e3c3-47fa-893c-6d677d21a245",
+        "a8e3c1b6-3f74-4d20-8fdd-ba610e8765c1", "6867fa47-c32f-4825-863d-d43545f2de74",
+        "a1c8b578-3393-422e-b6a3-97ca1ded7e3e"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "18.2", "uuid": "2279f6a7-dae0-4680-bad2-a50aae05fff7", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "18", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["eeee8f5f-6c08-42ef-9db8-107eacc98ae3",
-        "4494fde1-9c85-45ea-92dc-c048de679ade", "851a13c8-9d98-43a5-a14a-619914c18951",
-        "80a44c1f-3d64-4e86-83f3-fe34b940df37"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "19.2", "uuid": "4494fde1-9c85-45ea-92dc-c048de679ade", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "19", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["91b16c7c-37df-491e-84d6-2e36830ad9b1",
-        "84314d9a-bd27-4ebf-b295-93d8562ae2b8", "b245754e-eb72-4983-b37d-4c9aad97a495",
-        "48d358a4-125a-4444-be97-762766de9b9a"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "8.2", "uuid": "84314d9a-bd27-4ebf-b295-93d8562ae2b8", "fec_mode": "CL74",
+        "8.3", "uuid": "6867fa47-c32f-4825-863d-d43545f2de74", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
         "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "8", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["8f8ff48a-9137-4c72-add0-8a06b4720dfa",
-        "b56a9b36-6c87-4050-bd03-f9adeee7109b", "57fb0b04-b430-4088-ac7c-c15da54834a1",
-        "840570f2-26cd-4d4d-a671-2ffa00456abd"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["4a16a001-4239-4067-a116-f406704b0bf6",
+        "9cd59908-8169-4f8a-a046-490080a06067", "c925884f-b31e-4e15-86a3-f1ab7dfea6d0",
+        "105df8bb-5a6e-4547-802d-e90e7fe7011f"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "4.3", "uuid": "57fb0b04-b430-4088-ac7c-c15da54834a1", "fec_mode": "CL74",
+        "4.4", "uuid": "105df8bb-5a6e-4547-802d-e90e7fe7011f", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
         "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "4", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["0e25a798-a53c-4781-a24a-e9930a985fb6",
-        "6dd5e4c5-8424-4c06-91b8-8bffff198463", "f08a23e6-b94a-49f3-9e0f-368e3a0effe8",
-        "71e6697e-bdbe-4b22-985f-159f5e1703d0"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["1a72ec75-9cae-465d-98eb-265e53f17f35",
+        "f19ee1c2-8c2b-4733-9aa4-22f615f6f427", "ece224c3-f3af-443c-b4c5-b8f03f487b21",
+        "586e585d-88c7-4a03-b80a-0c4d77bad957"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "12.4", "uuid": "71e6697e-bdbe-4b22-985f-159f5e1703d0", "fec_mode": "CL74",
+        "5.4", "uuid": "586e585d-88c7-4a03-b80a-0c4d77bad957", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "12", "type": "access",
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "5", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["eeee8f5f-6c08-42ef-9db8-107eacc98ae3",
-        "4494fde1-9c85-45ea-92dc-c048de679ade", "851a13c8-9d98-43a5-a14a-619914c18951",
-        "80a44c1f-3d64-4e86-83f3-fe34b940df37"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["1057184b-265e-42cb-a466-163d292f0cce",
+        "35fcf1b9-ee84-4ed7-bfb6-4805a40bb0f8", "d5dcd66c-f7d6-4a82-8f96-1635d08bc4cf",
+        "beba62f7-3383-4e06-af61-ba71719bae5c"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "19.3", "uuid": "851a13c8-9d98-43a5-a14a-619914c18951", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "19", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["a590d7f1-7dc8-45fe-ae07-6e67c0181e93",
-        "5fbf2270-9da1-4b26-8ccc-182991603ec4", "eaf05f0f-f164-4e81-88d6-984b87f9d3a1",
-        "636703a5-97d7-49dc-a2a7-36946dce8788"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "17.1", "uuid": "a590d7f1-7dc8-45fe-ae07-6e67c0181e93", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
-        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "17", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["a590d7f1-7dc8-45fe-ae07-6e67c0181e93",
-        "5fbf2270-9da1-4b26-8ccc-182991603ec4", "eaf05f0f-f164-4e81-88d6-984b87f9d3a1",
-        "636703a5-97d7-49dc-a2a7-36946dce8788"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "17.4", "uuid": "636703a5-97d7-49dc-a2a7-36946dce8788", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "17", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["8f8ff48a-9137-4c72-add0-8a06b4720dfa",
-        "b56a9b36-6c87-4050-bd03-f9adeee7109b", "57fb0b04-b430-4088-ac7c-c15da54834a1",
-        "840570f2-26cd-4d4d-a671-2ffa00456abd"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "4.1", "uuid": "8f8ff48a-9137-4c72-add0-8a06b4720dfa", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
-        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "4", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["91b16c7c-37df-491e-84d6-2e36830ad9b1",
-        "84314d9a-bd27-4ebf-b295-93d8562ae2b8", "b245754e-eb72-4983-b37d-4c9aad97a495",
-        "48d358a4-125a-4444-be97-762766de9b9a"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "8.3", "uuid": "b245754e-eb72-4983-b37d-4c9aad97a495", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "8", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["6440f1ef-b1a2-4aa3-8913-a5901b08db72",
-        "d2be5c70-f481-48b8-a1bb-621fcf1f9a21", "05b35653-cd50-42ac-aa76-fadd7db9236a",
-        "8a0514ea-5789-4366-9a89-8c7e85316ae1"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "10.2", "uuid": "d2be5c70-f481-48b8-a1bb-621fcf1f9a21", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "10", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["0e25a798-a53c-4781-a24a-e9930a985fb6",
-        "6dd5e4c5-8424-4c06-91b8-8bffff198463", "f08a23e6-b94a-49f3-9e0f-368e3a0effe8",
-        "71e6697e-bdbe-4b22-985f-159f5e1703d0"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "12.2", "uuid": "6dd5e4c5-8424-4c06-91b8-8bffff198463", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "12", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["66babe6e-5488-4dae-801a-20be7e7cd5bc",
-        "b856caeb-29b8-47dc-9ab6-f680912db8ac", "f422698f-d1c2-4d46-ab3b-6c304925bd93",
-        "75d4355f-f5ea-4596-8e75-dcf980991b42"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "7.3", "uuid": "f422698f-d1c2-4d46-ab3b-6c304925bd93", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "7", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["9fefe51f-f96e-4767-ae83-572f34df5427"],
-        "ungrouped_vlans": "", "link_state": "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3",
-        "admin_state": "disabled", "form_factor": "sfp", "port_security_enabled":
-        false, "vlans": "", "speed": {"current": 10000, "permitted": [1000, 10000]},
-        "switch_name": "admin-vs2", "fec": "disabled", "read_only": false, "default_state":
-        true, "port_label": "33", "uuid": "9fefe51f-f96e-4767-ae83-572f34df5427",
-        "fec_mode": "CL74", "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid":
-        null, "permitted_qsfp_modes": [], "silkscreen": "S1", "type": "access", "bridge_loop_detection":
-        {"interval": 1000, "mode": "disabled"}, "qsfp_mode": "not_applicable"}, {"native_vlan":
-        1, "description": "", "name": "", "holddown": ["not_applicable"], "speed_group":
-        ["f8858bdf-d6f4-40db-a0e3-e8e7eebc9969", "eaff4696-f6a7-42f7-a0a9-1751be07f666",
-        "b5a2cb39-1415-41c7-9a1f-b0915b8a2fe9", "93091444-7b69-4b9c-be71-b1cb830cb9c6"],
-        "ungrouped_vlans": "", "link_state": "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3",
-        "admin_state": "disabled", "form_factor": "qsfp", "port_security_enabled":
-        false, "vlans": "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name":
-        "admin-vs2", "fec": "disabled", "read_only": false, "default_state": true,
-        "port_label": "5.4", "uuid": "93091444-7b69-4b9c-be71-b1cb830cb9c6", "fec_mode":
-        "CL74", "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid":
-        null, "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "5", "type":
-        "access", "bridge_loop_detection": {"interval": 1000, "mode": "disabled"},
-        "qsfp_mode": "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name":
-        "", "holddown": ["not_applicable"], "speed_group": ["6440f1ef-b1a2-4aa3-8913-a5901b08db72",
-        "d2be5c70-f481-48b8-a1bb-621fcf1f9a21", "05b35653-cd50-42ac-aa76-fadd7db9236a",
-        "8a0514ea-5789-4366-9a89-8c7e85316ae1"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "10.4", "uuid": "8a0514ea-5789-4366-9a89-8c7e85316ae1", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "10", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["53ade2b1-2c23-4efc-9b65-c9db9133d333",
-        "bf02211a-9950-479f-bc32-595ab46a20e8", "140df894-8a49-4d51-ae96-f5e760e93af0",
-        "4d075cb7-346e-4927-9e29-e067431c0c56"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "13.1", "uuid": "53ade2b1-2c23-4efc-9b65-c9db9133d333", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
-        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "13", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["a64ecea6-149f-43e8-b3e4-2de1ce88c221",
-        "9a246d2d-9914-46d1-bdc5-fa5a26d07693", "6aac616e-c270-44e0-be93-83eaa3447a94",
-        "ea256894-21fb-4c94-be96-7cb6be67b40a"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "6.4", "uuid": "ea256894-21fb-4c94-be96-7cb6be67b40a", "fec_mode": "CL74",
+        "6.2", "uuid": "35fcf1b9-ee84-4ed7-bfb6-4805a40bb0f8", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
         "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "6", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["73cd7119-5348-4b3e-88b9-597a9ae9e0de",
-        "ea15f2f3-bd2d-4a21-b010-856938095f2c", "88af1c91-50c4-46dd-a8f9-7fe2031a5a04",
-        "daf0085a-a182-4c84-9bd0-d12032f77c76"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["bd86a741-f7ef-44ab-9a6b-747d984dc8ae",
+        "807290f4-63d4-42c6-8cfc-7a8522677a86", "d7a7f51c-7a6c-4665-a7fd-75238642c683",
+        "22aab1e8-6211-424b-ba6f-932ef4bf0a8d"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "16.1", "uuid": "73cd7119-5348-4b3e-88b9-597a9ae9e0de", "fec_mode": "CL74",
+        "15.4", "uuid": "22aab1e8-6211-424b-ba6f-932ef4bf0a8d", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "15", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["9e81c410-43c2-4e1d-bfe0-c69c52100bce",
+        "0b7808b1-6989-4610-b0f3-516f83ac037a", "a7dc25d2-5276-4ba3-8310-2ce914b48c56",
+        "38a13ab5-9017-4d8b-96ba-b8c973ad6729"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "16.1", "uuid": "9e81c410-43c2-4e1d-bfe0-c69c52100bce", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
         "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
         "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "16", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["a64ecea6-149f-43e8-b3e4-2de1ce88c221",
-        "9a246d2d-9914-46d1-bdc5-fa5a26d07693", "6aac616e-c270-44e0-be93-83eaa3447a94",
-        "ea256894-21fb-4c94-be96-7cb6be67b40a"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["b45d4ef2-4416-4a9e-8672-a3795fdd0ca2",
+        "fd85b2f4-f67c-4cd4-8341-67c3b7bd328a", "22493d66-f9bb-46c3-8ba4-56e3074afed0",
+        "8dfe4df9-5ed6-455f-b497-b8c762a6624f"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "6.2", "uuid": "9a246d2d-9914-46d1-bdc5-fa5a26d07693", "fec_mode": "CL74",
+        "2.4", "uuid": "8dfe4df9-5ed6-455f-b497-b8c762a6624f", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "6", "type": "access",
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "2", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["5f10badd-864c-4fd4-adb3-fe88a456bbad",
-        "3efdd6a8-f6a7-4e05-8496-b7de7554bf14", "c0b971a1-80aa-41f1-8d35-1447eaa1b64f",
-        "5e84b1d6-a130-4997-9033-87379e1094a2"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["4eabc4d3-e3c3-47fa-893c-6d677d21a245",
+        "a8e3c1b6-3f74-4d20-8fdd-ba610e8765c1", "6867fa47-c32f-4825-863d-d43545f2de74",
+        "a1c8b578-3393-422e-b6a3-97ca1ded7e3e"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "3.2", "uuid": "3efdd6a8-f6a7-4e05-8496-b7de7554bf14", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "3", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["53ade2b1-2c23-4efc-9b65-c9db9133d333",
-        "bf02211a-9950-479f-bc32-595ab46a20e8", "140df894-8a49-4d51-ae96-f5e760e93af0",
-        "4d075cb7-346e-4927-9e29-e067431c0c56"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "13.4", "uuid": "4d075cb7-346e-4927-9e29-e067431c0c56", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "13", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["139c64d5-cca1-48c7-8d2a-fa958be74a5f",
-        "34623a04-fc4d-4923-8560-869bfb14b4bd", "2fba5665-0f3f-442d-b1a1-08e999df0a06",
-        "b62995d4-f048-444f-9b8c-26f8c4aee5cf"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "20.2", "uuid": "34623a04-fc4d-4923-8560-869bfb14b4bd", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "20", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["bf7e47d5-8e68-4604-afd5-d58c22263067",
-        "37d780f9-6a21-4353-9f82-237393e8127c", "472cceef-15bc-4a64-a201-c672280b14d7",
-        "56085a2b-8a44-46a1-887f-b051d71bd22d"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "9.2", "uuid": "37d780f9-6a21-4353-9f82-237393e8127c", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "9", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["25ebd8f6-08d6-4adf-b4af-f1d87b9c7353",
-        "226db7c2-f857-4e9a-82c2-1bd880208ab9", "3f5aceed-5bd6-403b-8379-9a4c9e967233",
-        "5a8388e4-ea47-498f-8c83-62bf647de788"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "11.1", "uuid": "25ebd8f6-08d6-4adf-b4af-f1d87b9c7353", "fec_mode": "CL74",
+        "8.1", "uuid": "4eabc4d3-e3c3-47fa-893c-6d677d21a245", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
         "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
-        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "11", "type": "access",
+        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "8", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["6d94611d-abfa-4575-bf66-e7cd20d4bb9c",
-        "911bdd74-c1b0-4383-b76e-1ea5fa70a2b6", "035a7c80-c1b7-467b-9416-05c816a50d30",
-        "80123eb3-bc23-4a53-a93e-8ff72d29bc67"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["e82d92b3-f24b-474e-bce7-4523ac607d58",
+        "4e2bcf31-5265-4c84-a4c3-eebce962861f", "c1ce4cb3-efa0-4820-9730-4ff6fd18ea09",
+        "ce057576-7425-49fc-b335-99ec58c45830"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "14.2", "uuid": "911bdd74-c1b0-4383-b76e-1ea5fa70a2b6", "fec_mode": "CL74",
+        "1.1", "uuid": "e82d92b3-f24b-474e-bce7-4523ac607d58", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "14", "type": "access",
+        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
+        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "1", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["71f5b4ff-2bec-4086-81da-37e28e424dc2",
-        "e874f79d-2738-40b4-8d1c-8c5f2b4ef791", "7c304cf9-9005-4fef-b1be-7bf1477aa140",
-        "ff4d10cd-d19a-4c8d-af1c-849a528125d8"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["bd86a741-f7ef-44ab-9a6b-747d984dc8ae",
+        "807290f4-63d4-42c6-8cfc-7a8522677a86", "d7a7f51c-7a6c-4665-a7fd-75238642c683",
+        "22aab1e8-6211-424b-ba6f-932ef4bf0a8d"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "15.4", "uuid": "ff4d10cd-d19a-4c8d-af1c-849a528125d8", "fec_mode": "CL74",
+        "15.2", "uuid": "807290f4-63d4-42c6-8cfc-7a8522677a86", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
         "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "15", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["71f5b4ff-2bec-4086-81da-37e28e424dc2",
-        "e874f79d-2738-40b4-8d1c-8c5f2b4ef791", "7c304cf9-9005-4fef-b1be-7bf1477aa140",
-        "ff4d10cd-d19a-4c8d-af1c-849a528125d8"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["2f2f8823-e4f7-4d7f-a1dd-3e933f5cb431",
+        "b980d67e-6b1c-415d-99e6-a5a422f0bc84", "efbd8139-41bf-4cca-9509-1ca2082db5bc",
+        "8d69d375-99bc-4d0f-86bf-992067e3ff04"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "15.2", "uuid": "e874f79d-2738-40b4-8d1c-8c5f2b4ef791", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "15", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["5f10badd-864c-4fd4-adb3-fe88a456bbad",
-        "3efdd6a8-f6a7-4e05-8496-b7de7554bf14", "c0b971a1-80aa-41f1-8d35-1447eaa1b64f",
-        "5e84b1d6-a130-4997-9033-87379e1094a2"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "3.1", "uuid": "5f10badd-864c-4fd4-adb3-fe88a456bbad", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
-        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "3", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["66babe6e-5488-4dae-801a-20be7e7cd5bc",
-        "b856caeb-29b8-47dc-9ab6-f680912db8ac", "f422698f-d1c2-4d46-ab3b-6c304925bd93",
-        "75d4355f-f5ea-4596-8e75-dcf980991b42"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "7.1", "uuid": "66babe6e-5488-4dae-801a-20be7e7cd5bc", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
-        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "7", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["139c64d5-cca1-48c7-8d2a-fa958be74a5f",
-        "34623a04-fc4d-4923-8560-869bfb14b4bd", "2fba5665-0f3f-442d-b1a1-08e999df0a06",
-        "b62995d4-f048-444f-9b8c-26f8c4aee5cf"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "20.4", "uuid": "b62995d4-f048-444f-9b8c-26f8c4aee5cf", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "20", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["66babe6e-5488-4dae-801a-20be7e7cd5bc",
-        "b856caeb-29b8-47dc-9ab6-f680912db8ac", "f422698f-d1c2-4d46-ab3b-6c304925bd93",
-        "75d4355f-f5ea-4596-8e75-dcf980991b42"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "7.2", "uuid": "b856caeb-29b8-47dc-9ab6-f680912db8ac", "fec_mode": "CL74",
+        "7.3", "uuid": "efbd8139-41bf-4cca-9509-1ca2082db5bc", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
         "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "7", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["25ebd8f6-08d6-4adf-b4af-f1d87b9c7353",
-        "226db7c2-f857-4e9a-82c2-1bd880208ab9", "3f5aceed-5bd6-403b-8379-9a4c9e967233",
-        "5a8388e4-ea47-498f-8c83-62bf647de788"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["8589736f-a96c-405c-97ce-dedd39c5b52a",
+        "1b9d9ed7-6276-46bd-86fd-ad955edba8c7", "e7f1243f-59bd-47c7-bfc3-84eb9292418b",
+        "55cc3af0-8a97-46ab-8679-6a8dae03b9e9"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "11.3", "uuid": "3f5aceed-5bd6-403b-8379-9a4c9e967233", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "11", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["bf7e47d5-8e68-4604-afd5-d58c22263067",
-        "37d780f9-6a21-4353-9f82-237393e8127c", "472cceef-15bc-4a64-a201-c672280b14d7",
-        "56085a2b-8a44-46a1-887f-b051d71bd22d"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "9.4", "uuid": "56085a2b-8a44-46a1-887f-b051d71bd22d", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "9", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["534f942d-6357-43bf-b98c-7eec17e8b787",
-        "45f8c699-de73-479d-bf2d-90626a0dafae", "eba03cd2-f754-4165-ba90-c8e5413d2c1c",
-        "9223b75e-2cde-4047-b55b-4faa9568dee4"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "2.4", "uuid": "9223b75e-2cde-4047-b55b-4faa9568dee4", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "2", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["73cd7119-5348-4b3e-88b9-597a9ae9e0de",
-        "ea15f2f3-bd2d-4a21-b010-856938095f2c", "88af1c91-50c4-46dd-a8f9-7fe2031a5a04",
-        "daf0085a-a182-4c84-9bd0-d12032f77c76"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "16.3", "uuid": "88af1c91-50c4-46dd-a8f9-7fe2031a5a04", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "16", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["534f942d-6357-43bf-b98c-7eec17e8b787",
-        "45f8c699-de73-479d-bf2d-90626a0dafae", "eba03cd2-f754-4165-ba90-c8e5413d2c1c",
-        "9223b75e-2cde-4047-b55b-4faa9568dee4"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "2.3", "uuid": "eba03cd2-f754-4165-ba90-c8e5413d2c1c", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "2", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["a590d7f1-7dc8-45fe-ae07-6e67c0181e93",
-        "5fbf2270-9da1-4b26-8ccc-182991603ec4", "eaf05f0f-f164-4e81-88d6-984b87f9d3a1",
-        "636703a5-97d7-49dc-a2a7-36946dce8788"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "17.2", "uuid": "5fbf2270-9da1-4b26-8ccc-182991603ec4", "fec_mode": "CL74",
+        "17.4", "uuid": "55cc3af0-8a97-46ab-8679-6a8dae03b9e9", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
         "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "17", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["5f10badd-864c-4fd4-adb3-fe88a456bbad",
-        "3efdd6a8-f6a7-4e05-8496-b7de7554bf14", "c0b971a1-80aa-41f1-8d35-1447eaa1b64f",
-        "5e84b1d6-a130-4997-9033-87379e1094a2"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["4eabc4d3-e3c3-47fa-893c-6d677d21a245",
+        "a8e3c1b6-3f74-4d20-8fdd-ba610e8765c1", "6867fa47-c32f-4825-863d-d43545f2de74",
+        "a1c8b578-3393-422e-b6a3-97ca1ded7e3e"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "3.4", "uuid": "5e84b1d6-a130-4997-9033-87379e1094a2", "fec_mode": "CL74",
+        "8.4", "uuid": "a1c8b578-3393-422e-b6a3-97ca1ded7e3e", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "3", "type": "access",
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "8", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["a64ecea6-149f-43e8-b3e4-2de1ce88c221",
-        "9a246d2d-9914-46d1-bdc5-fa5a26d07693", "6aac616e-c270-44e0-be93-83eaa3447a94",
-        "ea256894-21fb-4c94-be96-7cb6be67b40a"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["5b8ab5d3-9999-4fcb-bcf1-a47541a3995f",
+        "f06628e5-79c7-4164-be1d-6f1214ccba45", "2b6c7183-9d6d-4028-abf0-97da1a204b20",
+        "bc39c15b-1bd4-49ce-ac9c-fc34bb5a3bb8"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "6.3", "uuid": "6aac616e-c270-44e0-be93-83eaa3447a94", "fec_mode": "CL74",
+        "18.2", "uuid": "f06628e5-79c7-4164-be1d-6f1214ccba45", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "6", "type": "access",
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "18", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["0e25a798-a53c-4781-a24a-e9930a985fb6",
-        "6dd5e4c5-8424-4c06-91b8-8bffff198463", "f08a23e6-b94a-49f3-9e0f-368e3a0effe8",
-        "71e6697e-bdbe-4b22-985f-159f5e1703d0"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["77768e0c-9c82-4e22-8cf1-c5c937ac0ff2",
+        "1995da71-2cf4-43cf-9126-ab6915f205d3", "f7f545ab-c375-478e-9438-0239aec2cfa3",
+        "b785f3b7-301f-44be-bc11-d180dc5d57b0"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "12.1", "uuid": "0e25a798-a53c-4781-a24a-e9930a985fb6", "fec_mode": "CL74",
+        "14.4", "uuid": "b785f3b7-301f-44be-bc11-d180dc5d57b0", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "14", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["a8a7cd7c-862f-4faf-b611-e087b5a34d65",
+        "027b8e07-c3ee-432d-b0a0-22687e6ebb02", "c26e8048-80aa-460a-b9c4-92a0271084f0",
+        "28791c11-ba99-4441-8718-6e00178eede2"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "12.1", "uuid": "a8a7cd7c-862f-4faf-b611-e087b5a34d65", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
         "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
         "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "12", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["60ff30ea-eea5-4d6d-bee2-97faff433ced",
-        "2279f6a7-dae0-4680-bad2-a50aae05fff7", "5b90e9e1-e53b-41b4-86f0-21b83e7599b5",
-        "59ad125b-fcb8-462b-9035-4ee3aae8ae15"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["cbcb7969-eca1-44a1-90c6-7aa445d5e914",
+        "bca1ea98-3a11-4c6b-9bfe-ff4214efd23c", "6978a016-0281-4e54-8652-217f099113f7",
+        "a0331fa0-ec07-4748-916a-f2ced1004084"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "18.3", "uuid": "5b90e9e1-e53b-41b4-86f0-21b83e7599b5", "fec_mode": "CL74",
+        "9.2", "uuid": "bca1ea98-3a11-4c6b-9bfe-ff4214efd23c", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "18", "type": "access",
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "9", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["a590d7f1-7dc8-45fe-ae07-6e67c0181e93",
-        "5fbf2270-9da1-4b26-8ccc-182991603ec4", "eaf05f0f-f164-4e81-88d6-984b87f9d3a1",
-        "636703a5-97d7-49dc-a2a7-36946dce8788"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["77768e0c-9c82-4e22-8cf1-c5c937ac0ff2",
+        "1995da71-2cf4-43cf-9126-ab6915f205d3", "f7f545ab-c375-478e-9438-0239aec2cfa3",
+        "b785f3b7-301f-44be-bc11-d180dc5d57b0"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "17.3", "uuid": "eaf05f0f-f164-4e81-88d6-984b87f9d3a1", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "17", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["25ebd8f6-08d6-4adf-b4af-f1d87b9c7353",
-        "226db7c2-f857-4e9a-82c2-1bd880208ab9", "3f5aceed-5bd6-403b-8379-9a4c9e967233",
-        "5a8388e4-ea47-498f-8c83-62bf647de788"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "11.2", "uuid": "226db7c2-f857-4e9a-82c2-1bd880208ab9", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "11", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["60ff30ea-eea5-4d6d-bee2-97faff433ced",
-        "2279f6a7-dae0-4680-bad2-a50aae05fff7", "5b90e9e1-e53b-41b4-86f0-21b83e7599b5",
-        "59ad125b-fcb8-462b-9035-4ee3aae8ae15"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "18.4", "uuid": "59ad125b-fcb8-462b-9035-4ee3aae8ae15", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "18", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["5f10badd-864c-4fd4-adb3-fe88a456bbad",
-        "3efdd6a8-f6a7-4e05-8496-b7de7554bf14", "c0b971a1-80aa-41f1-8d35-1447eaa1b64f",
-        "5e84b1d6-a130-4997-9033-87379e1094a2"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "3.3", "uuid": "c0b971a1-80aa-41f1-8d35-1447eaa1b64f", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "3", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["53ade2b1-2c23-4efc-9b65-c9db9133d333",
-        "bf02211a-9950-479f-bc32-595ab46a20e8", "140df894-8a49-4d51-ae96-f5e760e93af0",
-        "4d075cb7-346e-4927-9e29-e067431c0c56"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "13.2", "uuid": "bf02211a-9950-479f-bc32-595ab46a20e8", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "13", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["a64ecea6-149f-43e8-b3e4-2de1ce88c221",
-        "9a246d2d-9914-46d1-bdc5-fa5a26d07693", "6aac616e-c270-44e0-be93-83eaa3447a94",
-        "ea256894-21fb-4c94-be96-7cb6be67b40a"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "6.1", "uuid": "a64ecea6-149f-43e8-b3e4-2de1ce88c221", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
-        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "6", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["6d94611d-abfa-4575-bf66-e7cd20d4bb9c",
-        "911bdd74-c1b0-4383-b76e-1ea5fa70a2b6", "035a7c80-c1b7-467b-9416-05c816a50d30",
-        "80123eb3-bc23-4a53-a93e-8ff72d29bc67"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "14.4", "uuid": "80123eb3-bc23-4a53-a93e-8ff72d29bc67", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "14", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["91b16c7c-37df-491e-84d6-2e36830ad9b1",
-        "84314d9a-bd27-4ebf-b295-93d8562ae2b8", "b245754e-eb72-4983-b37d-4c9aad97a495",
-        "48d358a4-125a-4444-be97-762766de9b9a"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "8.4", "uuid": "48d358a4-125a-4444-be97-762766de9b9a", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "8", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["d8b2571c-8e55-4f8a-907c-52c54e7b23c3",
-        "e3ffa199-0f55-4cab-882f-237d752fdfb0", "ca07faf2-037f-4bc3-b8b7-e0924522e3c2",
-        "ebdf61a8-be70-4c89-9992-2435084cd605"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "1.3", "uuid": "ca07faf2-037f-4bc3-b8b7-e0924522e3c2", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "1", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["6d94611d-abfa-4575-bf66-e7cd20d4bb9c",
-        "911bdd74-c1b0-4383-b76e-1ea5fa70a2b6", "035a7c80-c1b7-467b-9416-05c816a50d30",
-        "80123eb3-bc23-4a53-a93e-8ff72d29bc67"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "14.1", "uuid": "6d94611d-abfa-4575-bf66-e7cd20d4bb9c", "fec_mode": "CL74",
+        "14.1", "uuid": "77768e0c-9c82-4e22-8cf1-c5c937ac0ff2", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
         "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
         "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "14", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["53ade2b1-2c23-4efc-9b65-c9db9133d333",
-        "bf02211a-9950-479f-bc32-595ab46a20e8", "140df894-8a49-4d51-ae96-f5e760e93af0",
-        "4d075cb7-346e-4927-9e29-e067431c0c56"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["5b8ab5d3-9999-4fcb-bcf1-a47541a3995f",
+        "f06628e5-79c7-4164-be1d-6f1214ccba45", "2b6c7183-9d6d-4028-abf0-97da1a204b20",
+        "bc39c15b-1bd4-49ce-ac9c-fc34bb5a3bb8"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "13.3", "uuid": "140df894-8a49-4d51-ae96-f5e760e93af0", "fec_mode": "CL74",
+        "18.3", "uuid": "2b6c7183-9d6d-4028-abf0-97da1a204b20", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "13", "type": "access",
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "18", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["6440f1ef-b1a2-4aa3-8913-a5901b08db72",
-        "d2be5c70-f481-48b8-a1bb-621fcf1f9a21", "05b35653-cd50-42ac-aa76-fadd7db9236a",
-        "8a0514ea-5789-4366-9a89-8c7e85316ae1"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["aa5d3ef9-0b96-4e28-9aef-a1784ba73e33",
+        "9a106f7d-db1c-4e10-a491-c92dbae2ee34", "de379202-3e39-4fee-85bb-aa3620d1adf9",
+        "de60bcc3-2ee6-40ab-817f-46992d51865b"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "10.3", "uuid": "05b35653-cd50-42ac-aa76-fadd7db9236a", "fec_mode": "CL74",
+        "11.1", "uuid": "aa5d3ef9-0b96-4e28-9aef-a1784ba73e33", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
+        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "11", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["1057184b-265e-42cb-a466-163d292f0cce",
+        "35fcf1b9-ee84-4ed7-bfb6-4805a40bb0f8", "d5dcd66c-f7d6-4a82-8f96-1635d08bc4cf",
+        "beba62f7-3383-4e06-af61-ba71719bae5c"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "6.1", "uuid": "1057184b-265e-42cb-a466-163d292f0cce", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
+        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "6", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["f85010f3-de93-4aba-a501-12732ca25cf0",
+        "eb726b12-284f-4ad3-9176-b9fe79cf6fad", "2f7825b2-1cfa-4e8b-9a28-3c1ccf1f49a2",
+        "1237dad6-3415-4209-ad88-35bbe5bc4e19"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "10.3", "uuid": "2f7825b2-1cfa-4e8b-9a28-3c1ccf1f49a2", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
         "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "10", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["8f8ff48a-9137-4c72-add0-8a06b4720dfa",
-        "b56a9b36-6c87-4050-bd03-f9adeee7109b", "57fb0b04-b430-4088-ac7c-c15da54834a1",
-        "840570f2-26cd-4d4d-a671-2ffa00456abd"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["e82d92b3-f24b-474e-bce7-4523ac607d58",
+        "4e2bcf31-5265-4c84-a4c3-eebce962861f", "c1ce4cb3-efa0-4820-9730-4ff6fd18ea09",
+        "ce057576-7425-49fc-b335-99ec58c45830"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "4.4", "uuid": "840570f2-26cd-4d4d-a671-2ffa00456abd", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "4", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["f8858bdf-d6f4-40db-a0e3-e8e7eebc9969",
-        "eaff4696-f6a7-42f7-a0a9-1751be07f666", "b5a2cb39-1415-41c7-9a1f-b0915b8a2fe9",
-        "93091444-7b69-4b9c-be71-b1cb830cb9c6"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "5.3", "uuid": "b5a2cb39-1415-41c7-9a1f-b0915b8a2fe9", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "5", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["66babe6e-5488-4dae-801a-20be7e7cd5bc",
-        "b856caeb-29b8-47dc-9ab6-f680912db8ac", "f422698f-d1c2-4d46-ab3b-6c304925bd93",
-        "75d4355f-f5ea-4596-8e75-dcf980991b42"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "7.4", "uuid": "75d4355f-f5ea-4596-8e75-dcf980991b42", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "7", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["73cd7119-5348-4b3e-88b9-597a9ae9e0de",
-        "ea15f2f3-bd2d-4a21-b010-856938095f2c", "88af1c91-50c4-46dd-a8f9-7fe2031a5a04",
-        "daf0085a-a182-4c84-9bd0-d12032f77c76"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "16.4", "uuid": "daf0085a-a182-4c84-9bd0-d12032f77c76", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "16", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["d8b2571c-8e55-4f8a-907c-52c54e7b23c3",
-        "e3ffa199-0f55-4cab-882f-237d752fdfb0", "ca07faf2-037f-4bc3-b8b7-e0924522e3c2",
-        "ebdf61a8-be70-4c89-9992-2435084cd605"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "1.2", "uuid": "e3ffa199-0f55-4cab-882f-237d752fdfb0", "fec_mode": "CL74",
+        "1.4", "uuid": "ce057576-7425-49fc-b335-99ec58c45830", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
         "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "1", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
         "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["73cd7119-5348-4b3e-88b9-597a9ae9e0de",
-        "ea15f2f3-bd2d-4a21-b010-856938095f2c", "88af1c91-50c4-46dd-a8f9-7fe2031a5a04",
-        "daf0085a-a182-4c84-9bd0-d12032f77c76"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
+        ["not_applicable"], "speed_group": ["5b8ab5d3-9999-4fcb-bcf1-a47541a3995f",
+        "f06628e5-79c7-4164-be1d-6f1214ccba45", "2b6c7183-9d6d-4028-abf0-97da1a204b20",
+        "bc39c15b-1bd4-49ce-ac9c-fc34bb5a3bb8"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
         "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
         "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "16.2", "uuid": "ea15f2f3-bd2d-4a21-b010-856938095f2c", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "16", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["25ebd8f6-08d6-4adf-b4af-f1d87b9c7353",
-        "226db7c2-f857-4e9a-82c2-1bd880208ab9", "3f5aceed-5bd6-403b-8379-9a4c9e967233",
-        "5a8388e4-ea47-498f-8c83-62bf647de788"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "11.4", "uuid": "5a8388e4-ea47-498f-8c83-62bf647de788", "fec_mode": "CL74",
-        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
-        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "11", "type": "access",
-        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
-        ["not_applicable"], "speed_group": ["60ff30ea-eea5-4d6d-bee2-97faff433ced",
-        "2279f6a7-dae0-4680-bad2-a50aae05fff7", "5b90e9e1-e53b-41b4-86f0-21b83e7599b5",
-        "59ad125b-fcb8-462b-9035-4ee3aae8ae15"], "ungrouped_vlans": "", "link_state":
-        "down", "switch_uuid": "31203a3b-694a-458a-aee4-2283240b84d3", "admin_state":
-        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
-        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs2",
-        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
-        "18.1", "uuid": "60ff30ea-eea5-4d6d-bee2-97faff433ced", "fec_mode": "CL74",
+        "18.1", "uuid": "5b8ab5d3-9999-4fcb-bcf1-a47541a3995f", "fec_mode": "CL74",
         "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
         "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
         "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "18", "type": "access",
         "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
-        "qsfp_4x25_gbps"}], "time": "412.474mS"}'
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["e82d92b3-f24b-474e-bce7-4523ac607d58",
+        "4e2bcf31-5265-4c84-a4c3-eebce962861f", "c1ce4cb3-efa0-4820-9730-4ff6fd18ea09",
+        "ce057576-7425-49fc-b335-99ec58c45830"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "1.2", "uuid": "4e2bcf31-5265-4c84-a4c3-eebce962861f", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "1", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["bd86a741-f7ef-44ab-9a6b-747d984dc8ae",
+        "807290f4-63d4-42c6-8cfc-7a8522677a86", "d7a7f51c-7a6c-4665-a7fd-75238642c683",
+        "22aab1e8-6211-424b-ba6f-932ef4bf0a8d"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "15.1", "uuid": "bd86a741-f7ef-44ab-9a6b-747d984dc8ae", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
+        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "15", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["a8a7cd7c-862f-4faf-b611-e087b5a34d65",
+        "027b8e07-c3ee-432d-b0a0-22687e6ebb02", "c26e8048-80aa-460a-b9c4-92a0271084f0",
+        "28791c11-ba99-4441-8718-6e00178eede2"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "12.2", "uuid": "027b8e07-c3ee-432d-b0a0-22687e6ebb02", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "12", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["7498f38f-1a54-40d1-bc5e-f7f359a9bc90",
+        "01951880-358b-46c0-879e-f59280d9e9d5", "49b8e4f3-dd26-40b6-97e6-9c48a24baf49",
+        "b78785e6-fd6f-426d-96e0-0b6ce06d624a"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "19.4", "uuid": "b78785e6-fd6f-426d-96e0-0b6ce06d624a", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "19", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["aa5d3ef9-0b96-4e28-9aef-a1784ba73e33",
+        "9a106f7d-db1c-4e10-a491-c92dbae2ee34", "de379202-3e39-4fee-85bb-aa3620d1adf9",
+        "de60bcc3-2ee6-40ab-817f-46992d51865b"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "11.3", "uuid": "de379202-3e39-4fee-85bb-aa3620d1adf9", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "11", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["5ddf2af8-cb59-4900-9aca-4e20d3866448",
+        "69e1a9a6-b679-41f9-92d4-a50c9a29050a", "41aecdd3-e20d-48e8-8cfc-2ffa4e29c089",
+        "0a3a1f77-fc11-40d6-a653-d1b9fdbb1d77"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "20.1", "uuid": "5ddf2af8-cb59-4900-9aca-4e20d3866448", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
+        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "20", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["8fdbd463-03b8-44a7-ab2f-c392f031e26e",
+        "497e17e9-94ca-4eb2-9077-e669bdcc8ad8", "ea6e974d-fe00-4721-b693-67a2aafc5fcf",
+        "8f0a19b6-e280-45ca-b0c2-93164ffe2dc4"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "13.1", "uuid": "8fdbd463-03b8-44a7-ab2f-c392f031e26e", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
+        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "13", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["a8a7cd7c-862f-4faf-b611-e087b5a34d65",
+        "027b8e07-c3ee-432d-b0a0-22687e6ebb02", "c26e8048-80aa-460a-b9c4-92a0271084f0",
+        "28791c11-ba99-4441-8718-6e00178eede2"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "12.3", "uuid": "c26e8048-80aa-460a-b9c4-92a0271084f0", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "12", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["9e81c410-43c2-4e1d-bfe0-c69c52100bce",
+        "0b7808b1-6989-4610-b0f3-516f83ac037a", "a7dc25d2-5276-4ba3-8310-2ce914b48c56",
+        "38a13ab5-9017-4d8b-96ba-b8c973ad6729"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "16.4", "uuid": "38a13ab5-9017-4d8b-96ba-b8c973ad6729", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "16", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["1057184b-265e-42cb-a466-163d292f0cce",
+        "35fcf1b9-ee84-4ed7-bfb6-4805a40bb0f8", "d5dcd66c-f7d6-4a82-8f96-1635d08bc4cf",
+        "beba62f7-3383-4e06-af61-ba71719bae5c"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "6.3", "uuid": "d5dcd66c-f7d6-4a82-8f96-1635d08bc4cf", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "6", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["5ddf2af8-cb59-4900-9aca-4e20d3866448",
+        "69e1a9a6-b679-41f9-92d4-a50c9a29050a", "41aecdd3-e20d-48e8-8cfc-2ffa4e29c089",
+        "0a3a1f77-fc11-40d6-a653-d1b9fdbb1d77"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "20.4", "uuid": "0a3a1f77-fc11-40d6-a653-d1b9fdbb1d77", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "20", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["f85010f3-de93-4aba-a501-12732ca25cf0",
+        "eb726b12-284f-4ad3-9176-b9fe79cf6fad", "2f7825b2-1cfa-4e8b-9a28-3c1ccf1f49a2",
+        "1237dad6-3415-4209-ad88-35bbe5bc4e19"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "10.4", "uuid": "1237dad6-3415-4209-ad88-35bbe5bc4e19", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "10", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["8fdbd463-03b8-44a7-ab2f-c392f031e26e",
+        "497e17e9-94ca-4eb2-9077-e669bdcc8ad8", "ea6e974d-fe00-4721-b693-67a2aafc5fcf",
+        "8f0a19b6-e280-45ca-b0c2-93164ffe2dc4"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "13.2", "uuid": "497e17e9-94ca-4eb2-9077-e669bdcc8ad8", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "13", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["5ddf2af8-cb59-4900-9aca-4e20d3866448",
+        "69e1a9a6-b679-41f9-92d4-a50c9a29050a", "41aecdd3-e20d-48e8-8cfc-2ffa4e29c089",
+        "0a3a1f77-fc11-40d6-a653-d1b9fdbb1d77"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "20.3", "uuid": "41aecdd3-e20d-48e8-8cfc-2ffa4e29c089", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "20", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["8fdbd463-03b8-44a7-ab2f-c392f031e26e",
+        "497e17e9-94ca-4eb2-9077-e669bdcc8ad8", "ea6e974d-fe00-4721-b693-67a2aafc5fcf",
+        "8f0a19b6-e280-45ca-b0c2-93164ffe2dc4"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "13.4", "uuid": "8f0a19b6-e280-45ca-b0c2-93164ffe2dc4", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "13", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["03a02539-3677-4adf-9762-0e2987dff235",
+        "bf254df5-bd03-458f-9b83-a7bd421af265", "3b1a4731-a983-423a-bab2-2471fafeca25",
+        "bbe6e2b8-5d68-40d8-be71-9475af17c56c"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "3.3", "uuid": "3b1a4731-a983-423a-bab2-2471fafeca25", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "3", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["cbcb7969-eca1-44a1-90c6-7aa445d5e914",
+        "bca1ea98-3a11-4c6b-9bfe-ff4214efd23c", "6978a016-0281-4e54-8652-217f099113f7",
+        "a0331fa0-ec07-4748-916a-f2ced1004084"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "9.4", "uuid": "a0331fa0-ec07-4748-916a-f2ced1004084", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "9", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["77768e0c-9c82-4e22-8cf1-c5c937ac0ff2",
+        "1995da71-2cf4-43cf-9126-ab6915f205d3", "f7f545ab-c375-478e-9438-0239aec2cfa3",
+        "b785f3b7-301f-44be-bc11-d180dc5d57b0"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "14.2", "uuid": "1995da71-2cf4-43cf-9126-ab6915f205d3", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "14", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["03a02539-3677-4adf-9762-0e2987dff235",
+        "bf254df5-bd03-458f-9b83-a7bd421af265", "3b1a4731-a983-423a-bab2-2471fafeca25",
+        "bbe6e2b8-5d68-40d8-be71-9475af17c56c"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "3.4", "uuid": "bbe6e2b8-5d68-40d8-be71-9475af17c56c", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "3", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["2f2f8823-e4f7-4d7f-a1dd-3e933f5cb431",
+        "b980d67e-6b1c-415d-99e6-a5a422f0bc84", "efbd8139-41bf-4cca-9509-1ca2082db5bc",
+        "8d69d375-99bc-4d0f-86bf-992067e3ff04"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "7.1", "uuid": "2f2f8823-e4f7-4d7f-a1dd-3e933f5cb431", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
+        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "7", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["5b8ab5d3-9999-4fcb-bcf1-a47541a3995f",
+        "f06628e5-79c7-4164-be1d-6f1214ccba45", "2b6c7183-9d6d-4028-abf0-97da1a204b20",
+        "bc39c15b-1bd4-49ce-ac9c-fc34bb5a3bb8"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "18.4", "uuid": "bc39c15b-1bd4-49ce-ac9c-fc34bb5a3bb8", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "18", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["4a16a001-4239-4067-a116-f406704b0bf6",
+        "9cd59908-8169-4f8a-a046-490080a06067", "c925884f-b31e-4e15-86a3-f1ab7dfea6d0",
+        "105df8bb-5a6e-4547-802d-e90e7fe7011f"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "4.3", "uuid": "c925884f-b31e-4e15-86a3-f1ab7dfea6d0", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "4", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["b45d4ef2-4416-4a9e-8672-a3795fdd0ca2",
+        "fd85b2f4-f67c-4cd4-8341-67c3b7bd328a", "22493d66-f9bb-46c3-8ba4-56e3074afed0",
+        "8dfe4df9-5ed6-455f-b497-b8c762a6624f"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "2.1", "uuid": "b45d4ef2-4416-4a9e-8672-a3795fdd0ca2", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
+        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "2", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["77768e0c-9c82-4e22-8cf1-c5c937ac0ff2",
+        "1995da71-2cf4-43cf-9126-ab6915f205d3", "f7f545ab-c375-478e-9438-0239aec2cfa3",
+        "b785f3b7-301f-44be-bc11-d180dc5d57b0"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "14.3", "uuid": "f7f545ab-c375-478e-9438-0239aec2cfa3", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "14", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["4eabc4d3-e3c3-47fa-893c-6d677d21a245",
+        "a8e3c1b6-3f74-4d20-8fdd-ba610e8765c1", "6867fa47-c32f-4825-863d-d43545f2de74",
+        "a1c8b578-3393-422e-b6a3-97ca1ded7e3e"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "8.2", "uuid": "a8e3c1b6-3f74-4d20-8fdd-ba610e8765c1", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "8", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["1a72ec75-9cae-465d-98eb-265e53f17f35",
+        "f19ee1c2-8c2b-4733-9aa4-22f615f6f427", "ece224c3-f3af-443c-b4c5-b8f03f487b21",
+        "586e585d-88c7-4a03-b80a-0c4d77bad957"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "5.1", "uuid": "1a72ec75-9cae-465d-98eb-265e53f17f35", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
+        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "5", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["cbcb7969-eca1-44a1-90c6-7aa445d5e914",
+        "bca1ea98-3a11-4c6b-9bfe-ff4214efd23c", "6978a016-0281-4e54-8652-217f099113f7",
+        "a0331fa0-ec07-4748-916a-f2ced1004084"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "9.3", "uuid": "6978a016-0281-4e54-8652-217f099113f7", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "9", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["2f2f8823-e4f7-4d7f-a1dd-3e933f5cb431",
+        "b980d67e-6b1c-415d-99e6-a5a422f0bc84", "efbd8139-41bf-4cca-9509-1ca2082db5bc",
+        "8d69d375-99bc-4d0f-86bf-992067e3ff04"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "7.4", "uuid": "8d69d375-99bc-4d0f-86bf-992067e3ff04", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "7", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["b45d4ef2-4416-4a9e-8672-a3795fdd0ca2",
+        "fd85b2f4-f67c-4cd4-8341-67c3b7bd328a", "22493d66-f9bb-46c3-8ba4-56e3074afed0",
+        "8dfe4df9-5ed6-455f-b497-b8c762a6624f"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "2.3", "uuid": "22493d66-f9bb-46c3-8ba4-56e3074afed0", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "2", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["03a02539-3677-4adf-9762-0e2987dff235",
+        "bf254df5-bd03-458f-9b83-a7bd421af265", "3b1a4731-a983-423a-bab2-2471fafeca25",
+        "bbe6e2b8-5d68-40d8-be71-9475af17c56c"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "3.2", "uuid": "bf254df5-bd03-458f-9b83-a7bd421af265", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "3", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["9e81c410-43c2-4e1d-bfe0-c69c52100bce",
+        "0b7808b1-6989-4610-b0f3-516f83ac037a", "a7dc25d2-5276-4ba3-8310-2ce914b48c56",
+        "38a13ab5-9017-4d8b-96ba-b8c973ad6729"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "16.2", "uuid": "0b7808b1-6989-4610-b0f3-516f83ac037a", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "16", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["1a72ec75-9cae-465d-98eb-265e53f17f35",
+        "f19ee1c2-8c2b-4733-9aa4-22f615f6f427", "ece224c3-f3af-443c-b4c5-b8f03f487b21",
+        "586e585d-88c7-4a03-b80a-0c4d77bad957"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "5.3", "uuid": "ece224c3-f3af-443c-b4c5-b8f03f487b21", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "5", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["7498f38f-1a54-40d1-bc5e-f7f359a9bc90",
+        "01951880-358b-46c0-879e-f59280d9e9d5", "49b8e4f3-dd26-40b6-97e6-9c48a24baf49",
+        "b78785e6-fd6f-426d-96e0-0b6ce06d624a"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "19.2", "uuid": "01951880-358b-46c0-879e-f59280d9e9d5", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "19", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["2f2f8823-e4f7-4d7f-a1dd-3e933f5cb431",
+        "b980d67e-6b1c-415d-99e6-a5a422f0bc84", "efbd8139-41bf-4cca-9509-1ca2082db5bc",
+        "8d69d375-99bc-4d0f-86bf-992067e3ff04"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "7.2", "uuid": "b980d67e-6b1c-415d-99e6-a5a422f0bc84", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "7", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["f85010f3-de93-4aba-a501-12732ca25cf0",
+        "eb726b12-284f-4ad3-9176-b9fe79cf6fad", "2f7825b2-1cfa-4e8b-9a28-3c1ccf1f49a2",
+        "1237dad6-3415-4209-ad88-35bbe5bc4e19"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "10.2", "uuid": "eb726b12-284f-4ad3-9176-b9fe79cf6fad", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "10", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["9e81c410-43c2-4e1d-bfe0-c69c52100bce",
+        "0b7808b1-6989-4610-b0f3-516f83ac037a", "a7dc25d2-5276-4ba3-8310-2ce914b48c56",
+        "38a13ab5-9017-4d8b-96ba-b8c973ad6729"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "16.3", "uuid": "a7dc25d2-5276-4ba3-8310-2ce914b48c56", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "16", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["aa5d3ef9-0b96-4e28-9aef-a1784ba73e33",
+        "9a106f7d-db1c-4e10-a491-c92dbae2ee34", "de379202-3e39-4fee-85bb-aa3620d1adf9",
+        "de60bcc3-2ee6-40ab-817f-46992d51865b"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "11.2", "uuid": "9a106f7d-db1c-4e10-a491-c92dbae2ee34", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "11", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["cbcb7969-eca1-44a1-90c6-7aa445d5e914",
+        "bca1ea98-3a11-4c6b-9bfe-ff4214efd23c", "6978a016-0281-4e54-8652-217f099113f7",
+        "a0331fa0-ec07-4748-916a-f2ced1004084"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "9.1", "uuid": "cbcb7969-eca1-44a1-90c6-7aa445d5e914", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
+        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "9", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["5ddf2af8-cb59-4900-9aca-4e20d3866448",
+        "69e1a9a6-b679-41f9-92d4-a50c9a29050a", "41aecdd3-e20d-48e8-8cfc-2ffa4e29c089",
+        "0a3a1f77-fc11-40d6-a653-d1b9fdbb1d77"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "20.2", "uuid": "69e1a9a6-b679-41f9-92d4-a50c9a29050a", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "20", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["8589736f-a96c-405c-97ce-dedd39c5b52a",
+        "1b9d9ed7-6276-46bd-86fd-ad955edba8c7", "e7f1243f-59bd-47c7-bfc3-84eb9292418b",
+        "55cc3af0-8a97-46ab-8679-6a8dae03b9e9"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "17.2", "uuid": "1b9d9ed7-6276-46bd-86fd-ad955edba8c7", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "17", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["8fdbd463-03b8-44a7-ab2f-c392f031e26e",
+        "497e17e9-94ca-4eb2-9077-e669bdcc8ad8", "ea6e974d-fe00-4721-b693-67a2aafc5fcf",
+        "8f0a19b6-e280-45ca-b0c2-93164ffe2dc4"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "13.3", "uuid": "ea6e974d-fe00-4721-b693-67a2aafc5fcf", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "13", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["f85010f3-de93-4aba-a501-12732ca25cf0",
+        "eb726b12-284f-4ad3-9176-b9fe79cf6fad", "2f7825b2-1cfa-4e8b-9a28-3c1ccf1f49a2",
+        "1237dad6-3415-4209-ad88-35bbe5bc4e19"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "10.1", "uuid": "f85010f3-de93-4aba-a501-12732ca25cf0", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
+        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "10", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["03a02539-3677-4adf-9762-0e2987dff235",
+        "bf254df5-bd03-458f-9b83-a7bd421af265", "3b1a4731-a983-423a-bab2-2471fafeca25",
+        "bbe6e2b8-5d68-40d8-be71-9475af17c56c"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "3.1", "uuid": "03a02539-3677-4adf-9762-0e2987dff235", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
+        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "3", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["8589736f-a96c-405c-97ce-dedd39c5b52a",
+        "1b9d9ed7-6276-46bd-86fd-ad955edba8c7", "e7f1243f-59bd-47c7-bfc3-84eb9292418b",
+        "55cc3af0-8a97-46ab-8679-6a8dae03b9e9"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "17.1", "uuid": "8589736f-a96c-405c-97ce-dedd39c5b52a", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
+        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "17", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["1057184b-265e-42cb-a466-163d292f0cce",
+        "35fcf1b9-ee84-4ed7-bfb6-4805a40bb0f8", "d5dcd66c-f7d6-4a82-8f96-1635d08bc4cf",
+        "beba62f7-3383-4e06-af61-ba71719bae5c"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "6.4", "uuid": "beba62f7-3383-4e06-af61-ba71719bae5c", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "6", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["70d35ae9-8363-4f5a-8b91-24696bdae353"],
+        "ungrouped_vlans": "", "link_state": "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f",
+        "admin_state": "disabled", "form_factor": "sfp", "port_security_enabled":
+        false, "vlans": "", "speed": {"current": 10000, "permitted": [1000, 10000]},
+        "switch_name": "admin-vs1", "fec": "disabled", "read_only": false, "default_state":
+        true, "port_label": "33", "uuid": "70d35ae9-8363-4f5a-8b91-24696bdae353",
+        "fec_mode": "CL74", "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid":
+        null, "permitted_qsfp_modes": [], "silkscreen": "S1", "type": "access", "bridge_loop_detection":
+        {"interval": 1000, "mode": "disabled"}, "qsfp_mode": "not_applicable"}, {"native_vlan":
+        1, "description": "", "name": "", "holddown": ["not_applicable"], "speed_group":
+        ["8589736f-a96c-405c-97ce-dedd39c5b52a", "1b9d9ed7-6276-46bd-86fd-ad955edba8c7",
+        "e7f1243f-59bd-47c7-bfc3-84eb9292418b", "55cc3af0-8a97-46ab-8679-6a8dae03b9e9"],
+        "ungrouped_vlans": "", "link_state": "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f",
+        "admin_state": "disabled", "form_factor": "qsfp", "port_security_enabled":
+        false, "vlans": "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name":
+        "admin-vs1", "fec": "disabled", "read_only": false, "default_state": true,
+        "port_label": "17.3", "uuid": "e7f1243f-59bd-47c7-bfc3-84eb9292418b", "fec_mode":
+        "CL74", "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid":
+        null, "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "17", "type":
+        "access", "bridge_loop_detection": {"interval": 1000, "mode": "disabled"},
+        "qsfp_mode": "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name":
+        "", "holddown": ["not_applicable"], "speed_group": ["4a16a001-4239-4067-a116-f406704b0bf6",
+        "9cd59908-8169-4f8a-a046-490080a06067", "c925884f-b31e-4e15-86a3-f1ab7dfea6d0",
+        "105df8bb-5a6e-4547-802d-e90e7fe7011f"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "4.1", "uuid": "4a16a001-4239-4067-a116-f406704b0bf6", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
+        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "4", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["7498f38f-1a54-40d1-bc5e-f7f359a9bc90",
+        "01951880-358b-46c0-879e-f59280d9e9d5", "49b8e4f3-dd26-40b6-97e6-9c48a24baf49",
+        "b78785e6-fd6f-426d-96e0-0b6ce06d624a"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "19.1", "uuid": "7498f38f-1a54-40d1-bc5e-f7f359a9bc90", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_1x100_gbps", "qsfp_1x40_gbps", "qsfp_2x50_gbps",
+        "qsfp_4x10_gbps", "qsfp_4x25_gbps"], "silkscreen": "19", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["7498f38f-1a54-40d1-bc5e-f7f359a9bc90",
+        "01951880-358b-46c0-879e-f59280d9e9d5", "49b8e4f3-dd26-40b6-97e6-9c48a24baf49",
+        "b78785e6-fd6f-426d-96e0-0b6ce06d624a"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "19.3", "uuid": "49b8e4f3-dd26-40b6-97e6-9c48a24baf49", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "19", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["e82d92b3-f24b-474e-bce7-4523ac607d58",
+        "4e2bcf31-5265-4c84-a4c3-eebce962861f", "c1ce4cb3-efa0-4820-9730-4ff6fd18ea09",
+        "ce057576-7425-49fc-b335-99ec58c45830"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "1.3", "uuid": "c1ce4cb3-efa0-4820-9730-4ff6fd18ea09", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "1", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["1a72ec75-9cae-465d-98eb-265e53f17f35",
+        "f19ee1c2-8c2b-4733-9aa4-22f615f6f427", "ece224c3-f3af-443c-b4c5-b8f03f487b21",
+        "586e585d-88c7-4a03-b80a-0c4d77bad957"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "5.2", "uuid": "f19ee1c2-8c2b-4733-9aa4-22f615f6f427", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "5", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}, {"native_vlan": 1, "description": "", "name": "", "holddown":
+        ["not_applicable"], "speed_group": ["a8a7cd7c-862f-4faf-b611-e087b5a34d65",
+        "027b8e07-c3ee-432d-b0a0-22687e6ebb02", "c26e8048-80aa-460a-b9c4-92a0271084f0",
+        "28791c11-ba99-4441-8718-6e00178eede2"], "ungrouped_vlans": "", "link_state":
+        "down", "switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f", "admin_state":
+        "disabled", "form_factor": "qsfp", "port_security_enabled": false, "vlans":
+        "", "speed": {"current": 25000, "permitted": [25000]}, "switch_name": "admin-vs1",
+        "fec": "disabled", "read_only": false, "default_state": true, "port_label":
+        "12.4", "uuid": "28791c11-ba99-4441-8718-6e00178eede2", "fec_mode": "CL74",
+        "is_uplink": false, "vlan_group_uuids": [], "downlink_switch_uuid": null,
+        "permitted_qsfp_modes": ["qsfp_4x25_gbps"], "silkscreen": "12", "type": "access",
+        "bridge_loop_detection": {"interval": 1000, "mode": "disabled"}, "qsfp_mode":
+        "qsfp_4x25_gbps"}], "time": "597.310mS"}'
     headers:
       Cache-Control:
       - no-store
@@ -1161,7 +1170,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 16 Aug 2019 21:32:23 GMT
+      - Tue, 25 Feb 2020 20:33:03 GMT
       Server:
       - nginx
       Strict-Transport-Security:

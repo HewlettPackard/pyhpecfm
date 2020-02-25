@@ -13,7 +13,7 @@ interactions:
       Content-Type:
       - application/json;charset=UTF-8
       User-Agent:
-      - python-requests/2.21.0
+      - python-requests/2.23.0
       X-Auth-Password:
       - plexxi
       X-Auth-Username:
@@ -22,8 +22,8 @@ interactions:
     uri: https://cfmtest.local/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "db20ae5b0fc404821cf264c944ac6968e30fb49936efed3a793daf4026b4abe074ef22aeed18f6d405f7db36ea792d4b",
-        "time": "505.988mS"}'
+      string: '{"count": 1, "result": "9641119fe8af25a7bac26f176b4e3d441ea13f27a303db6b4e0d7dbfcb5cf35d7618d7d00db30e35c3e92134eeec246c",
+        "time": "451.357mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 16 Aug 2019 21:34:29 GMT
+      - Tue, 25 Feb 2020 20:36:25 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,13 +52,13 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer db20ae5b0fc404821cf264c944ac6968e30fb49936efed3a793daf4026b4abe074ef22aeed18f6d405f7db36ea792d4b
+      - Bearer 9641119fe8af25a7bac26f176b4e3d441ea13f27a303db6b4e0d7dbfcb5cf35d7618d7d00db30e35c3e92134eeec246c
       Connection:
       - keep-alive
       Content-Type:
       - application/json;charset=UTF-8
       User-Agent:
-      - python-requests/2.21.0
+      - python-requests/2.23.0
       X-Auth-Refresh-Token:
       - 'true'
     method: GET
@@ -66,7 +66,7 @@ interactions:
   response:
     body:
       string: '{"count": 1, "result": {"current": "1.0", "supported": ["1.0"], "software":
-        "5.1.0-5437"}, "time": "0.225mS"}'
+        "5.1.0-5437"}, "time": "0.238mS"}'
     headers:
       Connection:
       - keep-alive
@@ -75,7 +75,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 16 Aug 2019 21:34:34 GMT
+      - Tue, 25 Feb 2020 20:36:30 GMT
       Server:
       - nginx
       Strict-Transport-Security:

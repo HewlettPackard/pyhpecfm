@@ -22,8 +22,8 @@ interactions:
     uri: https://cfmtest.local/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "a277c7198516493748607dcc258bf1d3b09530dd78e735103001d7d57639dbe343141ce3e9436dfe5b153d6d7cbd7fa5",
-        "time": "374.680mS"}'
+      string: '{"count": 1, "result": "c8cb97f4ab18b3082391dc77c90c1e0fb89068558fb3a8277d4522c0e80cbe8836b7a461c7355c09869a4b3b161cb4fc",
+        "time": "450.001mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 25 Feb 2020 16:22:41 GMT
+      - Tue, 25 Feb 2020 20:35:22 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,7 +52,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer a277c7198516493748607dcc258bf1d3b09530dd78e735103001d7d57639dbe343141ce3e9436dfe5b153d6d7cbd7fa5
+      - Bearer c8cb97f4ab18b3082391dc77c90c1e0fb89068558fb3a8277d4522c0e80cbe8836b7a461c7355c09869a4b3b161cb4fc
       Connection:
       - keep-alive
       Content-Type:
@@ -78,7 +78,7 @@ interactions:
         CERTIFICATE-----\nMIIELzCCAxegAwIBAgIJANDa3fnDKQu1MA0GCSqGSIb3DQEBCwUAMIHDMS4wLAYD\nVQQDDCVDb21wb3NhYmxlIEZhYnJpYyBNYW5hZ2VyIChyZWFkLW9ubHkpMTYwNAYD\nVQQLDC1Db21wb3NhYmxlIEZhYnJpYyBNYW5hZ2VyIEludGVncmF0aW9uIENsaWVu\ndHMxIzAhBgNVBAoMGkhld2xldHQgUGFja2FyZCBFbnRlcnByaXNlMQswCQYDVQQG\nEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTESMBAGA1UEBwwJUGFsbyBBbHRvMB4X\nDTE5MDgxNjE3MTg0NFoXDTI5MDgxMzE3MTg0NFowgcMxLjAsBgNVBAMMJUNvbXBv\nc2FibGUgRmFicmljIE1hbmFnZXIgKHJlYWQtb25seSkxNjA0BgNVBAsMLUNvbXBv\nc2FibGUgRmFicmljIE1hbmFnZXIgSW50ZWdyYXRpb24gQ2xpZW50czEjMCEGA1UE\nCgwaSGV3bGV0dCBQYWNrYXJkIEVudGVycHJpc2UxCzAJBgNVBAYTAlVTMRMwEQYD\nVQQIDApDYWxpZm9ybmlhMRIwEAYDVQQHDAlQYWxvIEFsdG8wggEiMA0GCSqGSIb3\nDQEBAQUAA4IBDwAwggEKAoIBAQDCIH9vpkqqU4eaPiP6CpWaHXWc1EksJHfnAw4x\n2AZArrRa28nvqXxM4pGbQZSM2hnS/eKtwVF0djYZyuWyKqsClgTblk6EGEqo/Xyl\nYjo+exBSgFZNJuG1xR0Z63Z2TzkxHloaFx06EFsShuYpPlNGMn6QtR+fjdzaB9Tw\nzHKxSuZ34WlrVdncJMoDcRuJ66fUlYyx0NYpqSoPFyiSjeINs65hHtc9mA6aUpjU\nRBWmyYLdkUg/2/guIkos3XC3AMLWHhHjGqjfwuaZBqIMIYUiFkRKNQ8twdLb2Pt9\ntCYvDb4gtc1UkGGnjCowlAZgnEUQVLz3SyYsOwDGYcHwx8DTAgMBAAGjJDAiMAsG\nA1UdDwQEAwICtDATBgNVHSUEDDAKBggrBgEFBQcDAjANBgkqhkiG9w0BAQsFAAOC\nAQEAEeKl6PpZFvSIQU+CbA41+xxCJtuOGdFg9dnIv/K5YL2nRKPMyRsSuZ6A/cP2\nvWqG/6NT0yphNPLkOyKx96sl/LElkgtfiXWU4jI7qbauvC+Ir9ec8jb6kfnJr/uY\nVGMxwIfuOow6k+lNE2/+DdI4K+58Um5b5lKYg+LUwzE+YPwPc0nhDSXv8zYKPWO6\nKViFmM9lcml3qmBjGQ/dQNaTxD6UvMvXFE1SKbu6Gesx0pXp9ymRZadF2G0ShcZM\nfVaSTK4v+IUKjnq8iMsEiQi+XA/LdH36J6zzN66v0d5dZs3WJUB9xMk5+LrJ4eKz\nb8wrPZbB9JeJSsdebhQrR+er8w==\n-----END
         CERTIFICATE-----\n"}, "uuid": "066ddc77-fddb-4f0d-ac63-8f8ab32a0d34", "name":
         "Composable Fabric Manager (read-only) - PKI", "description": "Plexxi Pack
-        Client Authentication (PKI)"}], "time": "8.577mS"}'
+        Client Authentication (PKI)"}], "time": "8.416mS"}'
     headers:
       Cache-Control:
       - no-store
@@ -89,7 +89,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 25 Feb 2020 16:22:46 GMT
+      - Tue, 25 Feb 2020 20:35:27 GMT
       Server:
       - nginx
       Strict-Transport-Security:

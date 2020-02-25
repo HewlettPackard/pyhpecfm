@@ -4,6 +4,7 @@
 This module contains functions related to working with the system characteristics of the
 desired HPE Composable Fabric Manager instance
 """
+from pyhpecfm import system
 
 
 def get_versions(cfmclient):
@@ -71,7 +72,7 @@ def get_auth_sources(cfmclient, params=None):
     response = cfmclient.get(path, params)
     return response.json().get('result')
 
-def get_users(cfmclient):
+def get_users(cfmclient, params=None):
     """
         Function to query current local users from a Composable Fabric Manager represented
         by the CFMClient object
@@ -79,6 +80,44 @@ def get_users(cfmclient):
         :return: list of dict where each dict represents a CFM auth source
         """
     path = 'v1/users'
-    response = cfmclient.get(path)
+    response = cfmclient.get(path, params)
     return response.json().get('result')
 
+def add_local_user(cfmclient, username, role, password, params=None):
+    """
+    Function to add a single new local user to a Composable Fabric Manager
+    represented by the CFMClient Object
+    :param cfmclient: Composable Fabric Manager connection object of type CFMClient
+    :param username:
+    :param role:
+    :param password:
+    :return:
+    """
+    local_uuid = system.get_auth_sources(cfmclient, params={'type':'local'})[0]['uuid']
+    valid_roles = ['Viewer', 'Operator', 'Administrator']
+    data =  {
+            "username": username,
+            "role": role,
+            "auth_source_uuid" : local_uuid,
+            "password" : password
+                }
+    return cfmclient.post('v1/users',params, data)
+
+
+
+def delete_local_user(cfmclient, username):
+    """
+    Function to add a single new local user to a Composable Fabric Manager
+    represented by the CFMClient Object
+    :param cfmclient: Composable Fabric Manager connection object of type CFMClient
+    :param username:
+    :return:
+    """
+    user_uuid = system.get_users(cfmclient, params={"username": username})
+    if len(user_uuid) > 0:
+        user_uuid= user_uuid[0]['uuid']
+    else:
+        return ("Username not present")
+    path = 'v1/users/{}'.format(user_uuid)
+    print (path)
+    return cfmclient.delete(path).json().get('result')
