@@ -137,6 +137,20 @@ class TestGetAuthSources(TestCase):
         for i in my_sources[0].keys():
             self.assertIn(i, my_attributes)
 
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
+    def test_get_auth_sources_local(self):
+        """
+        Test pyhpecfm.system.auth_sources function.
+        """
+        cfm.connect()
+        my_sources = system.get_auth_sources(cfm, params={'type' : 'local'})
+        my_attributes = ['type', 'config', 'uuid', 'name', 'description']
+        self.assertIs(type(my_sources), list)
+        self.assertIs(type(my_sources[0]), dict)
+        for i in my_sources[0].keys():
+            self.assertIn(i, my_attributes)
+        self.assertEqual(my_sources[0]['type'],'local')
+
 
 class TestGetUsers(TestCase):
     """

@@ -60,15 +60,15 @@ def create_backup(cfmclient):
     response = cfmclient.post(path)
     return response.json().get('result') if response else None
 
-def get_auth_sources(cfmclient):
+def get_auth_sources(cfmclient, params=None):
     """
     Function to query current auth sources from a Composable Fabric Manager represented
     by the CFMClient object
     :param cfmclient: Composable Fabric Manager connection object of type CFMClient
-    :return:list of dict where each dict represents a CFM auth source
+    :return: list of dict where each dict represents a CFM auth source
     """
     path = 'v1/auth/sources'
-    response = cfmclient.get(path)
+    response = cfmclient.get(path, params)
     return response.json().get('result')
 
 def get_users(cfmclient):
@@ -76,8 +76,9 @@ def get_users(cfmclient):
         Function to query current local users from a Composable Fabric Manager represented
         by the CFMClient object
         :param cfmclient: Composable Fabric Manager connection object of type CFMClient
-        :return:
+        :return: list of dict where each dict represents a CFM auth source
         """
     path = 'v1/users'
     response = cfmclient.get(path)
     return response.json().get('result')
+
