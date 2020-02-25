@@ -1,0 +1,222 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.23.0
+      X-Auth-Password:
+      - plexxi
+      X-Auth-Username:
+      - admin
+    method: POST
+    uri: https://cfmtest.local/api/v1/auth/token
+  response:
+    body:
+      string: '{"count": 1, "result": "d82ae6d03445f50b2f8cbfa5dc79d2e29616dd3c6e1b788d232af9c4ccd6cafa8649a91bbb19616d1dfe60c2746bdfb2",
+        "time": "565.700mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '143'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Feb 2020 20:34:33 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer d82ae6d03445f50b2f8cbfa5dc79d2e29616dd3c6e1b788d232af9c4ccd6cafa8649a91bbb19616d1dfe60c2746bdfb2
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.23.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://cfmtest.local/api/v1/users?username=test_user
+  response:
+    body:
+      string: '{"count": 0, "result": [], "time": "7.752mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '45'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Feb 2020 20:34:38 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer d82ae6d03445f50b2f8cbfa5dc79d2e29616dd3c6e1b788d232af9c4ccd6cafa8649a91bbb19616d1dfe60c2746bdfb2
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.23.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://cfmtest.local/api/v1/auth/sources?type=local
+  response:
+    body:
+      string: '{"count": 1, "result": [{"type": "local", "config": {}, "uuid": "1529c3e4-aa43-46ee-a3a2-a7922e785487",
+        "name": "local", "description": "Authentication provided locally by Composable
+        Fabric Manager"}], "time": "7.078mS"}'
+    headers:
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '220'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Feb 2020 20:34:38 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=10; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"username": "test_user", "role": "Administrator", "auth_source_uuid":
+      "1529c3e4-aa43-46ee-a3a2-a7922e785487", "password": "password"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer d82ae6d03445f50b2f8cbfa5dc79d2e29616dd3c6e1b788d232af9c4ccd6cafa8649a91bbb19616d1dfe60c2746bdfb2
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '134'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.23.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: POST
+    uri: https://cfmtest.local/api/v1/users
+  response:
+    body:
+      string: '{"count": 1, "result": "530aa5c8-9ae4-4a19-bbb8-f2398e95c6fc", "time":
+        "617.309mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '83'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Feb 2020 20:34:39 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer d82ae6d03445f50b2f8cbfa5dc79d2e29616dd3c6e1b788d232af9c4ccd6cafa8649a91bbb19616d1dfe60c2746bdfb2
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.23.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://cfmtest.local/api/v1/users?username=test_user
+  response:
+    body:
+      string: '{"count": 1, "result": [{"username": "test_user", "token_lifetime":
+        30, "uuid": "530aa5c8-9ae4-4a19-bbb8-f2398e95c6fc", "auth_source_uuid": "1529c3e4-aa43-46ee-a3a2-a7922e785487",
+        "auth_source_name": "local", "distinguished_name": "", "role": "Administrator",
+        "immutable": false, "preferences": {}}], "time": "11.400mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '320'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Feb 2020 20:34:39 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+version: 1

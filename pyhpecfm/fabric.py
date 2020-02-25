@@ -101,6 +101,17 @@ def add_ip_fabric(cfmclient, fabric_uuid, name, description, mode, subnet, prefi
     return cfmclient.post(path, data=data).json().get('result')
 
 
+def delete_fabric_ip_networks(cfmclient, fabric_uuid):
+    """
+    Delete a specific IP networks from the Composable Fabric.
+    :param cfmclient:
+    :param fabric_uuid: UUID of fabric
+    :return:
+    :rtype: list
+    """
+    path = 'v1/fabric_ip_networks/{}'.format(fabric_uuid)
+    return cfmclient.delete(path).json().get('result')
+
 #####################
 # Fitting functions #
 #####################

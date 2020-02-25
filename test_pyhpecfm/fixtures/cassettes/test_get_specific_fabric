@@ -13,7 +13,7 @@ interactions:
       Content-Type:
       - application/json;charset=UTF-8
       User-Agent:
-      - python-requests/2.21.0
+      - python-requests/2.23.0
       X-Auth-Password:
       - plexxi
       X-Auth-Username:
@@ -22,8 +22,8 @@ interactions:
     uri: https://cfmtest.local/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "87414006f4e650a306cf05588e7b2dad59330e777b7b8ac7feaae28a3d62c597c27a63a61ae141270ab2b5530c379f5a",
-        "time": "497.505mS"}'
+      string: '{"count": 1, "result": "b5f61a0a37929d9ef6544414e14c5a9dbedb36996de9a1567c31199cd2fb411e6b6d0eab74593d8a8a3686bc80b547fa",
+        "time": "570.617mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 16 Aug 2019 21:31:56 GMT
+      - Tue, 25 Feb 2020 20:32:35 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,13 +52,13 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer 87414006f4e650a306cf05588e7b2dad59330e777b7b8ac7feaae28a3d62c597c27a63a61ae141270ab2b5530c379f5a
+      - Bearer b5f61a0a37929d9ef6544414e14c5a9dbedb36996de9a1567c31199cd2fb411e6b6d0eab74593d8a8a3686bc80b547fa
       Connection:
       - keep-alive
       Content-Type:
       - application/json;charset=UTF-8
       User-Agent:
-      - python-requests/2.21.0
+      - python-requests/2.23.0
       X-Auth-Refresh-Token:
       - 'true'
     method: GET
@@ -69,18 +69,18 @@ interactions:
         "", "foreign_fabric_state": "Unmanaged", "name": "test fabric", "segmented":
         false, "health": {"status": "healthy", "health_issues": []}, "is_stable":
         true, "foreign_management_state": "Available", "foreign_manager_url": "",
-        "uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff"}], "time": "31.065mS"}'
+        "uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff"}], "time": "125.641mS"}'
     headers:
       Cache-Control:
       - no-store
       Connection:
       - keep-alive
       Content-Length:
-      - '378'
+      - '379'
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 16 Aug 2019 21:32:01 GMT
+      - Tue, 25 Feb 2020 20:32:41 GMT
       Server:
       - nginx
       Strict-Transport-Security:
@@ -96,13 +96,13 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer 87414006f4e650a306cf05588e7b2dad59330e777b7b8ac7feaae28a3d62c597c27a63a61ae141270ab2b5530c379f5a
+      - Bearer b5f61a0a37929d9ef6544414e14c5a9dbedb36996de9a1567c31199cd2fb411e6b6d0eab74593d8a8a3686bc80b547fa
       Connection:
       - keep-alive
       Content-Type:
       - application/json;charset=UTF-8
       User-Agent:
-      - python-requests/2.21.0
+      - python-requests/2.23.0
       X-Auth-Refresh-Token:
       - 'true'
     method: GET
@@ -113,7 +113,7 @@ interactions:
         "", "foreign_fabric_state": "Unmanaged", "name": "test fabric", "segmented":
         false, "health": {"status": "healthy", "health_issues": []}, "is_stable":
         true, "foreign_management_state": "Available", "foreign_manager_url": "",
-        "uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff"}, "time": "26.841mS"}'
+        "uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff"}, "time": "31.274mS"}'
     headers:
       Cache-Control:
       - no-store
@@ -124,7 +124,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 16 Aug 2019 21:32:01 GMT
+      - Tue, 25 Feb 2020 20:32:41 GMT
       Server:
       - nginx
       Strict-Transport-Security:

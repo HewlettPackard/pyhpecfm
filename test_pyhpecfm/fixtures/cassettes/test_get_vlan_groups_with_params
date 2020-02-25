@@ -13,7 +13,7 @@ interactions:
       Content-Type:
       - application/json;charset=UTF-8
       User-Agent:
-      - python-requests/2.21.0
+      - python-requests/2.23.0
       X-Auth-Password:
       - plexxi
       X-Auth-Username:
@@ -22,8 +22,8 @@ interactions:
     uri: https://cfmtest.local/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "a5eec543d0fa1de4ff35d7f00abad8eb8a99e998742c334814cd4c5ebee3cb44ccbf9d7859a2c2878f1e2120e44122bd",
-        "time": "314.160mS"}'
+      string: '{"count": 1, "result": "4bd5eabb1c7a1a1ab08035fc6033c2d0a5b25781cd2acc34af9790a880890a935b2f0daeaa4f1343abe96a72de64af29",
+        "time": "466.021mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 16 Aug 2019 21:33:20 GMT
+      - Tue, 25 Feb 2020 20:34:08 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,13 +52,13 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer a5eec543d0fa1de4ff35d7f00abad8eb8a99e998742c334814cd4c5ebee3cb44ccbf9d7859a2c2878f1e2120e44122bd
+      - Bearer 4bd5eabb1c7a1a1ab08035fc6033c2d0a5b25781cd2acc34af9790a880890a935b2f0daeaa4f1343abe96a72de64af29
       Connection:
       - keep-alive
       Content-Type:
       - application/json;charset=UTF-8
       User-Agent:
-      - python-requests/2.21.0
+      - python-requests/2.23.0
       X-Auth-Refresh-Token:
       - 'true'
     method: GET
@@ -67,7 +67,7 @@ interactions:
     body:
       string: '{"count": 1, "result": [{"lag_uuids": [], "description": "My_New_VLAN_Group
         description", "vlans": "2", "uuid": "fd9107ea-1b63-4e4d-beb5-e069fcfd4c83",
-        "name": "My_New_VLAN_Group"}], "time": "11.555mS"}'
+        "name": "My_New_VLAN_Group"}], "time": "12.608mS"}'
     headers:
       Cache-Control:
       - no-store
@@ -78,7 +78,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 16 Aug 2019 21:33:25 GMT
+      - Tue, 25 Feb 2020 20:34:13 GMT
       Server:
       - nginx
       Strict-Transport-Security:

@@ -1,0 +1,358 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.23.0
+      X-Auth-Password:
+      - plexxi
+      X-Auth-Username:
+      - admin
+    method: POST
+    uri: https://cfmtest.local/api/v1/auth/token
+  response:
+    body:
+      string: '{"count": 1, "result": "95d2abaa787484795e42c6e48fc44f6c132529c27415eafe3ededeca7f7800f16c944dc47a6aa427ccc27b378a7b0cc5",
+        "time": "525.167mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '143'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Feb 2020 20:34:59 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 95d2abaa787484795e42c6e48fc44f6c132529c27415eafe3ededeca7f7800f16c944dc47a6aa427ccc27b378a7b0cc5
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.23.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://cfmtest.local/api/v1/users?username=test_user
+  response:
+    body:
+      string: '{"count": 1, "result": [{"username": "test_user", "token_lifetime":
+        30, "uuid": "530aa5c8-9ae4-4a19-bbb8-f2398e95c6fc", "auth_source_uuid": "1529c3e4-aa43-46ee-a3a2-a7922e785487",
+        "auth_source_name": "local", "distinguished_name": "", "role": "Administrator",
+        "immutable": false, "preferences": {}}], "time": "12.006mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '320'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Feb 2020 20:35:04 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 95d2abaa787484795e42c6e48fc44f6c132529c27415eafe3ededeca7f7800f16c944dc47a6aa427ccc27b378a7b0cc5
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.23.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: DELETE
+    uri: https://cfmtest.local/api/v1/users/530aa5c8-9ae4-4a19-bbb8-f2398e95c6fc
+  response:
+    body:
+      string: '{"count": 1, "result": null, "time": "9.575mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Feb 2020 20:35:04 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 95d2abaa787484795e42c6e48fc44f6c132529c27415eafe3ededeca7f7800f16c944dc47a6aa427ccc27b378a7b0cc5
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.23.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://cfmtest.local/api/v1/auth/sources?type=local
+  response:
+    body:
+      string: '{"count": 1, "result": [{"type": "local", "config": {}, "uuid": "1529c3e4-aa43-46ee-a3a2-a7922e785487",
+        "name": "local", "description": "Authentication provided locally by Composable
+        Fabric Manager"}], "time": "11.614mS"}'
+    headers:
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '221'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Feb 2020 20:35:04 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=10; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"username": "test_user", "role": "Administrator", "auth_source_uuid":
+      "1529c3e4-aa43-46ee-a3a2-a7922e785487", "password": "password"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 95d2abaa787484795e42c6e48fc44f6c132529c27415eafe3ededeca7f7800f16c944dc47a6aa427ccc27b378a7b0cc5
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '134'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.23.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: POST
+    uri: https://cfmtest.local/api/v1/users
+  response:
+    body:
+      string: '{"count": 1, "result": "c1b7b665-f9f6-4152-86c9-fa5ddebe1df7", "time":
+        "1041.022mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '84'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Feb 2020 20:35:05 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 95d2abaa787484795e42c6e48fc44f6c132529c27415eafe3ededeca7f7800f16c944dc47a6aa427ccc27b378a7b0cc5
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.23.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://cfmtest.local/api/v1/users?username=test_user
+  response:
+    body:
+      string: '{"count": 1, "result": [{"username": "test_user", "token_lifetime":
+        30, "uuid": "c1b7b665-f9f6-4152-86c9-fa5ddebe1df7", "auth_source_uuid": "1529c3e4-aa43-46ee-a3a2-a7922e785487",
+        "auth_source_name": "local", "distinguished_name": "", "role": "Administrator",
+        "immutable": false, "preferences": {}}], "time": "38.505mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '320'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Feb 2020 20:35:05 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 95d2abaa787484795e42c6e48fc44f6c132529c27415eafe3ededeca7f7800f16c944dc47a6aa427ccc27b378a7b0cc5
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.23.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://cfmtest.local/api/v1/users?username=test_user
+  response:
+    body:
+      string: '{"count": 1, "result": [{"username": "test_user", "token_lifetime":
+        30, "uuid": "c1b7b665-f9f6-4152-86c9-fa5ddebe1df7", "auth_source_uuid": "1529c3e4-aa43-46ee-a3a2-a7922e785487",
+        "auth_source_name": "local", "distinguished_name": "", "role": "Administrator",
+        "immutable": false, "preferences": {}}], "time": "64.320mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '320'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Feb 2020 20:35:05 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 95d2abaa787484795e42c6e48fc44f6c132529c27415eafe3ededeca7f7800f16c944dc47a6aa427ccc27b378a7b0cc5
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.23.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: DELETE
+    uri: https://cfmtest.local/api/v1/users/c1b7b665-f9f6-4152-86c9-fa5ddebe1df7
+  response:
+    body:
+      string: '{"count": 1, "result": null, "time": "21.643mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '48'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Feb 2020 20:35:05 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+version: 1

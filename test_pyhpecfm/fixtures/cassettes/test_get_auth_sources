@@ -1,0 +1,100 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.23.0
+      X-Auth-Password:
+      - plexxi
+      X-Auth-Username:
+      - admin
+    method: POST
+    uri: https://cfmtest.local/api/v1/auth/token
+  response:
+    body:
+      string: '{"count": 1, "result": "c8cb97f4ab18b3082391dc77c90c1e0fb89068558fb3a8277d4522c0e80cbe8836b7a461c7355c09869a4b3b161cb4fc",
+        "time": "450.001mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '143'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Feb 2020 20:35:22 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer c8cb97f4ab18b3082391dc77c90c1e0fb89068558fb3a8277d4522c0e80cbe8836b7a461c7355c09869a4b3b161cb4fc
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.23.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://cfmtest.local/api/v1/auth/sources
+  response:
+    body:
+      string: '{"count": 4, "result": [{"type": "pki", "config": {"trusted_certs":
+        "-----BEGIN CERTIFICATE-----\nMIIEFzCCAv+gAwIBAgIJAJf2dJOIuusTMA0GCSqGSIb3DQEBCwUAMIG3MSIwIAYD\nVQQDDBlDb21wb3NhYmxlIEZhYnJpYyBNYW5hZ2VyMTYwNAYDVQQLDC1Db21wb3Nh\nYmxlIEZhYnJpYyBNYW5hZ2VyIEludGVncmF0aW9uIENsaWVudHMxIzAhBgNVBAoM\nGkhld2xldHQgUGFja2FyZCBFbnRlcnByaXNlMQswCQYDVQQGEwJVUzETMBEGA1UE\nCAwKQ2FsaWZvcm5pYTESMBAGA1UEBwwJUGFsbyBBbHRvMB4XDTE5MDgxNjE3MTg1\nMFoXDTI5MDgxMzE3MTg1MFowgbcxIjAgBgNVBAMMGUNvbXBvc2FibGUgRmFicmlj\nIE1hbmFnZXIxNjA0BgNVBAsMLUNvbXBvc2FibGUgRmFicmljIE1hbmFnZXIgSW50\nZWdyYXRpb24gQ2xpZW50czEjMCEGA1UECgwaSGV3bGV0dCBQYWNrYXJkIEVudGVy\ncHJpc2UxCzAJBgNVBAYTAlVTMRMwEQYDVQQIDApDYWxpZm9ybmlhMRIwEAYDVQQH\nDAlQYWxvIEFsdG8wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC4dNTZ\nADuKED3JD/p6yY2xf5iVz4j8sIASzHBIz6DVdxx7gnJwtgjLRK9Aw9qq9jvOGB0O\nwzMXWJ0utUZG5sNexGlPSa5sVFqLUAi1Fy5sOt80tK91c404qp2n7HuHO38Rhjf5\n5/6SddtqbMEFUJy9aOXEGcdvo9f2TQfk5T7mo56dJMEDtMUZZEM5TCN4/zk43im5\nhe1SsF5dUzStr2/w/D90tvmDPgk3u8sMazOTT4iVIipsvqj1k57WD5EJTrfePIqU\nlXK2C1W2FCfe6GdcJ6K2KnC0C22Z5TbD2NWD2DUAXWtPs7ObHYcoC3tQcNIISl7+\nUzKkiwb3+d1vmMT5AgMBAAGjJDAiMAsGA1UdDwQEAwICtDATBgNVHSUEDDAKBggr\nBgEFBQcDAjANBgkqhkiG9w0BAQsFAAOCAQEAJJd5gZWesZXSYNL+oR4ho9gguehV\ndhdodeB4Et3T6ZSXtibEDDkHPZzaUB/sXpdBDrpR6i3s7zNWkEbLEUNgnytp/wLs\nlH+ex2Ur3ISAiqYgWt+Fp/E9+1pV9G7bsXS+0ETqLTEpAxsnojFl4Qz+Aw9vYtrp\nUjDNaF3oZxJSHSS4mIiEEFE58MZai2jX7Wjpm0Edyt/cLX28p1P6bLV/xxWNGe90\nzcPmL+IfrqmCRZp/YPvSTvo0TBiH2Hnp/MQZZWX2/hTQnlO6zYo1b99gB3qxW8/x\n2G4Vw4fGCPbiY+XHHQuZ2fdeKZMGkm0fZK7xFMLoZq9t1e8zFXvvhuEj0g==\n-----END
+        CERTIFICATE-----\n"}, "uuid": "77ba8efe-3f8a-4b77-8fa1-25040488f835", "name":
+        "Composable Fabric Manager - PKI", "description": "Plexxi Pack Client Authentication
+        (PKI)"}, {"type": "pki", "config": {"trusted_certs": "-----BEGIN CERTIFICATE-----\nMIID/zCCAuegAwIBAgIJAOmEdvN1B0yKMA0GCSqGSIb3DQEBCwUAMIGrMRYwFAYD\nVQQDDA1FdmVudCBNYW5hZ2VyMTYwNAYDVQQLDC1Db21wb3NhYmxlIEZhYnJpYyBN\nYW5hZ2VyIEludGVncmF0aW9uIENsaWVudHMxIzAhBgNVBAoMGkhld2xldHQgUGFj\na2FyZCBFbnRlcnByaXNlMQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5p\nYTESMBAGA1UEBwwJUGFsbyBBbHRvMB4XDTE5MDgxNjE3MTg1MloXDTI5MDgxMzE3\nMTg1MlowgasxFjAUBgNVBAMMDUV2ZW50IE1hbmFnZXIxNjA0BgNVBAsMLUNvbXBv\nc2FibGUgRmFicmljIE1hbmFnZXIgSW50ZWdyYXRpb24gQ2xpZW50czEjMCEGA1UE\nCgwaSGV3bGV0dCBQYWNrYXJkIEVudGVycHJpc2UxCzAJBgNVBAYTAlVTMRMwEQYD\nVQQIDApDYWxpZm9ybmlhMRIwEAYDVQQHDAlQYWxvIEFsdG8wggEiMA0GCSqGSIb3\nDQEBAQUAA4IBDwAwggEKAoIBAQDXMmSQFeCPwCnt/H/OzNDj1Jv8LH2Mb4u5P89u\n2Te4BIqrzVVm+1FO9fH0xuNz+O/0rY37S67lgTVhEyTKOMsbwMr6bGoZ1rpMZtXV\n0Kf3Uz6B8EWh3TG/MJeXGde3PZzq4+SOuT3/bxAQCYQpKpbdpLs1Lg+hFHm2OiHp\ngQCljwS3+qaX67uQk5ntSP4ZyHYIxuSWzUxg/ynJ8m0X82oFTKKP0XGOE0BIsQ36\nYTBcLnjDptt+41DUKtVW35j2kzbJ74nhMmB0qrPrNPaCcttOnEYRspPmDwHp2GX3\nB07xFmXnzCF9pl0z+M1tICyKQm8147oRxSvxWLBQbmd7gcY5AgMBAAGjJDAiMAsG\nA1UdDwQEAwICtDATBgNVHSUEDDAKBggrBgEFBQcDAjANBgkqhkiG9w0BAQsFAAOC\nAQEAEQDNgkcxxujCRz/sYVj993ZC59SwfwMGcQf5W0NCLH6P2zOKgOmXcKNj2Tzy\nKOM6ViDiFHe0nLs2Uy2f3Tpvj8rO8stegvZS7MYTRrZmTsam3uAC3vUaQsZmW3mH\nyFThziiOA5YVraoZUvePkL3tQKAmat/Xk3VE4w1oee/ElUGQaTu3yB1KO7tTWg9H\nbvKyEZFAW08JBG6+q2jcvzVtl54jF51LQXfRzOw2+ay2dxjZL4kHMrV06HXirUSc\nmyQPPJUNERUvQmsGQ3o2do0XCdyvlWFsz6hHIqjpRTb7Ws3+bTBNgzCt0U/q/Uh7\n5feJNLiVt3wUiXmhjmi5zW1OWQ==\n-----END
+        CERTIFICATE-----\n"}, "uuid": "dee7533f-46c4-4554-9248-0630219958e8", "name":
+        "Event Manager - PKI", "description": "Plexxi Pack Client Authentication (PKI)"},
+        {"type": "local", "config": {}, "uuid": "1529c3e4-aa43-46ee-a3a2-a7922e785487",
+        "name": "local", "description": "Authentication provided locally by Composable
+        Fabric Manager"}, {"type": "pki", "config": {"trusted_certs": "-----BEGIN
+        CERTIFICATE-----\nMIIELzCCAxegAwIBAgIJANDa3fnDKQu1MA0GCSqGSIb3DQEBCwUAMIHDMS4wLAYD\nVQQDDCVDb21wb3NhYmxlIEZhYnJpYyBNYW5hZ2VyIChyZWFkLW9ubHkpMTYwNAYD\nVQQLDC1Db21wb3NhYmxlIEZhYnJpYyBNYW5hZ2VyIEludGVncmF0aW9uIENsaWVu\ndHMxIzAhBgNVBAoMGkhld2xldHQgUGFja2FyZCBFbnRlcnByaXNlMQswCQYDVQQG\nEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTESMBAGA1UEBwwJUGFsbyBBbHRvMB4X\nDTE5MDgxNjE3MTg0NFoXDTI5MDgxMzE3MTg0NFowgcMxLjAsBgNVBAMMJUNvbXBv\nc2FibGUgRmFicmljIE1hbmFnZXIgKHJlYWQtb25seSkxNjA0BgNVBAsMLUNvbXBv\nc2FibGUgRmFicmljIE1hbmFnZXIgSW50ZWdyYXRpb24gQ2xpZW50czEjMCEGA1UE\nCgwaSGV3bGV0dCBQYWNrYXJkIEVudGVycHJpc2UxCzAJBgNVBAYTAlVTMRMwEQYD\nVQQIDApDYWxpZm9ybmlhMRIwEAYDVQQHDAlQYWxvIEFsdG8wggEiMA0GCSqGSIb3\nDQEBAQUAA4IBDwAwggEKAoIBAQDCIH9vpkqqU4eaPiP6CpWaHXWc1EksJHfnAw4x\n2AZArrRa28nvqXxM4pGbQZSM2hnS/eKtwVF0djYZyuWyKqsClgTblk6EGEqo/Xyl\nYjo+exBSgFZNJuG1xR0Z63Z2TzkxHloaFx06EFsShuYpPlNGMn6QtR+fjdzaB9Tw\nzHKxSuZ34WlrVdncJMoDcRuJ66fUlYyx0NYpqSoPFyiSjeINs65hHtc9mA6aUpjU\nRBWmyYLdkUg/2/guIkos3XC3AMLWHhHjGqjfwuaZBqIMIYUiFkRKNQ8twdLb2Pt9\ntCYvDb4gtc1UkGGnjCowlAZgnEUQVLz3SyYsOwDGYcHwx8DTAgMBAAGjJDAiMAsG\nA1UdDwQEAwICtDATBgNVHSUEDDAKBggrBgEFBQcDAjANBgkqhkiG9w0BAQsFAAOC\nAQEAEeKl6PpZFvSIQU+CbA41+xxCJtuOGdFg9dnIv/K5YL2nRKPMyRsSuZ6A/cP2\nvWqG/6NT0yphNPLkOyKx96sl/LElkgtfiXWU4jI7qbauvC+Ir9ec8jb6kfnJr/uY\nVGMxwIfuOow6k+lNE2/+DdI4K+58Um5b5lKYg+LUwzE+YPwPc0nhDSXv8zYKPWO6\nKViFmM9lcml3qmBjGQ/dQNaTxD6UvMvXFE1SKbu6Gesx0pXp9ymRZadF2G0ShcZM\nfVaSTK4v+IUKjnq8iMsEiQi+XA/LdH36J6zzN66v0d5dZs3WJUB9xMk5+LrJ4eKz\nb8wrPZbB9JeJSsdebhQrR+er8w==\n-----END
+        CERTIFICATE-----\n"}, "uuid": "066ddc77-fddb-4f0d-ac63-8f8ab32a0d34", "name":
+        "Composable Fabric Manager (read-only) - PKI", "description": "Plexxi Pack
+        Client Authentication (PKI)"}], "time": "8.416mS"}'
+    headers:
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '5331'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Feb 2020 20:35:27 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=10; includeSubDomains
+    status:
+      code: 200
+      message: OK
+version: 1

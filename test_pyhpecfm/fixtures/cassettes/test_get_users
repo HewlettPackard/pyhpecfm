@@ -1,0 +1,112 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.23.0
+      X-Auth-Password:
+      - plexxi
+      X-Auth-Username:
+      - admin
+    method: POST
+    uri: https://cfmtest.local/api/v1/auth/token
+  response:
+    body:
+      string: '{"count": 1, "result": "215737aed4620c65a8682a4c7d233f563b8f8f17299cb4094910b5f4fa3c09a467c7e03424222734d1ebc18c16cbca3b",
+        "time": "473.672mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '143'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Feb 2020 20:36:15 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 215737aed4620c65a8682a4c7d233f563b8f8f17299cb4094910b5f4fa3c09a467c7e03424222734d1ebc18c16cbca3b
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.23.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://cfmtest.local/api/v1/users
+  response:
+    body:
+      string: '{"count": 5, "result": [{"username": "cyoung", "token_lifetime": 30,
+        "uuid": "0910742c-5309-44a4-a7c1-dc45404c14e7", "auth_source_uuid": "1529c3e4-aa43-46ee-a3a2-a7922e785487",
+        "auth_source_name": "local", "distinguished_name": "", "role": "Administrator",
+        "immutable": false, "preferences": {}}, {"username": "admin", "token_lifetime":
+        30, "uuid": "98ddfcc5-7ecb-4eef-8e3a-09db20003218", "auth_source_uuid": "1529c3e4-aa43-46ee-a3a2-a7922e785487",
+        "auth_source_name": "local", "distinguished_name": "", "role": "Administrator",
+        "immutable": false, "preferences": {}}, {"username": "Composable Fabric Manager
+        (read-only)", "token_lifetime": 1440, "uuid": "32612ad9-ef2e-41a1-9908-becf8b302d61",
+        "auth_source_uuid": "066ddc77-fddb-4f0d-ac63-8f8ab32a0d34", "auth_source_name":
+        "Composable Fabric Manager (read-only) - PKI", "distinguished_name": "CN=Composable
+        Fabric Manager (read-only),OU=Composable Fabric Manager Integration Clients,O=Hewlett
+        Packard Enterprise,C=US,ST=California,L=Palo Alto", "role": "Viewer", "immutable":
+        true, "preferences": {}}, {"username": "Composable Fabric Manager", "token_lifetime":
+        1440, "uuid": "3f9023a4-e0c7-4c98-bdcc-695b22d24850", "auth_source_uuid":
+        "77ba8efe-3f8a-4b77-8fa1-25040488f835", "auth_source_name": "Composable Fabric
+        Manager - PKI", "distinguished_name": "CN=Composable Fabric Manager,OU=Composable
+        Fabric Manager Integration Clients,O=Hewlett Packard Enterprise,C=US,ST=California,L=Palo
+        Alto", "role": "Operator", "immutable": true, "preferences": {}}, {"username":
+        "Event Manager", "token_lifetime": 1440, "uuid": "b5b396f2-c227-4c43-bf89-c8a5f2bd02df",
+        "auth_source_uuid": "dee7533f-46c4-4554-9248-0630219958e8", "auth_source_name":
+        "Event Manager - PKI", "distinguished_name": "CN=Event Manager,OU=Composable
+        Fabric Manager Integration Clients,O=Hewlett Packard Enterprise,C=US,ST=California,L=Palo
+        Alto", "role": "Operator", "immutable": true, "preferences": {}}], "time":
+        "8.986mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1939'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Feb 2020 20:36:20 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+version: 1
