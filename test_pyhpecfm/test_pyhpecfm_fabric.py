@@ -121,7 +121,7 @@ class TestAddFabric(TestCase):
         if SKIPTEST:
             raise SkipTest
         cfm.connect()
-        new_fabric = fabric.add_fabrics(cfm, '172.30.0.4', 'New Fabric', 'My New Fabric')
+        test_fabric = fabric.add_fabrics(cfm, '172.30.0.4', 'New Fabric', 'My New Fabric')
         my_attributes = ['description', 'foreign_manager_id', 'switches', 'foreign_fabric_state', 'name', 'segmented',
                          'health', 'is_stable', 'foreign_management_state', 'foreign_manager_url', 'uuid']
         self.assertIs(type(test_fabric), dict)
@@ -167,8 +167,8 @@ class TestGetFabric(TestCase):
             self.assertIn(i, my_attributes)
 
 
-#TODO NEED CREATE IP FABRIC FUNCTION
-#TODO NEED DELETE IP FABRIC FUNCTION
+
+
 
 class TestAddFabric_IP_Networks(TestCase):
     """
@@ -179,8 +179,13 @@ class TestAddFabric_IP_Networks(TestCase):
     def test_add_fabric_ip_networks(self):
         """
         General test for pyhpecfm.fabric.add_fabric_ip_networks function
+        #note: test assumes there's only one fabric IP network on the system. Test
+        may fail if there's more than one fabric.
         """
         cfm.connect()
+        test_fabric = fabric.get_fabric_ip_networks(cfm)
+        if len(test_fabric) > 0:
+            fabric.delete_fabric_ip_networks(cfm,test_fabric['uuid'])
         fabric_uuid = fabric.get_fabrics(cfm)[0]['uuid']
         switch_uuid = fabric.get_switches(cfm)[0]['uuid']
         test_fabric = fabric.add_ip_fabric(cfm, fabric_uuid, 'new ip fabric', 'my new fabric description', 'manual', '172.16.0.0', '24', '10',switch_uuid,'172.16.0.1')
@@ -190,6 +195,8 @@ class TestAddFabric_IP_Networks(TestCase):
         self.assertIs(type(test_fabric), dict)
         for i in test_fabric.keys():
             self.assertIn(i, my_attributes)
+        test_fabric = fabric.get_fabric_ip_networks(cfm)[0]
+        fabric.delete_fabric_ip_networks(cfm, test_fabric['uuid'])
 
 class TestGetFabric_IP_Networks(TestCase):
     """
@@ -204,13 +211,47 @@ class TestGetFabric_IP_Networks(TestCase):
         """
         cfm.connect()
         test_fabric = fabric.get_fabric_ip_networks(cfm)
+        if len(test_fabric) > 0:
+            fabric.delete_fabric_ip_networks(cfm, test_fabric[0]['uuid'])
+        fabric_uuid = fabric.get_fabrics(cfm)[0]['uuid']
+        switch_uuid = fabric.get_switches(cfm)[0]['uuid']
+        test_fabric = fabric.add_ip_fabric(cfm, fabric_uuid, 'new ip fabric', 'my new fabric description', 'manual',
+                                           '172.16.0.0', '24', '10', switch_uuid, '172.16.0.1')
+        test_fabric = fabric.get_fabric_ip_networks(cfm)
         my_attributes = ['subnet', 'fabric_uuid', 'name', 'switch_addresses','vlan', 'uuid',
                          'mode', 'description']
         self.assertIs(type(test_fabric), list)
         self.assertIs(type(test_fabric[0]), dict)
         for i in test_fabric[0].keys():
             self.assertIn(i, my_attributes)
+        if len(test_fabric) > 0:
+            fabric.delete_fabric_ip_networks(cfm, test_fabric[0]['uuid'])
 
+
+class TestDeleteFabric_IP_Networks(TestCase):
+    """
+    Test case for pyhpecfm.fabric.add_ip_fabric function
+    """
+
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
+    def test_delete_fabric_ip_networks(self):
+        """
+        General test for pyhpecfm.fabric.add_fabric_ip_networks function
+        #note: test assumes there's only one fabric IP network on the system. Test
+        may fail if there's more than one fabric.
+        """
+        cfm.connect()
+        test_fabric = fabric.get_fabric_ip_networks(cfm)
+        if len(test_fabric) > 0:
+            fabric.delete_fabric_ip_networks(cfm,test_fabric[0]['uuid'])
+        fabric_uuid = fabric.get_fabrics(cfm)[0]['uuid']
+        switch_uuid = fabric.get_switches(cfm)[0]['uuid']
+        test_fabric = fabric.add_ip_fabric(cfm, fabric_uuid, 'new ip fabric', 'my new fabric description', 'manual', '172.16.0.0', '24', '10',switch_uuid,'172.16.0.1')
+        test_fabric = fabric.get_fabric_ip_networks(cfm)
+        self.assertIs(len(test_fabric), 1)
+        fabric.delete_fabric_ip_networks(cfm, test_fabric[0]['uuid'])
+        test_fabric = fabric.get_fabric_ip_networks(cfm)
+        self.assertIs(len(test_fabric), 0)
 
 #TODO Need Create VLAN Groups function
 #TODO NEed Delete VLAN Groups function

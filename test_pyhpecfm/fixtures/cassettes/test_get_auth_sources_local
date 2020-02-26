@@ -22,8 +22,8 @@ interactions:
     uri: https://cfmtest.local/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "c1786ae50cd346bd0c983d9faa5e99091e75d059e3d56a9522f4dbbe27eaffb17a1487f4241d893b5b1ce8c11445ea65",
-        "time": "388.903mS"}'
+      string: '{"count": 1, "result": "a4b49d6e4dcac229bd8d1d9001db33b5e897fdd9892db70ae55141054e8a3f7834bf7e6c2ec901c365022c9f1f3c7d01",
+        "time": "435.243mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 25 Feb 2020 20:33:57 GMT
+      - Tue, 25 Feb 2020 20:35:32 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,7 +52,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer c1786ae50cd346bd0c983d9faa5e99091e75d059e3d56a9522f4dbbe27eaffb17a1487f4241d893b5b1ce8c11445ea65
+      - Bearer a4b49d6e4dcac229bd8d1d9001db33b5e897fdd9892db70ae55141054e8a3f7834bf7e6c2ec901c365022c9f1f3c7d01
       Connection:
       - keep-alive
       Content-Type:
@@ -62,23 +62,23 @@ interactions:
       X-Auth-Refresh-Token:
       - 'true'
     method: GET
-    uri: https://cfmtest.local/api/v1/vlan_groups
+    uri: https://cfmtest.local/api/v1/auth/sources?type=local
   response:
     body:
-      string: '{"count": 1, "result": [{"lag_uuids": [], "description": "My_New_VLAN_Group
-        description", "vlans": "2", "uuid": "fd9107ea-1b63-4e4d-beb5-e069fcfd4c83",
-        "name": "My_New_VLAN_Group"}], "time": "14.432mS"}'
+      string: '{"count": 1, "result": [{"type": "local", "config": {}, "uuid": "1529c3e4-aa43-46ee-a3a2-a7922e785487",
+        "name": "local", "description": "Authentication provided locally by Composable
+        Fabric Manager"}], "time": "8.407mS"}'
     headers:
       Cache-Control:
       - no-store
       Connection:
       - keep-alive
       Content-Length:
-      - '202'
+      - '220'
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 25 Feb 2020 20:34:02 GMT
+      - Tue, 25 Feb 2020 20:35:37 GMT
       Server:
       - nginx
       Strict-Transport-Security:

@@ -13,7 +13,7 @@ interactions:
       Content-Type:
       - application/json;charset=UTF-8
       User-Agent:
-      - python-requests/2.21.0
+      - python-requests/2.23.0
       X-Auth-Password:
       - plexxi
       X-Auth-Username:
@@ -22,8 +22,8 @@ interactions:
     uri: https://cfmtest.local/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "3d413db8048c0053dda2f6e9bd03e3efb31a32d2d7516dc65fe84f08e1a021b73713123f0bda3f8da3f469af1d75b853",
-        "time": "311.382mS"}'
+      string: '{"count": 1, "result": "a15a4ae2bc6042a29a41a6a1e9464b4701fa2a420fde8a97bd587a1bbaa477e344bc870c9826a0f1aa006ec4606938d8",
+        "time": "492.614mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 16 Aug 2019 21:31:46 GMT
+      - Tue, 25 Feb 2020 20:32:25 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,13 +52,13 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer 3d413db8048c0053dda2f6e9bd03e3efb31a32d2d7516dc65fe84f08e1a021b73713123f0bda3f8da3f469af1d75b853
+      - Bearer a15a4ae2bc6042a29a41a6a1e9464b4701fa2a420fde8a97bd587a1bbaa477e344bc870c9826a0f1aa006ec4606938d8
       Connection:
       - keep-alive
       Content-Type:
       - application/json;charset=UTF-8
       User-Agent:
-      - python-requests/2.21.0
+      - python-requests/2.23.0
       X-Auth-Refresh-Token:
       - 'true'
     method: GET
@@ -69,7 +69,7 @@ interactions:
         "", "foreign_fabric_state": "Unmanaged", "name": "test fabric", "segmented":
         false, "health": {"status": "healthy", "health_issues": []}, "is_stable":
         true, "foreign_management_state": "Available", "foreign_manager_url": "",
-        "uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff"}], "time": "32.415mS"}'
+        "uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff"}], "time": "50.359mS"}'
     headers:
       Cache-Control:
       - no-store
@@ -80,7 +80,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 16 Aug 2019 21:31:51 GMT
+      - Tue, 25 Feb 2020 20:32:30 GMT
       Server:
       - nginx
       Strict-Transport-Security:

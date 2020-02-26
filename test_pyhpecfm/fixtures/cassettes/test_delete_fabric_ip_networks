@@ -22,8 +22,8 @@ interactions:
     uri: https://cfmtest.local/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "95a662c9f43018c550478af50bd6fabc4c381245dc9e0d651e0c7238423141c076431534e189ce6c0e90844269963137",
-        "time": "478.908mS"}'
+      string: '{"count": 1, "result": "d2ac3a0473f4b86eda282710dde5e72c1fbcafb157d085fdfec4caa916cf7c549c6251b503a719889d365ced16ec1486",
+        "time": "364.204mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 25 Feb 2020 20:32:46 GMT
+      - Tue, 25 Feb 2020 20:32:16 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,7 +52,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer 95a662c9f43018c550478af50bd6fabc4c381245dc9e0d651e0c7238423141c076431534e189ce6c0e90844269963137
+      - Bearer d2ac3a0473f4b86eda282710dde5e72c1fbcafb157d085fdfec4caa916cf7c549c6251b503a719889d365ced16ec1486
       Connection:
       - keep-alive
       Content-Type:
@@ -65,7 +65,7 @@ interactions:
     uri: https://cfmtest.local/api/v1/fabric_ip_networks
   response:
     body:
-      string: '{"count": 0, "result": [], "time": "9.623mS"}'
+      string: '{"count": 0, "result": [], "time": "8.981mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -76,7 +76,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 25 Feb 2020 20:32:51 GMT
+      - Tue, 25 Feb 2020 20:32:21 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -94,7 +94,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer 95a662c9f43018c550478af50bd6fabc4c381245dc9e0d651e0c7238423141c076431534e189ce6c0e90844269963137
+      - Bearer d2ac3a0473f4b86eda282710dde5e72c1fbcafb157d085fdfec4caa916cf7c549c6251b503a719889d365ced16ec1486
       Connection:
       - keep-alive
       Content-Type:
@@ -111,7 +111,7 @@ interactions:
         "", "foreign_fabric_state": "Unmanaged", "name": "test fabric", "segmented":
         false, "health": {"status": "healthy", "health_issues": []}, "is_stable":
         true, "foreign_management_state": "Available", "foreign_manager_url": "",
-        "uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff"}], "time": "40.698mS"}'
+        "uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff"}], "time": "32.553mS"}'
     headers:
       Cache-Control:
       - no-store
@@ -122,7 +122,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 25 Feb 2020 20:32:51 GMT
+      - Tue, 25 Feb 2020 20:32:21 GMT
       Server:
       - nginx
       Strict-Transport-Security:
@@ -138,7 +138,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer 95a662c9f43018c550478af50bd6fabc4c381245dc9e0d651e0c7238423141c076431534e189ce6c0e90844269963137
+      - Bearer d2ac3a0473f4b86eda282710dde5e72c1fbcafb157d085fdfec4caa916cf7c549c6251b503a719889d365ced16ec1486
       Connection:
       - keep-alive
       Content-Type:
@@ -214,7 +214,7 @@ interactions:
         "", "segment": "4fab5b23-7196-4b4e-8b4e-f392e71f5fab", "model": "HPE Composable
         Fabric FM 3032Q", "hw_revision": "CEL_SEASTONE", "sw_version": "5.1.0-94",
         "name": "admin-vs4", "ip_mask": "255.255.255.0", "configuration_number": 0,
-        "operational_stage": "S3P", "ip_mask_v6": "::"}], "time": "16.724mS"}'
+        "operational_stage": "S3P", "ip_mask_v6": "::"}], "time": "14.998mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -225,7 +225,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 25 Feb 2020 20:32:51 GMT
+      - Tue, 25 Feb 2020 20:32:21 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -246,7 +246,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer 95a662c9f43018c550478af50bd6fabc4c381245dc9e0d651e0c7238423141c076431534e189ce6c0e90844269963137
+      - Bearer d2ac3a0473f4b86eda282710dde5e72c1fbcafb157d085fdfec4caa916cf7c549c6251b503a719889d365ced16ec1486
       Connection:
       - keep-alive
       Content-Length:
@@ -265,8 +265,8 @@ interactions:
         "172.16.0.0"}, "fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff", "name":
         "new ip fabric", "switch_addresses": [{"switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f",
         "ip_address": {"prefix_length": 24, "address": "172.16.0.1"}}], "vlan": 10,
-        "uuid": "0df5ed04-de2f-46d4-85f3-dd29a3cb4967", "mode": "manual", "description":
-        "my new fabric description"}, "time": "317.544mS"}'
+        "uuid": "433e41b9-c08c-4d7b-a65d-fc815b956315", "mode": "manual", "description":
+        "my new fabric description"}, "time": "252.962mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -277,7 +277,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 25 Feb 2020 20:32:52 GMT
+      - Tue, 25 Feb 2020 20:32:21 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -295,7 +295,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer 95a662c9f43018c550478af50bd6fabc4c381245dc9e0d651e0c7238423141c076431534e189ce6c0e90844269963137
+      - Bearer d2ac3a0473f4b86eda282710dde5e72c1fbcafb157d085fdfec4caa916cf7c549c6251b503a719889d365ced16ec1486
       Connection:
       - keep-alive
       Content-Type:
@@ -312,8 +312,8 @@ interactions:
         "172.16.0.0"}, "fabric_uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff", "name":
         "new ip fabric", "switch_addresses": [{"switch_uuid": "dd5da679-e8dd-473a-87d8-2c5de2bf792f",
         "ip_address": {"prefix_length": 24, "address": "172.16.0.1"}}], "vlan": 10,
-        "uuid": "0df5ed04-de2f-46d4-85f3-dd29a3cb4967", "mode": "manual", "description":
-        "my new fabric description"}], "time": "13.715mS"}'
+        "uuid": "433e41b9-c08c-4d7b-a65d-fc815b956315", "mode": "manual", "description":
+        "my new fabric description"}], "time": "14.131mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -324,7 +324,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 25 Feb 2020 20:32:52 GMT
+      - Tue, 25 Feb 2020 20:32:21 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -342,7 +342,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer 95a662c9f43018c550478af50bd6fabc4c381245dc9e0d651e0c7238423141c076431534e189ce6c0e90844269963137
+      - Bearer d2ac3a0473f4b86eda282710dde5e72c1fbcafb157d085fdfec4caa916cf7c549c6251b503a719889d365ced16ec1486
       Connection:
       - keep-alive
       Content-Length:
@@ -354,10 +354,10 @@ interactions:
       X-Auth-Refresh-Token:
       - 'true'
     method: DELETE
-    uri: https://cfmtest.local/api/v1/fabric_ip_networks/0df5ed04-de2f-46d4-85f3-dd29a3cb4967
+    uri: https://cfmtest.local/api/v1/fabric_ip_networks/433e41b9-c08c-4d7b-a65d-fc815b956315
   response:
     body:
-      string: '{"count": 1, "result": null, "time": "253.321mS"}'
+      string: '{"count": 1, "result": null, "time": "229.398mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -368,7 +368,49 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 25 Feb 2020 20:32:52 GMT
+      - Tue, 25 Feb 2020 20:32:21 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer d2ac3a0473f4b86eda282710dde5e72c1fbcafb157d085fdfec4caa916cf7c549c6251b503a719889d365ced16ec1486
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - python-requests/2.23.0
+      X-Auth-Refresh-Token:
+      - 'true'
+    method: GET
+    uri: https://cfmtest.local/api/v1/fabric_ip_networks
+  response:
+    body:
+      string: '{"count": 0, "result": [], "time": "9.222mS"}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '45'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Feb 2020 20:32:21 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:

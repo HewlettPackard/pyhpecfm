@@ -119,8 +119,117 @@ class TestCreateBackup(TestCase):
             self.assertIn(i, my_attributes)
 
 
+class TestGetAuthSources(TestCase):
+    """
+    Test Cases for pyhpecfm.system get_auth_sources function
+    """
+
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
+    def test_get_auth_sources(self):
+        """
+        Test pyhpecfm.system.auth_sources function.
+        """
+        cfm.connect()
+        my_sources = system.get_auth_sources(cfm)
+        my_attributes = ['type', 'config', 'uuid', 'name', 'description']
+        self.assertIs(type(my_sources), list)
+        self.assertIs(type(my_sources[0]), dict)
+        for i in my_sources[0].keys():
+            self.assertIn(i, my_attributes)
+
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
+    def test_get_auth_sources_local(self):
+        """
+        Test pyhpecfm.system.auth_sources function.
+        """
+        cfm.connect()
+        my_sources = system.get_auth_sources(cfm, params={'type' : 'local'})
+        my_attributes = ['type', 'config', 'uuid', 'name', 'description']
+        self.assertIs(type(my_sources), list)
+        self.assertIs(type(my_sources[0]), dict)
+        for i in my_sources[0].keys():
+            self.assertIn(i, my_attributes)
+        self.assertEqual(my_sources[0]['type'],'local')
 
 
+class TestGetUsers(TestCase):
+    """
+    Test Cases for pyhpecfm.system get_users function
+    """
 
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
+    def test_get_users(self):
+        """
+        Test pyhpecfm.system.users function.
+        """
+        cfm.connect()
+        my_users = system.get_users(cfm)
+        my_attributes = ['username', 'token_lifetime', 'uuid', 'auth_source_uuid', 'auth_source_name', 'distinguished_name', 'role', 'immutable', 'preferences']
+        self.assertIs(type(my_users), list)
+        self.assertIs(type(my_users[0]), dict)
+        for i in my_users[0].keys():
+            self.assertIn(i, my_attributes)
+
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
+    def test_get_admin_user(self):
+        """
+        Test pyhpecfm.system.users function.
+        """
+        cfm.connect()
+        my_users = system.get_users(cfm, params={"username": "admin"})
+        my_attributes = ['username', 'token_lifetime', 'uuid', 'auth_source_uuid', 'auth_source_name', 'distinguished_name', 'role', 'immutable', 'preferences']
+        self.assertIs(type(my_users), list)
+        self.assertIs(type(my_users[0]), dict)
+        for i in my_users[0].keys():
+            self.assertIn(i, my_attributes)
+        self.assertEqual(my_users[0]['username'], 'admin')
+
+
+class TestAddLocalUsers(TestCase):
+    """
+    Test Cases for pyhpecfm.system get_users function
+    """
+
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
+    def test_add_local_user(self):
+        """
+        Test pyhpecfm.system.users function.
+        """
+        cfm.connect()
+        system.delete_local_user(cfm, 'test_user')
+        my_users = system.add_local_user(cfm, 'test_user', 'Administrator', 'password')
+        my_users = system.get_users(cfm, params={"username": "test_user"})
+        my_attributes = ['username', 'token_lifetime', 'uuid', 'auth_source_uuid', 'auth_source_name',
+                         'distinguished_name', 'role', 'immutable', 'preferences']
+        self.assertIs(type(my_users), list)
+        self.assertIs(type(my_users[0]), dict)
+        for i in my_users[0].keys():
+            self.assertIn(i, my_attributes)
+        self.assertEqual(my_users[0]['username'], 'test_user')
+
+
+class TestDeleteLocalUsers(TestCase):
+    """
+    Test Cases for pyhpecfm.system get_users function
+    """
+
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
+    def test_delete_local_user(self):
+        """
+        Test pyhpecfm.system.users function.
+        """
+        cfm.connect()
+        system.delete_local_user(cfm, 'test_user')
+        system.add_local_user(cfm, 'test_user', 'Administrator', 'password')
+        my_users = system.get_users(cfm, params={"username": "test_user"})
+        my_attributes = ['username', 'token_lifetime', 'uuid', 'auth_source_uuid', 'auth_source_name',
+                         'distinguished_name', 'role', 'immutable', 'preferences']
+        self.assertIs(type(my_users), list)
+        self.assertIs(type(my_users[0]), dict)
+        for i in my_users[0].keys():
+            self.assertIn(i, my_attributes)
+        self.assertEqual(my_users[0]['username'], 'test_user')
+        x = system.delete_local_user(cfm, 'test_user')
+        self.assertIs(x, None)
 
 

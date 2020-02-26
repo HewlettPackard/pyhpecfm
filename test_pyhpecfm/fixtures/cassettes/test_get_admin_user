@@ -22,8 +22,8 @@ interactions:
     uri: https://cfmtest.local/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "c1786ae50cd346bd0c983d9faa5e99091e75d059e3d56a9522f4dbbe27eaffb17a1487f4241d893b5b1ce8c11445ea65",
-        "time": "388.903mS"}'
+      string: '{"count": 1, "result": "ded619eb5b58178b0a776dd5c7ead18c8e48893fb571fd6b757c9f37ea35cf62845b0d2e22175c4b3df28eafba4b3b4c",
+        "time": "508.954mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 25 Feb 2020 20:33:57 GMT
+      - Tue, 25 Feb 2020 20:56:53 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,7 +52,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer c1786ae50cd346bd0c983d9faa5e99091e75d059e3d56a9522f4dbbe27eaffb17a1487f4241d893b5b1ce8c11445ea65
+      - Bearer ded619eb5b58178b0a776dd5c7ead18c8e48893fb571fd6b757c9f37ea35cf62845b0d2e22175c4b3df28eafba4b3b4c
       Connection:
       - keep-alive
       Content-Type:
@@ -62,27 +62,30 @@ interactions:
       X-Auth-Refresh-Token:
       - 'true'
     method: GET
-    uri: https://cfmtest.local/api/v1/vlan_groups
+    uri: https://cfmtest.local/api/v1/users?username=admin
   response:
     body:
-      string: '{"count": 1, "result": [{"lag_uuids": [], "description": "My_New_VLAN_Group
-        description", "vlans": "2", "uuid": "fd9107ea-1b63-4e4d-beb5-e069fcfd4c83",
-        "name": "My_New_VLAN_Group"}], "time": "14.432mS"}'
+      string: '{"count": 1, "result": [{"username": "admin", "token_lifetime": 30,
+        "uuid": "98ddfcc5-7ecb-4eef-8e3a-09db20003218", "auth_source_uuid": "1529c3e4-aa43-46ee-a3a2-a7922e785487",
+        "auth_source_name": "local", "distinguished_name": "", "role": "Administrator",
+        "immutable": false, "preferences": {}}], "time": "7.603mS"}'
     headers:
       Cache-Control:
-      - no-store
+      - no-cache
       Connection:
       - keep-alive
       Content-Length:
-      - '202'
+      - '315'
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 25 Feb 2020 20:34:02 GMT
+      - Tue, 25 Feb 2020 20:56:58 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
       - nginx
       Strict-Transport-Security:
-      - max-age=10; includeSubDomains
+      - max-age=31536000; includeSubDomains
     status:
       code: 200
       message: OK

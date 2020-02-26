@@ -13,7 +13,7 @@ interactions:
       Content-Type:
       - application/json;charset=UTF-8
       User-Agent:
-      - python-requests/2.21.0
+      - python-requests/2.23.0
       X-Auth-Password:
       - plexxi
       X-Auth-Username:
@@ -22,8 +22,8 @@ interactions:
     uri: https://cfmtest.local/api/v1/auth/token
   response:
     body:
-      string: '{"count": 1, "result": "bf4fb0eef82f4aee5cf200da0de7272539e0d82c24e5e4aff2252afd1ec90414005cb7f242905f17477be55ceda0bc01",
-        "time": "500.418mS"}'
+      string: '{"count": 1, "result": "56d85af8d4ab76c13b3a37f10676606e0a74dcda7391346803af2a8ab3ad894c87d9237cd87339d9a111159852d153fa",
+        "time": "503.977mS"}'
     headers:
       Cache-Control:
       - no-cache
@@ -34,7 +34,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 16 Aug 2019 21:33:30 GMT
+      - Tue, 25 Feb 2020 20:34:18 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:01 GMT
       Server:
@@ -52,13 +52,13 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer bf4fb0eef82f4aee5cf200da0de7272539e0d82c24e5e4aff2252afd1ec90414005cb7f242905f17477be55ceda0bc01
+      - Bearer 56d85af8d4ab76c13b3a37f10676606e0a74dcda7391346803af2a8ab3ad894c87d9237cd87339d9a111159852d153fa
       Connection:
       - keep-alive
       Content-Type:
       - application/json;charset=UTF-8
       User-Agent:
-      - python-requests/2.21.0
+      - python-requests/2.23.0
       X-Auth-Refresh-Token:
       - 'true'
     method: GET
@@ -69,7 +69,7 @@ interactions:
         "", "foreign_fabric_state": "Unmanaged", "name": "test fabric", "segmented":
         false, "health": {"status": "healthy", "health_issues": []}, "is_stable":
         true, "foreign_management_state": "Available", "foreign_manager_url": "",
-        "uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff"}], "time": "33.568mS"}'
+        "uuid": "7f2ca010-df98-45d1-b211-c268ee1b04ff"}], "time": "35.193mS"}'
     headers:
       Cache-Control:
       - no-store
@@ -80,7 +80,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 16 Aug 2019 21:33:35 GMT
+      - Tue, 25 Feb 2020 20:34:23 GMT
       Server:
       - nginx
       Strict-Transport-Security:
@@ -97,7 +97,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer bf4fb0eef82f4aee5cf200da0de7272539e0d82c24e5e4aff2252afd1ec90414005cb7f242905f17477be55ceda0bc01
+      - Bearer 56d85af8d4ab76c13b3a37f10676606e0a74dcda7391346803af2a8ab3ad894c87d9237cd87339d9a111159852d153fa
       Connection:
       - keep-alive
       Content-Length:
@@ -105,15 +105,15 @@ interactions:
       Content-Type:
       - application/json;charset=UTF-8
       User-Agent:
-      - python-requests/2.21.0
+      - python-requests/2.23.0
       X-Auth-Refresh-Token:
       - 'true'
     method: POST
     uri: https://cfmtest.local/api/v1/fits
   response:
     body:
-      string: '{"count": 1, "result": "414e46ef-adfd-47db-b14d-b66b51b05b78", "time":
-        "3679.070mS"}'
+      string: '{"count": 1, "result": "6646c8c8-b597-4f06-93c3-40d03e585774", "time":
+        "4443.372mS"}'
     headers:
       Connection:
       - keep-alive
@@ -122,7 +122,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 16 Aug 2019 21:33:39 GMT
+      - Tue, 25 Feb 2020 20:34:28 GMT
       Server:
       - nginx
       Strict-Transport-Security:
