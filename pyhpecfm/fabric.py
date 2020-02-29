@@ -28,6 +28,21 @@ def get_fabrics(cfmclient, fabric_uuid=None):
     return cfmclient.get(path).json().get('result')
 
 
+def get_portmaps(cfmclient, fabric_uuid, portmaps_uuid=None):
+    """
+    Get a list of portmaps currently configured in Composable Fabric
+    :param cfmclient
+    :param fabric uuid
+    :return: list of Dictionary objects where each dictionary represents a portmap
+    on the composable fabric
+    :rtype: list
+    """
+    path = 'v1/fabrics/{}/portmaps'.format(fabric_uuid)
+    if portmaps_uuid:
+        path += '/{}'.format(portmaps_uuid)
+    return cfmclient.get(path).json().get('result')
+
+
 def add_fabrics(cfmclient, switch_ip, name, description):
     """
     Function to add a new fabric for management under a specific CFM instance
