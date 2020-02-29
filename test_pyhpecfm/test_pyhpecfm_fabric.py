@@ -167,7 +167,41 @@ class TestGetFabric(TestCase):
             self.assertIn(i, my_attributes)
 
 
+class TestGetPortmaps(TestCase):
+    """
+    Test case for pyhpecfm.fabric.get_portmaps function.
+    """
 
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
+    def test_get_portmaps(self):
+        """
+        General test for get_portmaps function.
+        """
+        cfm.connect()
+        all_fabrics = fabric.get_fabrics(cfm)
+        my_fabric = all_fabrics[0]['uuid']
+        portmaps = fabric.get_portmaps(cfm, my_fabric)
+        my_attributes = ['configuration', 'fabric_uuid', 'uuid']
+        self.assertIs(type(portmaps), list)
+        self.assertIs(type(portmaps[0]), dict)
+        for i in portmaps[0].keys():
+            self.assertIn(i, my_attributes)
+
+    @vcr.use_cassette(cassette_library_dir='./test_pyhpecfm/fixtures/cassettes')
+    def test_get_specific_portmaps(self):
+        """
+        Test to get specific portmaps associated with a Composable Fabric.
+        """
+        cfm.connect()
+        all_fabrics = fabric.get_fabrics(cfm)
+        my_fabric = all_fabrics[0]['uuid']
+        all_portmaps = fabric.get_portmaps(cfm, my_fabric)
+        my_portmaps = all_portmaps[0]['uuid']
+        portmaps = fabric.get_portmaps(cfm, my_fabric, my_portmaps)
+        my_attributes = ['configuration', 'fabric_uuid', 'uuid']
+        self.assertIs(type(portmaps), dict)
+        for i in portmaps.keys():
+            self.assertIn(i, my_attributes)
 
 
 class TestAddFabric_IP_Networks(TestCase):
